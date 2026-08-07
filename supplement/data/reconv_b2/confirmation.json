@@ -1,0 +1,1876 @@
+[
+  {
+    "theorem": "Stream'.WSeq.head_congr",
+    "file": "Mathlib/Data/Seq/WSeq.lean",
+    "pp_hash": "f45f840207a3f3e9",
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "constructor",
+        "simp only [dse]"
+      ],
+      [
+        "constructor",
+        "simp only [dsm]"
+      ],
+      [
+        "constructor",
+        "simp only [h]"
+      ],
+      [
+        "constructor",
+        "simp only [ho]"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 5,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:e9e70656c0d2",
+          "SUCC:55c367fd8435",
+          "SUCC:c9b49aad7e7c"
+        ],
+        "constructor ; simp only [dse]": [
+          "SUCC:847322915949",
+          "SUCC:401d847050bc",
+          "SUCC:a0da76f22753"
+        ],
+        "constructor ; simp only [dsm]": [
+          "SUCC:0d25c7ed6a32",
+          "SUCC:dc5a6f933590",
+          "SUCC:102b332eeed0"
+        ],
+        "constructor ; simp only [h]": [
+          "SUCC:652f198459fa",
+          "SUCC:8822fa544c80",
+          "SUCC:e85ff9aa797b"
+        ],
+        "constructor ; simp only [ho]": [
+          "SUCC:dac996e6ec82",
+          "SUCC:a56ecb6b95e3",
+          "SUCC:67e8bea75c7d"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "KaehlerDifferential.span_range_derivation",
+    "file": "Mathlib/RingTheory/Kaehler/Basic.lean",
+    "pp_hash": "62f9c70a1444c1e9",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "norm_num",
+      "simp only [hx]",
+      "simp_all"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "norm_num": {
+        "intro h ; simp": [
+          "SUCC:62f9c70a1444",
+          "SUCC:62f9c70a1444",
+          "SUCC:62f9c70a1444"
+        ],
+        "simp ; intro h": [
+          "SUCC:62f9c70a1444",
+          "SUCC:62f9c70a1444",
+          "SUCC:62f9c70a1444"
+        ]
+      },
+      "simp only [hx]": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp_all": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  },
+  {
+    "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+    "file": "Mathlib/Probability/Kernel/Disintegration/Density.lean",
+    "pp_hash": "00c9c6d8af4acb31",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp",
+      "simp_all"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:00c9c6d8af4a",
+          "SUCC:00c9c6d8af4a",
+          "SUCC:00c9c6d8af4a"
+        ]
+      },
+      "simp_all": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:00c9c6d8af4a",
+          "SUCC:00c9c6d8af4a",
+          "SUCC:00c9c6d8af4a"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp",
+      "simp_all"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nβ : Type u_2\nγ : Type u_3\nmα : MeasurableSpace α\nmβ : MeasurableSpace β\nmγ : MeasurableSpace γ\ninst✝ : CountablyGenerated γ\nκ : ↥(kernel α (γ × β))\nν : ↥(kernel α γ)\nhκν : fst κ ≤ ν\nn : ℕ\na : α\nx : γ\ns : Set β\nh : ℝ≥0\n⊢ (ν a) (countablePartitionSet n x) = ↑h → ∃ b, (κ a) (countablePartitionSet n x ×ˢ s) = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "hasSum_mellin",
+    "file": "Mathlib/NumberTheory/LSeries/MellinEqDirichlet.lean",
+    "pp_hash": "e158a624a6ac3f7b",
+    "histories": [
+      [
+        "intro h",
+        "simp only [hF]"
+      ],
+      [
+        "intro h",
+        "simp only [h_sum]"
+      ],
+      [
+        "intro h",
+        "simp only [hp]"
+      ],
+      [
+        "intro h",
+        "simp only [hs]"
+      ]
+    ],
+    "flagged": [
+      "decide",
+      "norm_num",
+      "rw [F]",
+      "rw [hF]",
+      "rw [h_sum]",
+      "rw [p]",
+      "rw [s]",
+      "simp",
+      "simp only [a]",
+      "simp only [hp]",
+      "simp only [s]",
+      "simp_all"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "decide": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "norm_num": {
+        "intro h ; simp only [hF]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [hp]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [hs]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ]
+      },
+      "rw [F]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [hF]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [h_sum]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [p]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [s]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp": {
+        "intro h ; simp only [hF]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [hp]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ],
+        "intro h ; simp only [hs]": [
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4",
+          "SUCC:e00d1641fed4"
+        ]
+      },
+      "simp only [a]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [hp]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [s]": {
+        "intro h ; simp only [hF]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hp]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "intro h ; simp only [hs]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp_all": {
+        "intro h ; simp only [hF]": [
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69"
+        ],
+        "intro h ; simp only [h_sum]": [
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69"
+        ],
+        "intro h ; simp only [hp]": [
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69"
+        ],
+        "intro h ; simp only [hs]": [
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69",
+          "SUCC:e397d595df69"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  },
+  {
+    "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+    "file": "Mathlib/MeasureTheory/Integral/Lebesgue.lean",
+    "pp_hash": "dc12987d57bfa877",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp",
+      "simp_all"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:dc12987d57bf",
+          "SUCC:dc12987d57bf",
+          "SUCC:dc12987d57bf"
+        ]
+      },
+      "simp_all": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:dc12987d57bf",
+          "SUCC:dc12987d57bf",
+          "SUCC:dc12987d57bf"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp",
+      "simp_all"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nβ : Type u_2\nγ : Type u_3\nδ : Type u_4\nm : MeasurableSpace α\nμ ν : Measure α\nf : α → ℝ\nh : ℝ≥0\n⊢ ∫⁻ (x : α), ENNReal.ofReal |f x| ∂μ = ↑h → ∃ b, ∫⁻ (x : α), ENNReal.ofReal (f x) ∂μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "FormalMultilinearSeries.summable_nnnorm_mul_pow",
+    "file": "Mathlib/Analysis/Analytic/Basic.lean",
+    "pp_hash": "f3c149312d1599f0",
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "norm_num"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "norm_num": {
+        "constructor ; simp": [
+          "SUCC:f3c149312d15",
+          "SUCC:f3c149312d15",
+          "SUCC:f3c149312d15"
+        ],
+        "simp ; constructor": [
+          "SUCC:f3c149312d15",
+          "SUCC:f3c149312d15",
+          "SUCC:f3c149312d15"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_add_le",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "pp_hash": "7555e1702ed54909",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp",
+      "simp_all"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:7555e1702ed5",
+          "SUCC:7555e1702ed5",
+          "SUCC:7555e1702ed5"
+        ]
+      },
+      "simp_all": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:7555e1702ed5",
+          "SUCC:7555e1702ed5",
+          "SUCC:7555e1702ed5"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp",
+      "simp_all"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\nα : Type u_1\ninst✝ : MeasurableSpace α\nμ : Measure α\np : ℝ\nf g : α → ℝ≥0∞\nhf : AEMeasurable f μ\nhg : AEMeasurable g μ\nhp1 : 1 ≤ p\nhp_pos : 0 < p\nhf_top : ¬∫⁻ (a : α), f a ^ p ∂μ = ⊤\nhg_top : ¬∫⁻ (a : α), g a ^ p ∂μ = ⊤\nh1 : ¬p = 1\nhp1_lt : 1 < p\nh : ℝ≥0\n⊢ (∫⁻ (a : α), f a ^ p ∂μ) ^ p⁻¹ + (∫⁻ (a : α), g a ^ p ∂μ) ^ p⁻¹ = ↑h →\n    ∃ b, (∫⁻ (a : α), (f a + g a) ^ p ∂μ) ^ p⁻¹ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "DenseInducing.extend_Z_bilin_key",
+    "file": "Mathlib/Topology/Algebra/UniformGroup.lean",
+    "pp_hash": "c405428abacdab77",
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [W'_nhd]",
+        "simp"
+      ],
+      [
+        "simp only [de]",
+        "simp"
+      ],
+      [
+        "simp only [df]",
+        "simp"
+      ]
+    ],
+    "flagged": [
+      "aesop",
+      "constructor",
+      "decide",
+      "exact?",
+      "norm_num",
+      "rw [G]",
+      "rw [e]",
+      "simp only [G]",
+      "simp only [e]",
+      "simp_all",
+      "tauto",
+      "trivial"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "simp": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ],
+        "simp only [de] ; simp": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ],
+        "simp only [df] ; simp": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ]
+      },
+      "constructor": {
+        "simp": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [de] ; simp": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [df] ; simp": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ]
+      },
+      "decide": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "exact?": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "norm_num": {
+        "simp": [
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd"
+        ],
+        "simp only [de] ; simp": [
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd"
+        ],
+        "simp only [df] ; simp": [
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd",
+          "SUCC:c405428abacd"
+        ]
+      },
+      "rw [G]": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [e]": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [G]": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [e]": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp_all": {
+        "simp": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ],
+        "simp only [de] ; simp": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ],
+        "simp only [df] ; simp": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ]
+      },
+      "tauto": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "trivial": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  },
+  {
+    "theorem": "DenseInducing.extend_Z_bilin_key",
+    "file": "Mathlib/Topology/Algebra/UniformGroup.lean",
+    "pp_hash": "5127d1f9335afcff",
+    "histories": [
+      [
+        "simp only [W'_nhd]"
+      ],
+      [
+        "simp only [de]"
+      ],
+      [
+        "simp only [df]"
+      ]
+    ],
+    "flagged": [
+      "aesop",
+      "decide",
+      "rw [de]",
+      "rw [e]",
+      "rw [f]",
+      "simp only [G]",
+      "simp only [de]",
+      "simp only [e]",
+      "simp_all",
+      "tauto",
+      "trivial"
+    ],
+    "members_restored": 3,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "simp only [W'_nhd]": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ],
+        "simp only [de]": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ],
+        "simp only [df]": [
+          "SUCC:df839be91553",
+          "SUCC:df839be91553",
+          "SUCC:df839be91553"
+        ]
+      },
+      "decide": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [de]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [e]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [f]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [G]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [de]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [e]": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp_all": {
+        "simp only [W'_nhd]": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ],
+        "simp only [de]": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ],
+        "simp only [df]": [
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613",
+          "SUCC:abdae0e5e613"
+        ]
+      },
+      "tauto": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "trivial": {
+        "simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  },
+  {
+    "theorem": "DenseInducing.extend_Z_bilin_key",
+    "file": "Mathlib/Topology/Algebra/UniformGroup.lean",
+    "pp_hash": "e1ef54b40d9a4ab4",
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop",
+      "rw [G]",
+      "rw [de]",
+      "rw [e]",
+      "simp only [e]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "CRASH"
+        ],
+        "simp ; constructor": [
+          "CRASH"
+        ]
+      },
+      "rw [G]": {
+        "constructor ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [de]": {
+        "constructor ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [e]": {
+        "constructor ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [e]": {
+        "constructor ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [
+      "aesop"
+    ],
+    "confirmed_probes": [],
+    "verdict": "CRASH_CONTAMINATED"
+  },
+  {
+    "theorem": "DenseInducing.extend_Z_bilin_key",
+    "file": "Mathlib/Topology/Algebra/UniformGroup.lean",
+    "pp_hash": "958b48bbfb1c9cfb",
+    "histories": [
+      [
+        "constructor",
+        "simp only [W'_nhd]"
+      ],
+      [
+        "constructor",
+        "simp only [de]"
+      ],
+      [
+        "constructor",
+        "simp only [df]"
+      ],
+      [
+        "simp only [W'_nhd]",
+        "constructor"
+      ],
+      [
+        "simp only [de]",
+        "constructor"
+      ],
+      [
+        "simp only [df]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "assumption",
+      "exact?",
+      "omega",
+      "rfl",
+      "rw [W']",
+      "rw [W'_nhd]",
+      "rw [de]",
+      "rw [df]",
+      "rw [f]",
+      "rw [x₀]",
+      "simp",
+      "simp only [W']",
+      "simp only [W'_nhd]",
+      "simp only [de]",
+      "simp only [df]",
+      "simp only [f]",
+      "simp only [x₀]"
+    ],
+    "members_restored": 6,
+    "renderings_identical": true,
+    "repeat_table": {
+      "assumption": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "exact?": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "omega": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rfl": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [W']": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [W'_nhd]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [de]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [df]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [f]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "rw [x₀]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp": {
+        "constructor ; simp only [W'_nhd]": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "constructor ; simp only [de]": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "constructor ; simp only [df]": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [de] ; constructor": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ],
+        "simp only [df] ; constructor": [
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a",
+          "SUCC:e1ef54b40d9a"
+        ]
+      },
+      "simp only [W']": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [W'_nhd]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [de]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [df]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [f]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [x₀]": {
+        "constructor ; simp only [W'_nhd]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [de]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "constructor ; simp only [df]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [W'_nhd] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [de] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [df] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NOT_REPRODUCED"
+  }
+]

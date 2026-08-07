@@ -1,0 +1,1799 @@
+[
+  {
+    "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+    "file": "Mathlib/AlgebraicTopology/AlternatingFaceMapComplex.lean",
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [P]",
+        "simp"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "simp": "c3159ce8dfd81494",
+          "simp only [P] ; simp": "c3159ce8dfd81494"
+        },
+        "bytes": {
+          "simp": 451,
+          "simp only [P] ; simp": 451
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "simp": "5763ced9641f0a02",
+          "simp only [P] ; simp": "1b7aa330a38d8fc3"
+        },
+        "bytes": {
+          "simp": 96313,
+          "simp only [P] ; simp": 97329
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "simp": "c3159ce8dfd81494",
+          "simp only [P] ; simp": "c3159ce8dfd81494"
+        },
+        "bytes": {
+          "simp": 451,
+          "simp only [P] ; simp": 451
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "simp": "c2b6e0cc89da56f8",
+          "simp only [P] ; simp": "c2b6e0cc89da56f8"
+        },
+        "bytes": {
+          "simp": 602,
+          "simp only [P] ; simp": 602
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "simp": "5763ced9641f0a02",
+          "simp only [P] ; simp": "1b7aa330a38d8fc3"
+        },
+        "bytes": {
+          "simp": 96313,
+          "simp only [P] ; simp": 97329
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "simp": "857926386edf9f45",
+          "simp only [P] ; simp": "4863bb7f6fb5a4e3"
+        },
+        "bytes": {
+          "simp": 117467,
+          "simp only [P] ; simp": 118483
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "simp": "86a02ed48bfa5aeb876f0eaac45dd9ddd5fce787e2d502737aa39616b24ad2f0",
+          "simp only [P] ; simp": "9d61365b060c76109c5f84b3f8801abf651bc3f6bdcf5b547097bca5b3f90314"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "simp": "4e8a12dbcdb45d9fffea13cd9f19eeb0cd6099cb860d70c53acc897266ab305d",
+          "simp only [P] ; simp": "bc54dd6265e38095802e3cc5d2254feeedeb11f437a34c9369a3d4be2347530c"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "simp": "69b29e6afb381022ff8a4bfd13fd884002c5bb7b48af775c9ea44df188192c3c",
+          "simp only [P] ; simp": "69b29e6afb381022ff8a4bfd13fd884002c5bb7b48af775c9ea44df188192c3c"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "simp": "37a2434c75172c86fa0f79914ef8ca8d20364d38096a0f0e4ad57aff090a84d3",
+          "simp only [P] ; simp": "34ef0193f596778b026d1dfc36459594aa95cdbd0acca8acee259d499c106300"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-P",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3)))))",
+      "-P)",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3))))))",
+      "-P)",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3))))))"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -377,17 +377,116 @@",
+      " (instOfNatNat",
+      " 3))))",
+      " (ha",
+      " :",
+      " @Membership.mem.{0,",
+      " 0}",
+      "-P",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}"
+    ]
+  },
+  {
+    "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+    "file": "Mathlib/AlgebraicTopology/AlternatingFaceMapComplex.lean",
+    "histories": [
+      [
+        "simp only [P]",
+        "simp only [S]"
+      ],
+      [
+        "simp only [S]",
+        "simp only [P]"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "53c08477581c5ca5",
+          "simp only [S] ; simp only [P]": "53c08477581c5ca5"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 524,
+          "simp only [S] ; simp only [P]": 524
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "9c1e2ae9163e0483",
+          "simp only [S] ; simp only [P]": "43ce14ae43e2995e"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 99201,
+          "simp only [S] ; simp only [P]": 100675
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "53c08477581c5ca5",
+          "simp only [S] ; simp only [P]": "53c08477581c5ca5"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 524,
+          "simp only [S] ; simp only [P]": 524
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "8f4d72683e94a3c7",
+          "simp only [S] ; simp only [P]": "8f4d72683e94a3c7"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 739,
+          "simp only [S] ; simp only [P]": 739
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "9c1e2ae9163e0483",
+          "simp only [S] ; simp only [P]": "43ce14ae43e2995e"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 99201,
+          "simp only [S] ; simp only [P]": 100675
+        }
+      },
+      "phi_full_proofs": {
+        "separates": false,
+        "hashes": {
+          "simp only [P] ; simp only [S]": "b25978322b602670",
+          "simp only [S] ; simp only [P]": "b25978322b602670"
+        },
+        "bytes": {
+          "simp only [P] ; simp only [S]": 121053,
+          "simp only [S] ; simp only [P]": 121053
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "simp only [P] ; simp only [S]": "d637008b865839894f1a6d22bcca12211f25b00a5640bde6d176c9e09dba1418",
+          "simp only [S] ; simp only [P]": "641d10ae5c3dde8e55470a595ff5199d476c4549df29fcc18f6440733ccf92d9"
+        }
+      },
+      "f_proof": {
+        "separates": false,
+        "values": {
+          "simp only [P] ; simp only [S]": "a34a35a9acae282d46950e1f5aaab98e2295d57bbc3ae1ba73a6fc3da5ccd063",
+          "simp only [S] ; simp only [P]": "a34a35a9acae282d46950e1f5aaab98e2295d57bbc3ae1ba73a6fc3da5ccd063"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "simp only [P] ; simp only [S]": "69b29e6afb381022ff8a4bfd13fd884002c5bb7b48af775c9ea44df188192c3c",
+          "simp only [S] ; simp only [P]": "69b29e6afb381022ff8a4bfd13fd884002c5bb7b48af775c9ea44df188192c3c"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "simp only [P] ; simp only [S]": "dbade43a1788c75dd7e432f23377502939054afd97eef492affd958d7ce6a89a",
+          "simp only [S] ; simp only [P]": "99e63e753a037dd916c11a401a449db7b30ac5331710e748ccddf9ed7a58dcb3"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-P",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3)))))",
+      "-P)",
+      "+Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3)))))",
+      "-P)",
+      "+Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3)))))",
+      "-P",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+3",
+      "+(instOfNatNat",
+      "+3)))))"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -483,17 +483,83 @@",
+      " Nat",
+      " 3",
+      " (instOfNatNat",
+      " 3))))))",
+      " a",
+      " (@Finset.filter.{0}",
+      "-P",
+      "+(Prod.{0,",
+      "+0}",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}",
+      "+Nat",
+      "+2",
+      "+(instOfNatNat",
+      "+2))))",
+      "+(Fin",
+      "+(@HAdd.hAdd.{0,",
+      "+0,",
+      "+0}",
+      "+Nat",
+      "+Nat",
+      "+Nat",
+      "+(@instHAdd.{0}",
+      "+Nat",
+      "+instAddNat)",
+      "+n",
+      "+(@OfNat.ofNat.{0}"
+    ]
+  },
+  {
+    "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+    "file": "Mathlib/Analysis/NormedSpace/Spectrum.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "54802ded1f286f85",
+          "simp ; intro h": "54802ded1f286f85"
+        },
+        "bytes": {
+          "intro h ; simp": 290,
+          "simp ; intro h": 290
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "9b9c59de3cc64bda",
+          "simp ; intro h": "07bedbe47aa526b2"
+        },
+        "bytes": {
+          "intro h ; simp": 5347,
+          "simp ; intro h": 5363
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "54802ded1f286f85",
+          "simp ; intro h": "54802ded1f286f85"
+        },
+        "bytes": {
+          "intro h ; simp": 290,
+          "simp ; intro h": 290
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "54802ded1f286f85",
+          "simp ; intro h": "54802ded1f286f85"
+        },
+        "bytes": {
+          "intro h ; simp": 290,
+          "simp ; intro h": 290
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "9b9c59de3cc64bda",
+          "simp ; intro h": "07bedbe47aa526b2"
+        },
+        "bytes": {
+          "intro h ; simp": 5347,
+          "simp ; intro h": 5363
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "9b9c59de3cc64bda",
+          "simp ; intro h": "07bedbe47aa526b2"
+        },
+        "bytes": {
+          "intro h ; simp": 5347,
+          "simp ; intro h": 5363
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "d282587aec5eff40aead7514ff43b6c6c1c67a33c6a144ab764c97c055a4a9db",
+          "simp ; intro h": "967b2ada4c0e5e9bcc53f187c51f8d728e29295c4288dd976f47dcf4ac2eef0b"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "d282587aec5eff40aead7514ff43b6c6c1c67a33c6a144ab764c97c055a4a9db",
+          "simp ; intro h": "967b2ada4c0e5e9bcc53f187c51f8d728e29295c4288dd976f47dcf4ac2eef0b"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "4907f35bb77a26c01b90257e62339d1899a6b6b377a1d549c7f52a4b926ced12",
+          "simp ; intro h": "4907f35bb77a26c01b90257e62339d1899a6b6b377a1d549c7f52a4b926ced12"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "df3b2c07ddba05ad756402a77460a976fa69d20f94f0f12dd225f3589f1e8286",
+          "simp ; intro h": "dca3a30c857898142d75947690a30968284325d12b8412c0536eff711ac97f51"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -258,13 +258,14 @@",
+      " Real.instRing)))",
+      " i))))",
+      " (@Inv.inv.{0}",
+      " ENNReal",
+      " ENNReal.instInv",
+      " ε))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -290,13 +291,14 @@",
+      " inst✝³",
+      " (@NormedRing.toSeminormedRing.{u_2}",
+      " A",
+      " inst✝²)",
+      " inst✝¹)",
+      " a)",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+    "file": "Mathlib/MeasureTheory/Function/Egorov.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "64187459e5f60212",
+          "simp ; intro h": "64187459e5f60212"
+        },
+        "bytes": {
+          "intro h ; simp": 514,
+          "simp ; intro h": 514
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d814782d9e6889f4",
+          "simp ; intro h": "4396960beaa13c93"
+        },
+        "bytes": {
+          "intro h ; simp": 6081,
+          "simp ; intro h": 6097
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "64187459e5f60212",
+          "simp ; intro h": "64187459e5f60212"
+        },
+        "bytes": {
+          "intro h ; simp": 514,
+          "simp ; intro h": 514
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "64187459e5f60212",
+          "simp ; intro h": "64187459e5f60212"
+        },
+        "bytes": {
+          "intro h ; simp": 514,
+          "simp ; intro h": 514
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d814782d9e6889f4",
+          "simp ; intro h": "4396960beaa13c93"
+        },
+        "bytes": {
+          "intro h ; simp": 6081,
+          "simp ; intro h": 6097
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "f362bdeee529e18f",
+          "simp ; intro h": "d000f1c6755b7c79"
+        },
+        "bytes": {
+          "intro h ; simp": 6324,
+          "simp ; intro h": 6340
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "cf59dcba5992bd8092ecbfb6d42d93fdf62b1a57f1e5f1cb8869fe38b1ab9d27",
+          "simp ; intro h": "1f3ebe15277166d3fe315b9d9b0e20cc3d80b7ffe346fc46ecfc35e05af40f76"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "3baeb8e37d675233ee46ad0ffc69e2fc5e2fc0a721ecc21d91a93d4fd66a7405",
+          "simp ; intro h": "6e02899e685c5b3d21a407356f4c104b25cd6a9885c44584ab931bd521d12b6a"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "e2a3e9a248985cdc9d8591896e481a19e0fc1afa1a5deaabd1c4297b34d71bc6",
+          "simp ; intro h": "e2a3e9a248985cdc9d8591896e481a19e0fc1afa1a5deaabd1c4297b34d71bc6"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "0459d921a22b0e5348f1433bcbec83764e14d9fd8e45fb7f3329a78c300154e2",
+          "simp ; intro h": "7ae959da917d6c1be868b1dec095486570f50c7c86f7f60549cfb13d12d2b416"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -221,13 +221,14 @@",
+      " ⊢",
+      " @Eq.{1}",
+      " (WithTop.{0}",
+      " NNReal)",
+      " (ENNReal.ofReal",
+      " ε)",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -360,13 +361,14 @@",
+      " (@instOfNatAtLeastTwo.{0}",
+      " Real",
+      " 2",
+      " Real.instNatCast",
+      " ⋯))",
+      " a))))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "ccb4123b231919ff",
+          "simp ; intro h": "ccb4123b231919ff"
+        },
+        "bytes": {
+          "intro h ; simp": 404,
+          "simp ; intro h": 404
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d37e6fcb4ff78aad",
+          "simp ; intro h": "ffa9f5d6fd95b1ec"
+        },
+        "bytes": {
+          "intro h ; simp": 3711,
+          "simp ; intro h": 3727
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "ccb4123b231919ff",
+          "simp ; intro h": "ccb4123b231919ff"
+        },
+        "bytes": {
+          "intro h ; simp": 404,
+          "simp ; intro h": 404
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "ccb4123b231919ff",
+          "simp ; intro h": "ccb4123b231919ff"
+        },
+        "bytes": {
+          "intro h ; simp": 404,
+          "simp ; intro h": 404
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d37e6fcb4ff78aad",
+          "simp ; intro h": "ffa9f5d6fd95b1ec"
+        },
+        "bytes": {
+          "intro h ; simp": 3711,
+          "simp ; intro h": 3727
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d37e6fcb4ff78aad",
+          "simp ; intro h": "ffa9f5d6fd95b1ec"
+        },
+        "bytes": {
+          "intro h ; simp": 3711,
+          "simp ; intro h": 3727
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "a74f47ec4cf4fe003ab51516863a4a8192aec5292e18a9a1398de45a1d0a38e8",
+          "simp ; intro h": "0a7397f649be328bc3ffb7de3c97f4d289143390bacafb2f3b7bb09faa9c4b8f"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "a74f47ec4cf4fe003ab51516863a4a8192aec5292e18a9a1398de45a1d0a38e8",
+          "simp ; intro h": "0a7397f649be328bc3ffb7de3c97f4d289143390bacafb2f3b7bb09faa9c4b8f"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "969c71fda9e98b6261f4b820f387c9c7a7e68be0549f84c327cfaa15fee699a5",
+          "simp ; intro h": "969c71fda9e98b6261f4b820f387c9c7a7e68be0549f84c327cfaa15fee699a5"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "142aa5df68557b8277e92c8d9e9e6414bc7bbcc22188a1514d2fd286b5e00edd",
+          "simp ; intro h": "c36ae45792b3ee64813e3a738e83eaacb0f3a6becc48f1c97e3eb37290dcb617"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -269,13 +269,14 @@",
+      " (@Inv.inv.{0}",
+      " Real",
+      " (@DivInvMonoid.toInv.{0}",
+      " Real",
+      " Real.instDivInvMonoid)",
+      " q)))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -307,13 +308,14 @@",
+      " ENNReal",
+      " ENNReal.instCanonicallyOrderedCommSemiring))",
+      " (f",
+      " a)",
+      " (g",
+      " a))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+    "file": "Mathlib/MeasureTheory/Function/Egorov.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "c92816e18f9ba9c4",
+          "simp ; intro h": "c92816e18f9ba9c4"
+        },
+        "bytes": {
+          "intro h ; simp": 499,
+          "simp ; intro h": 499
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "37a272cda34d755f",
+          "simp ; intro h": "1d9e96c0753a876e"
+        },
+        "bytes": {
+          "intro h ; simp": 5926,
+          "simp ; intro h": 5942
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "c92816e18f9ba9c4",
+          "simp ; intro h": "c92816e18f9ba9c4"
+        },
+        "bytes": {
+          "intro h ; simp": 499,
+          "simp ; intro h": 499
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "c92816e18f9ba9c4",
+          "simp ; intro h": "c92816e18f9ba9c4"
+        },
+        "bytes": {
+          "intro h ; simp": 499,
+          "simp ; intro h": 499
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "37a272cda34d755f",
+          "simp ; intro h": "1d9e96c0753a876e"
+        },
+        "bytes": {
+          "intro h ; simp": 5926,
+          "simp ; intro h": 5942
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "4ca117cc10032678",
+          "simp ; intro h": "37630d392799862d"
+        },
+        "bytes": {
+          "intro h ; simp": 6169,
+          "simp ; intro h": 6185
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "ff524e0e5443ddd0f6ffae0850f96449eee6d5f4dc6769dd4f5c2726164d68fe",
+          "simp ; intro h": "cf7750d797f42d4e0e74c71dd8e72009be2a03635b70ed8555fa258fceb45a2e"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "8def64cd8df8d626f1f3dc549db0c018e6217fb92e29e91f2cddd6f67b8fe7c4",
+          "simp ; intro h": "8838bc4ed38eaadbe709a3983475bd01f4c4bac0bac5e07a0761ae393294f398"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "e2a3e9a248985cdc9d8591896e481a19e0fc1afa1a5deaabd1c4297b34d71bc6",
+          "simp ; intro h": "e2a3e9a248985cdc9d8591896e481a19e0fc1afa1a5deaabd1c4297b34d71bc6"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "b8f20ee1920aa75f77e5ac1173f18f72dc11b75a84f1163d8d9c4bf321bc6901",
+          "simp ; intro h": "5d32224b3b3ffccab21842eb7d52284218d5c07ac56e1d217ecb5965b95c313a"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -221,13 +221,14 @@",
+      " ⊢",
+      " @Eq.{1}",
+      " (WithTop.{0}",
+      " NNReal)",
+      " (ENNReal.ofReal",
+      " ε)",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -357,13 +358,14 @@",
+      " (@instOfNatAtLeastTwo.{0}",
+      " Real",
+      " 2",
+      " Real.instNatCast",
+      " ⋯))",
+      " a))))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+    "file": "Mathlib/MeasureTheory/Function/UniformIntegrable.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "02b37d0e4b540108",
+          "simp ; intro h": "02b37d0e4b540108"
+        },
+        "bytes": {
+          "intro h ; simp": 368,
+          "simp ; intro h": 368
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "aa7036386af34366",
+          "simp ; intro h": "4e3305a5d78bb710"
+        },
+        "bytes": {
+          "intro h ; simp": 3554,
+          "simp ; intro h": 3570
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "02b37d0e4b540108",
+          "simp ; intro h": "02b37d0e4b540108"
+        },
+        "bytes": {
+          "intro h ; simp": 368,
+          "simp ; intro h": 368
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "02b37d0e4b540108",
+          "simp ; intro h": "02b37d0e4b540108"
+        },
+        "bytes": {
+          "intro h ; simp": 368,
+          "simp ; intro h": 368
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "aa7036386af34366",
+          "simp ; intro h": "4e3305a5d78bb710"
+        },
+        "bytes": {
+          "intro h ; simp": 3554,
+          "simp ; intro h": 3570
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "aa7036386af34366",
+          "simp ; intro h": "4e3305a5d78bb710"
+        },
+        "bytes": {
+          "intro h ; simp": 3554,
+          "simp ; intro h": 3570
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "50b8f5b87e24b0975f1bd7f5695f795706e8b7e361801ed2a138e51ab17904d8",
+          "simp ; intro h": "20185d5639da48d5c714cbf43310554238e2db9fffcd832fb7bc2a53f1c19319"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "50b8f5b87e24b0975f1bd7f5695f795706e8b7e361801ed2a138e51ab17904d8",
+          "simp ; intro h": "20185d5639da48d5c714cbf43310554238e2db9fffcd832fb7bc2a53f1c19319"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "1a546ba3144067780ce7e546f53c458d3ea68a5a5b104341eea4ffa48a80b5ce",
+          "simp ; intro h": "1a546ba3144067780ce7e546f53c458d3ea68a5a5b104341eea4ffa48a80b5ce"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "a8d3a92217924a89e0349bd2fb166c8e12d3e9ecb97d745d6f49660caee590ef",
+          "simp ; intro h": "99625777c59066d93089f04827d289eff9e6c28867c3b6383ab64b3b27a52c04"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -185,13 +185,14 @@",
+      " Real",
+      " (@DivInvMonoid.toInv.{0}",
+      " Real",
+      " Real.instDivInvMonoid)",
+      " (ENNReal.toReal",
+      " p))))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -274,13 +275,14 @@",
+      " β",
+      " inst✝)))))",
+      " f",
+      " g))",
+      " p",
+      " μ)",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "BumpCovering.sum_toPOUFun_eq",
+    "file": "Mathlib/Topology/PartitionOfUnity.lean",
+    "histories": [
+      [
+        "simp only [s]"
+      ],
+      [
+        "simp only [this]",
+        "simp only [s]"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "simp only [s]": "6ee4b6555ffb4c97",
+          "simp only [this] ; simp only [s]": "6ee4b6555ffb4c97"
+        },
+        "bytes": {
+          "simp only [s]": 425,
+          "simp only [this] ; simp only [s]": 425
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "simp only [s]": "189c0cefb4a6259f",
+          "simp only [this] ; simp only [s]": "f197591a8902ca15"
+        },
+        "bytes": {
+          "simp only [s]": 10943,
+          "simp only [this] ; simp only [s]": 11226
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "simp only [s]": "6ee4b6555ffb4c97",
+          "simp only [this] ; simp only [s]": "6ee4b6555ffb4c97"
+        },
+        "bytes": {
+          "simp only [s]": 425,
+          "simp only [this] ; simp only [s]": 425
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "simp only [s]": "496667b2203b6371",
+          "simp only [this] ; simp only [s]": "496667b2203b6371"
+        },
+        "bytes": {
+          "simp only [s]": 551,
+          "simp only [this] ; simp only [s]": 551
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "simp only [s]": "189c0cefb4a6259f",
+          "simp only [this] ; simp only [s]": "f197591a8902ca15"
+        },
+        "bytes": {
+          "simp only [s]": 10943,
+          "simp only [this] ; simp only [s]": 11226
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "simp only [s]": "1301cbcd25ff9ca1",
+          "simp only [this] ; simp only [s]": "aac326c49aaac698"
+        },
+        "bytes": {
+          "simp only [s]": 11260,
+          "simp only [this] ; simp only [s]": 11740
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "simp only [s]": "23044cd79e875293a4365d23e571096c49ee312a79a488e5cca024bffd652313",
+          "simp only [this] ; simp only [s]": "7926733e9f98d0670823556108f69c5d453cf0cd6f07b7fff469497977cccf3d"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "simp only [s]": "9c69da202fcd54d29e336873441ee40d26e79f72eba8e95804b5e373512fb568",
+          "simp only [this] ; simp only [s]": "8935412fda54fda641d020eab71c2ee2f5ffc7d04ee4ae3cea5adfacaebca54a"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "simp only [s]": "544b166879729e810c2083ac37c1aba962c9f03c505fc29cd80415f6f042b0c7",
+          "simp only [this] ; simp only [s]": "544b166879729e810c2083ac37c1aba962c9f03c505fc29cd80415f6f042b0c7"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "simp only [s]": "ee5a20479235018776fa1ed182722dae08465f00b3c55273eace1a8e234f525f",
+          "simp only [this] ; simp only [s]": "f02b3a2b116626c357d81232f586784b54bc2ff3a9b7279b376d3d5341142863"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-this))))))",
+      "+(@linearOrderOfSTO.{u}",
+      "+ι",
+      "+(@WellOrderingRel.{u}",
+      "+ι)",
+      "+⋯",
+      "+fun",
+      "+(x",
+      "+y",
+      "+:",
+      "+ι)",
+      "+=>",
+      "+@instDecidableNot",
+      "+(@WellOrderingRel.{u}",
+      "+ι",
+      "+x",
+      "+y)",
+      "+(Classical.propDecidable",
+      "+(@WellOrderingRel.{u}",
+      "+ι",
+      "+x",
+      "+y)))))))))"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -751,13 +751,33 @@",
+      " (@Lattice.toSemilatticeInf.{u}",
+      " ι",
+      " (@DistribLattice.toLattice.{u}",
+      " ι",
+      " (@instDistribLatticeOfLinearOrder.{u}",
+      " ι",
+      "-this))))))",
+      "+(@linearOrderOfSTO.{u}",
+      "+ι",
+      "+(@WellOrderingRel.{u}",
+      "+ι)",
+      "+⋯",
+      "+fun",
+      "+(x",
+      "+y",
+      "+:",
+      "+ι)",
+      "+=>",
+      "+@instDecidableNot",
+      "+(@WellOrderingRel.{u}",
+      "+ι",
+      "+x",
+      "+y)",
+      "+(Classical.propDecidable",
+      "+(@WellOrderingRel.{u}",
+      "+ι",
+      "+x",
+      "+y)))))))))",
+      " x",
+      " x_1)",
+      " (fun",
+      " (a",
+      " :",
+      " ι)"
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+    "file": "Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "07226ed2f4af7875",
+          "simp ; intro h": "07226ed2f4af7875"
+        },
+        "bytes": {
+          "intro h ; simp": 341,
+          "simp ; intro h": 341
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d03af3081a54b064",
+          "simp ; intro h": "46fda657b4408eeb"
+        },
+        "bytes": {
+          "intro h ; simp": 4655,
+          "simp ; intro h": 4679
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "07226ed2f4af7875",
+          "simp ; intro h": "07226ed2f4af7875"
+        },
+        "bytes": {
+          "intro h ; simp": 341,
+          "simp ; intro h": 341
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "07226ed2f4af7875",
+          "simp ; intro h": "07226ed2f4af7875"
+        },
+        "bytes": {
+          "intro h ; simp": 341,
+          "simp ; intro h": 341
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d03af3081a54b064",
+          "simp ; intro h": "46fda657b4408eeb"
+        },
+        "bytes": {
+          "intro h ; simp": 4655,
+          "simp ; intro h": 4679
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "d03af3081a54b064",
+          "simp ; intro h": "46fda657b4408eeb"
+        },
+        "bytes": {
+          "intro h ; simp": 4655,
+          "simp ; intro h": 4679
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "a685a11434de6dd71c3a458bab05bb65fb82fb0c6807559bf6263dd4998a23f6",
+          "simp ; intro h": "260077f80f82cdabba4a5ad186eb3db6d136f8c7cae8bf03f5fbd7ed7776ffea"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "a685a11434de6dd71c3a458bab05bb65fb82fb0c6807559bf6263dd4998a23f6",
+          "simp ; intro h": "260077f80f82cdabba4a5ad186eb3db6d136f8c7cae8bf03f5fbd7ed7776ffea"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "a2d9c2ebeef395cd06d6fcefd2e6a11ed0974c2fb933b446f1b1a71977b693f6",
+          "simp ; intro h": "a2d9c2ebeef395cd06d6fcefd2e6a11ed0974c2fb933b446f1b1a71977b693f6"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "175cbe786d06e1078e3e6cd1c50af2c4e49c9e03301c6853b7ae14ab16714f85",
+          "simp ; intro h": "dd5bd0988e6157c129c6d910e2da54ee882996f57a078c011398e4d88b374610"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -251,13 +251,14 @@",
+      " Real",
+      " (@DivInvMonoid.toInv.{0}",
+      " Real",
+      " Real.instDivInvMonoid)",
+      " (ENNReal.toReal",
+      " q)))))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -274,13 +275,14 @@",
+      " E",
+      " inst✝",
+      " m",
+      " f",
+      " p",
+      " μ)",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "HahnSeries.order_ofForallLtEqZero",
+    "file": "Mathlib/RingTheory/HahnSeries/Basic.lean",
+    "histories": [
+      [
+        "rw [h]",
+        "simp only [h]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hf]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hn]"
+      ],
+      [
+        "simp only [h]"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "rw [h] ; simp only [h]": "0c97371220748967",
+          "rw [h] ; simp only [hf]": "0c97371220748967",
+          "rw [h] ; simp only [hn]": "0c97371220748967",
+          "simp only [h]": "0c97371220748967"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 485,
+          "rw [h] ; simp only [hf]": 485,
+          "rw [h] ; simp only [hn]": 485,
+          "simp only [h]": 485
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "rw [h] ; simp only [h]": "ae33344f6cac365e",
+          "rw [h] ; simp only [hf]": "ae33344f6cac365e",
+          "rw [h] ; simp only [hn]": "ae33344f6cac365e",
+          "simp only [h]": "becabcbf01a28171"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 4110,
+          "rw [h] ; simp only [hf]": 4110,
+          "rw [h] ; simp only [hn]": 4110,
+          "simp only [h]": 4112
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "rw [h] ; simp only [h]": "f985a1f6ceb357de",
+          "rw [h] ; simp only [hf]": "f985a1f6ceb357de",
+          "rw [h] ; simp only [hn]": "f985a1f6ceb357de",
+          "simp only [h]": "f985a1f6ceb357de"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 232,
+          "rw [h] ; simp only [hf]": 232,
+          "rw [h] ; simp only [hn]": 232,
+          "simp only [h]": 232
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": true,
+        "hashes": {
+          "rw [h] ; simp only [h]": "56875ac010313f22",
+          "rw [h] ; simp only [hf]": "56875ac010313f22",
+          "rw [h] ; simp only [hn]": "56875ac010313f22",
+          "simp only [h]": "14467d1a1bbafb73"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 326,
+          "rw [h] ; simp only [hf]": 326,
+          "rw [h] ; simp only [hn]": 326,
+          "simp only [h]": 563
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "rw [h] ; simp only [h]": "ae33344f6cac365e",
+          "rw [h] ; simp only [hf]": "ae33344f6cac365e",
+          "rw [h] ; simp only [hn]": "ae33344f6cac365e",
+          "simp only [h]": "becabcbf01a28171"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 4110,
+          "rw [h] ; simp only [hf]": 4110,
+          "rw [h] ; simp only [hn]": 4110,
+          "simp only [h]": 4112
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "rw [h] ; simp only [h]": "70f3a685f4734bb0",
+          "rw [h] ; simp only [hf]": "70f3a685f4734bb0",
+          "rw [h] ; simp only [hn]": "70f3a685f4734bb0",
+          "simp only [h]": "8022cae9a15445d6"
+        },
+        "bytes": {
+          "rw [h] ; simp only [h]": 10364,
+          "rw [h] ; simp only [hf]": 10364,
+          "rw [h] ; simp only [hn]": 10364,
+          "simp only [h]": 23527
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "rw [h] ; simp only [h]": "91e46807c2399ccfbcfd2089b86ea7bf1afb448158311f74cbf6906873e45835",
+          "rw [h] ; simp only [hf]": "91e46807c2399ccfbcfd2089b86ea7bf1afb448158311f74cbf6906873e45835",
+          "rw [h] ; simp only [hn]": "91e46807c2399ccfbcfd2089b86ea7bf1afb448158311f74cbf6906873e45835",
+          "simp only [h]": "5c72c9355036bbcfdb7a20d9a2f2bc389abaf29f6ba54ff2b6827d2f34c5024b"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "rw [h] ; simp only [h]": "9c66cd1e5aa0c1fa399d6c5e67375406caedb5774ac835e3065b3a696f7490d3",
+          "rw [h] ; simp only [hf]": "9c66cd1e5aa0c1fa399d6c5e67375406caedb5774ac835e3065b3a696f7490d3",
+          "rw [h] ; simp only [hn]": "9c66cd1e5aa0c1fa399d6c5e67375406caedb5774ac835e3065b3a696f7490d3",
+          "simp only [h]": "e74262d8cc489db14a61cc5d33d5b7619a6c85678af3016955893ceeb2a01d10"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "rw [h] ; simp only [h]": "9827c4490ff7a51f6ee17b3d02ef0e0bf2edc280e6f4ddfb94f7fc28a2ba7802",
+          "rw [h] ; simp only [hf]": "9827c4490ff7a51f6ee17b3d02ef0e0bf2edc280e6f4ddfb94f7fc28a2ba7802",
+          "rw [h] ; simp only [hn]": "9827c4490ff7a51f6ee17b3d02ef0e0bf2edc280e6f4ddfb94f7fc28a2ba7802",
+          "simp only [h]": "9827c4490ff7a51f6ee17b3d02ef0e0bf2edc280e6f4ddfb94f7fc28a2ba7802"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "rw [h] ; simp only [h]": "fa16418cb63562376f2c3fdfc478689f46d8b7a2f0d3415177de2892f9cdb887",
+          "rw [h] ; simp only [hf]": "fa16418cb63562376f2c3fdfc478689f46d8b7a2f0d3415177de2892f9cdb887",
+          "rw [h] ; simp only [hn]": "fa16418cb63562376f2c3fdfc478689f46d8b7a2f0d3415177de2892f9cdb887",
+          "simp only [h]": "9cc2b68d6d35c6b411c61816ea27e6252126e3b7ff39eb6f59bc372a62837fbe"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,145 @@
+% Figures for "Same Text, Different Transitions".
+% Every value here is recomputed by artifact/reproduce.sh.
+
+% Figure 1
+% The phenomenon: one root, two histories, one rendering, two outcomes.
+\newcommand{\FigMechanism}{%
+\begin{figure}[t]\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw=black!55,rounded corners=1.5pt,inner sep=3.5pt,
+              align=center,fill=white},
+  hid/.style={box,draw=BrandA,fill=BrandA!7},
+  obs/.style={box,draw=black!70,fill=black!5,thick},
+  res/.style={box,draw=BrandB,fill=BrandB!8},
+  ar/.style={-{Stealth[length=4pt]},draw=black!55},
+]
+\node[box] (root) at (0,0) {root state};
+\node[hid] (sa) at (2.55,0.72) {$s_1$};
+\node[hid] (sb) at (2.55,-0.72) {$s_2$};
+\node[obs] (obs) at (4.75,0) {\texttt{$\vdash$ $\uparrow$x + $\uparrow$y = $\uparrow$(x+y)}};
+\node[res,anchor=west] (oa) at (6.65,0.72) {accepted};
+\node[res,anchor=west] (ob) at (6.65,-0.72) {rejected};
+
+\draw[ar] (root) -- node[above,font=\scriptsize,pos=.45] {$h_1$} (sa);
+\draw[ar] (root) -- node[below,font=\scriptsize,pos=.45] {$h_2$} (sb);
+\draw[ar] (sa) -- (obs); \draw[ar] (sb) -- (obs);
+\draw[ar] (obs.east) to[out=25,in=180] (oa.west);
+\draw[ar] (obs.east) to[out=-25,in=180] (ob.west);
+
+\node[font=\scriptsize,BrandA,align=center] at (2.55,1.62)
+  {\texttt{ENNReal.ofNNReal x}};
+\node[font=\scriptsize,BrandA,align=center] at (2.55,-1.62)
+  {\texttt{@WithTop.some x}};
+\node[font=\scriptsize,black!60,align=center] at (3.55,-2.28)
+  {byte-identical rendering, hence identical model input};
+\node[font=\scriptsize,BrandB,align=center,anchor=west] at (6.35,1.62)
+  {same tactic};
+\end{tikzpicture}}
+\caption{Observation aliasing. Two histories from one root reach states that
+differ only in elaborated structure the printer collapses; the rendering, and
+therefore the entire input supplied to the evaluated state-only generators, is
+byte-identical, yet the same tactic is accepted on one and rejected on the
+other.}
+\label{fig:mechanism}
+\end{figure}}
+
+% Figure 2
+% Logical evidence ladder with distinct denominators presented separately.
+\newcommand{\FigEvidence}{%
+\begin{figure}[t]\centering
+\resizebox{0.94\columnwidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  ev/.style={draw=black!55,rounded corners=1.5pt,inner sep=4pt,
+             text width=6.35cm,align=center,fill=white},
+  ar/.style={-{Stealth[length=4pt]},draw=black!55,thick},
+]
+\node[ev,draw=BrandA,fill=BrandA!7] (e1) at (0,0)
+  {\textbf{Existence: do text aliases occur?}\\[-1pt]\scriptsize sampled roots $\rightarrow$ 70 repeat-confirmed classes};
+\node[ev,below=0.34cm of e1] (e2)
+  {\textbf{Action relevance: do labels differ?}\\[-1pt]\scriptsize confirmed classes $\rightarrow$ 103 contradictory action pairs};
+\node[ev,below=0.34cm of e2] (e3)
+  {\textbf{Cause and learning: can structure explain the labels?}\\[-1pt]\scriptsize valid interventions; grouped learned acceptance prediction};
+\node[ev,draw=BrandB,fill=BrandB!8,below=0.34cm of e3] (e4)
+  {\textbf{Consequence: can retention discard a proof?}\\[-1pt]\scriptsize admitted pair--orders; one current-prover case; zero loss with digest};
+\draw[ar] (e1) -- (e2); \draw[ar] (e2) -- (e3); \draw[ar] (e3) -- (e4);
+\end{tikzpicture}}
+\caption{Conceptual evidence spine. Each arrow asks a separate question and
+uses the denominator printed beneath it. Population incidence, contradictory
+actions, structural learnability, and conditional search loss are estimated
+separately.}
+\label{fig:evidence}
+\end{figure}}
+
+% Figure 3
+% Intervention: construction, validity gate, and per-family result.
+\newcommand{\FigIntervention}{%
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[
+  font=\small,
+  b/.style={draw=black!55,rounded corners=1.5pt,inner sep=4pt,align=center,fill=white},
+  gate/.style={b,draw=black!70,fill=black!4},
+  ok/.style={b,draw=BrandB,fill=BrandB!8},
+  no/.style={b,draw=black!45,fill=black!7},
+  ar/.style={-{Stealth[length=4pt]},draw=black!55},
+]
+% Four stages fit the two-column width. The footnote line states the probing
+% step. The two variant boxes
+% share a text width so their edges align and the gate arrows stay symmetric.
+\node[b] (goal) at (0,0) {one goal\\[-2pt]\scriptsize fixed binders and env};
+\node[b,text width=3.9cm] (a)  at (3.6,0.95) {\scriptsize\texttt{show ENNReal.ofNNReal x}};
+\node[b,text width=3.9cm] (bb) at (3.6,-0.95) {\scriptsize\texttt{show WithTop.some x}};
+\node[gate,text width=3.1cm] (gate) at (7.9,0)
+  {\centering valid \emph{iff} both hold\\[1pt]
+   \scriptsize renderings byte-identical\\[-2pt]
+   \emph{and} digests differ};
+\node[ok,text width=3.1cm] (valid) at (11.8,0)
+  {\centering\textbf{valid intervention}\\[-1pt]
+   \scriptsize observation fixed,\\[-2pt]hidden structure changed};
+\draw[ar] (goal) -- (a); \draw[ar] (goal) -- (bb);
+\draw[ar] (a.east) -- ($(gate.west)+(0,0.30)$);
+\draw[ar] (bb.east) -- ($(gate.west)+(0,-0.30)$);
+\draw[ar] (gate) -- (valid);
+\node[font=\scriptsize,black!60,align=center] at (5.9,-1.95)
+  {a valid pair is probed identically on both variants;
+   pairs failing either check are excluded and reported};
+\end{tikzpicture}
+
+\vspace{3pt}
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.62\textwidth, height=2.7cm,
+  ybar, ymin=0, ymax=17,
+  bar width=8pt, enlarge x limits=0.16,
+  symbolic x coords={coercion (pinned),coercion (current),Ne vs Not,eta-expansion},
+  xtick=data, tick label style={font=\scriptsize},
+  ylabel={pairs}, ylabel style={font=\scriptsize},
+  axis lines*=left, axis line style={draw=black!45},
+  ymajorgrids, grid style={black!12},
+  legend style={font=\scriptsize,at={(1.02,1.0)},anchor=north west,draw=black!30},
+  legend cell align=left,
+  nodes near coords, nodes near coords style={font=\scriptsize},
+]
+\addplot[fill=black!16,draw=black!40] coordinates {
+  (coercion (pinned),15) (coercion (current),8) (Ne vs Not,10) (eta-expansion,10)};
+\addlegendentry{constructed}
+\addplot[fill=BrandA!55,draw=BrandA!80] coordinates {
+  (coercion (pinned),13) (coercion (current),8) (Ne vs Not,0) (eta-expansion,0)};
+\addlegendentry{valid}
+\addplot[fill=BrandB!75,draw=BrandB!90] coordinates {
+  (coercion (pinned),11) (coercion (current),8) (Ne vs Not,0) (eta-expansion,0)};
+\addlegendentry{outcome differs}
+\end{axis}
+\end{tikzpicture}
+\caption{Rendering-preserving interventions. \textbf{Top:} the construction.
+A single \texttt{show} step replaces the goal with a definitionally equal term,
+so only the elaborated representation changes; a pair is used only if it passes
+both checks. \textbf{Bottom:} outcomes. The construction succeeds for the
+coercion family under the pinned stack and, with acceptance-sensitive probes,
+on a current Lean and Mathlib, where all 8 pairs are accepted on one variant
+and rejected on the other. The other two families yield zero valid pairs
+because the printer renders their two spellings differently.}
+\label{fig:intervention}
+\end{figure*}}

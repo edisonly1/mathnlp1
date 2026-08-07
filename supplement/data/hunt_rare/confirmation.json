@@ -1,0 +1,884 @@
+[
+  {
+    "theorem": "ENNReal.hasSum_lt",
+    "file": "Mathlib/Topology/Instances/ENNReal.lean",
+    "pp_hash": "82aab2b5369e943c",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "constructor",
+        "rw [hsg]"
+      ],
+      [
+        "constructor",
+        "simp only [hsg]"
+      ],
+      [
+        "rw [hsg]",
+        "constructor"
+      ],
+      [
+        "simp only [hsg]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; rw [hsg]": [
+          "SUCC:970b02e87e2a",
+          "SUCC:cc9462358c92",
+          "SUCC:2648cc0279ea"
+        ],
+        "constructor ; simp only [hsg]": [
+          "SUCC:92b95dcfc9f4",
+          "SUCC:45787b15c62e",
+          "SUCC:94b639498454"
+        ],
+        "rw [hsg] ; constructor": [
+          "SUCC:3023643b93f5",
+          "SUCC:7dcc20ee11af",
+          "SUCC:714bb3ddc76b"
+        ],
+        "simp only [hsg] ; constructor": [
+          "SUCC:44505dcaf020",
+          "SUCC:f6a3a97a5de3",
+          "SUCC:14b26f36996e"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "WittVector.exists_eq_pow_p_mul",
+    "file": "Mathlib/RingTheory/WittVector/DiscreteValuationRing.lean",
+    "pp_hash": "2e49d6210dd9fe5d",
+    "tactic_index": 3,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:1b8a8acf008e",
+          "SUCC:f4a908661461",
+          "SUCC:74d26badb86a"
+        ],
+        "simp ; constructor": [
+          "SUCC:4f1100dc2135",
+          "SUCC:96e974d834f2",
+          "SUCC:0c8d0e4ef207"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+    "file": "Mathlib/AlgebraicTopology/AlternatingFaceMapComplex.lean",
+    "pp_hash": "c3159ce8dfd81494",
+    "tactic_index": 10,
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [P]",
+        "simp"
+      ]
+    ],
+    "flagged": [
+      "simp only [P]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [P]": {
+        "simp": [
+          "SUCC:c3159ce8dfd8",
+          "SUCC:c3159ce8dfd8",
+          "SUCC:c3159ce8dfd8"
+        ],
+        "simp only [P] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [P]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp": "case h\nC : Type u_1\ninst✝¹ : Category.{u_2, u_1} C\ninst✝ : Preadditive C\nX Y : SimplicialObject C\nn : ℕ\nP : Type := Fin (n + 2) × Fin (n + 3)\nS : Finset P := Finset.filter (fun ij => ↑ij.2 ≤ ↑ij.1) Finset.univ\nφ : (ij : P) → ij ∈ S → P := fun ij hij => (ij.2.castLT ⋯, ij.1.succ)\n⊢ ∀ (a : Fin (n + 2)) (b : Fin (n + 3)) (ha : (a, b) ∈ S),\n    ((-1) ^ ↑b • X.δ b) ≫ ((-1) ^ ↑a • X.δ a) = -((-1) ^ (↑a + 1) • X.δ a.succ) ≫ ((-1) ^ ↑b • X.δ (b.castLT ⋯))",
+      "simp only [P] ; simp": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+    "file": "Mathlib/AlgebraicTopology/AlternatingFaceMapComplex.lean",
+    "pp_hash": "53c08477581c5ca5",
+    "tactic_index": 10,
+    "histories": [
+      [
+        "simp only [P]",
+        "simp only [S]"
+      ],
+      [
+        "simp only [S]",
+        "simp only [P]"
+      ]
+    ],
+    "flagged": [
+      "simp only [P]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [P]": {
+        "simp only [P] ; simp only [S]": [
+          "SUCC:53c08477581c",
+          "SUCC:53c08477581c",
+          "SUCC:53c08477581c"
+        ],
+        "simp only [S] ; simp only [P]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [P]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp only [P] ; simp only [S]": "case h\nC : Type u_1\ninst✝¹ : Category.{u_2, u_1} C\ninst✝ : Preadditive C\nX Y : SimplicialObject C\nn : ℕ\nP : Type := Fin (n + 2) × Fin (n + 3)\nS : Finset P := Finset.filter (fun ij => ↑ij.2 ≤ ↑ij.1) Finset.univ\nφ : (ij : P) → ij ∈ S → P := fun ij hij => (ij.2.castLT ⋯, ij.1.succ)\n⊢ ∀ (a : Fin (n + 2) × Fin (n + 3)) (ha : a ∈ Finset.filter (fun ij => ↑ij.2 ≤ ↑ij.1) Finset.univ),\n    ((-1) ^ ↑a.2 • X.δ a.2) ≫ ((-1) ^ ↑a.1 • X.δ a.1) =\n      -((-1) ^ ↑a.1.succ • X.δ a.1.succ) ≫ ((-1) ^ ↑(a.2.castLT ⋯) • X.δ (a.2.castLT ⋯))",
+      "simp only [S] ; simp only [P]": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+    "file": "Mathlib/Analysis/NormedSpace/Spectrum.lean",
+    "pp_hash": "54802ded1f286f85",
+    "tactic_index": 7,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:54802ded1f28",
+          "SUCC:54802ded1f28",
+          "SUCC:54802ded1f28"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\n𝕜 : Type u_1\nA : Type u_2\ninst✝³ : NormedField 𝕜\ninst✝² : NormedRing A\ninst✝¹ : NormedAlgebra 𝕜 A\ninst✝ : CompleteSpace A\na : A\nε : ℝ≥0∞\nhε : 1 < ε⁻¹\nh✝ : ¬ε = 0\nhε' : ε⁻¹ ≠ ⊤\nh : ℝ≥0\n⊢ ⨆ i, ⨅ i_1, ↑‖a ^ (i_1 + i)‖₊ ^ (↑i_1 + ↑i)⁻¹ * ε⁻¹ = ↑h → ∃ b, spectralRadius 𝕜 a = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+    "file": "Mathlib/MeasureTheory/Function/Egorov.lean",
+    "pp_hash": "64187459e5f60212",
+    "tactic_index": 2,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:64187459e5f6",
+          "SUCC:64187459e5f6",
+          "SUCC:64187459e5f6"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nβ : Type u_2\nι : Type u_3\nm : MeasurableSpace α\ninst✝³ : MetricSpace β\nμ : Measure α\nn : ℕ\ni j : ι\ns : Set α\nε : ℝ\nf : ι → α → β\ng : α → β\ninst✝² : SemilatticeSup ι\ninst✝¹ : Nonempty ι\ninst✝ : Countable ι\nhε : 0 < ε\nhf : ∀ (n : ι), StronglyMeasurable (f n)\nhg : StronglyMeasurable g\nhsm : MeasurableSet s\nhs : μ s ≠ ⊤\nhfg : ∀ᵐ (x : α) ∂μ, x ∈ s → Tendsto (fun n => f n x) atTop (𝓝 (g x))\nh : ℝ≥0\n⊢ ENNReal.ofReal ε = ↑h → ∃ b, ∑' (a : ℕ), ENNReal.ofReal (ε / 2) * ENNReal.ofReal (2 ^ a)⁻¹ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "Submodule.basis_of_pid_aux",
+    "file": "Mathlib/LinearAlgebra/FreeModule/PID.lean",
+    "pp_hash": "e9d25cf6e7f9fa57",
+    "tactic_index": 20,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:bb8e3735b369",
+          "SUCC:dab1212559ef",
+          "SUCC:fdb24b91fe45"
+        ],
+        "simp ; constructor": [
+          "SUCC:9d17e32ece27",
+          "SUCC:d92578b5e1d9",
+          "SUCC:acbc72bed9c7"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "Submodule.basis_of_pid_aux",
+    "file": "Mathlib/LinearAlgebra/FreeModule/PID.lean",
+    "pp_hash": "6a86fddafb6d24a4",
+    "tactic_index": 20,
+    "histories": [
+      [
+        "constructor",
+        "simp only [a]"
+      ],
+      [
+        "simp only [a]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp only [a]": [
+          "SUCC:7d9bb6ad1e08",
+          "SUCC:4a1aa881ad13",
+          "SUCC:31c585b48c33"
+        ],
+        "simp only [a] ; constructor": [
+          "SUCC:2e308ac390a5",
+          "SUCC:6b9e5d056931",
+          "SUCC:284bbea62c17"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "pp_hash": "ccb4123b231919ff",
+    "tactic_index": 0,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:ccb4123b2319",
+          "SUCC:ccb4123b2319",
+          "SUCC:ccb4123b2319"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\ninst✝ : MeasurableSpace α\nμ : Measure α\np q : ℝ\nhpq : p.IsConjExponent q\nf g : α → ℝ≥0∞\nhf : AEMeasurable f μ\nhf_nontop : ∫⁻ (a : α), f a ^ p ∂μ ≠ ⊤\nhg_nontop : ∫⁻ (a : α), g a ^ q ∂μ ≠ ⊤\nhf_nonzero : ∫⁻ (a : α), f a ^ p ∂μ ≠ 0\nhg_nonzero : ∫⁻ (a : α), g a ^ q ∂μ ≠ 0\nh : ℝ≥0\n⊢ (∫⁻ (a : α), f a ^ p ∂μ) ^ p⁻¹ * (∫⁻ (a : α), g a ^ q ∂μ) ^ q⁻¹ = ↑h → ∃ b, ∫⁻ (a : α), f a * g a ∂μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+    "file": "Mathlib/MeasureTheory/Function/Egorov.lean",
+    "pp_hash": "c92816e18f9ba9c4",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:c92816e18f9b",
+          "SUCC:c92816e18f9b",
+          "SUCC:c92816e18f9b"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nβ : Type u_2\nι : Type u_3\nm : MeasurableSpace α\ninst✝³ : MetricSpace β\nμ : Measure α\nn : ℕ\ni j : ι\ns : Set α\nε : ℝ\nf : ι → α → β\ng : α → β\ninst✝² : SemilatticeSup ι\ninst✝¹ : Nonempty ι\ninst✝ : Countable ι\nhε : 0 < ε\nhf : ∀ (n : ι), StronglyMeasurable (f n)\nhg : StronglyMeasurable g\nhsm : MeasurableSet s\nhs : μ s ≠ ⊤\nhfg : ∀ᵐ (x : α) ∂μ, x ∈ s → Tendsto (fun n => f n x) atTop (𝓝 (g x))\nh : ℝ≥0\n⊢ ENNReal.ofReal ε = ↑h → ∃ b, ∑' (a : ℕ), ENNReal.ofReal (ε / 2 * (2 ^ a)⁻¹) = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "fermatLastTheoremThree_of_dvd_a_of_gcd_eq_one_of_case2",
+    "file": "Mathlib/NumberTheory/FLT/Three.lean",
+    "pp_hash": "6a8cef14271f0c63",
+    "tactic_index": 4,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:52ebd276b1cb",
+          "SUCC:efdfec8f8024",
+          "SUCC:1240d37fc007"
+        ],
+        "simp ; constructor": [
+          "SUCC:4c7dab74dd33",
+          "SUCC:cc89a3b3c819",
+          "SUCC:25de0882cb3d"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+    "file": "Mathlib/Analysis/SpecificLimits/Basic.lean",
+    "pp_hash": "95b9b3187f6b2828",
+    "tactic_index": 4,
+    "histories": [
+      [
+        "constructor",
+        "simp only [Hpos]"
+      ],
+      [
+        "constructor",
+        "simp only [Hsum]"
+      ],
+      [
+        "constructor",
+        "simp only [this]"
+      ],
+      [
+        "simp",
+        "constructor"
+      ],
+      [
+        "simp only [Hpos]",
+        "constructor"
+      ],
+      [
+        "simp only [Hsum]",
+        "constructor"
+      ],
+      [
+        "simp only [this]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 7,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp only [Hpos]": [
+          "SUCC:5a3448e4ef6b",
+          "SUCC:c852bbd60f2c",
+          "SUCC:dfec253cc7e8"
+        ],
+        "constructor ; simp only [Hsum]": [
+          "SUCC:f01c0c040c35",
+          "SUCC:5cfe50041022",
+          "SUCC:cafbd01d919b"
+        ],
+        "constructor ; simp only [this]": [
+          "SUCC:b661b8ddc40f",
+          "SUCC:a0970106712e",
+          "SUCC:af182beab3e6"
+        ],
+        "simp ; constructor": [
+          "SUCC:848a5747b4c8",
+          "SUCC:2e56cc02e901",
+          "SUCC:2177936907d0"
+        ],
+        "simp only [Hpos] ; constructor": [
+          "SUCC:781390c68050",
+          "SUCC:287fac6e544c",
+          "SUCC:3722d60b700a"
+        ],
+        "simp only [Hsum] ; constructor": [
+          "SUCC:cda769ce88f7",
+          "SUCC:4d828521946a",
+          "SUCC:8b8a14a1e03a"
+        ],
+        "simp only [this] ; constructor": [
+          "SUCC:cf2b9763aec2",
+          "SUCC:68ab132f56af",
+          "SUCC:7bdb17587113"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+    "file": "Mathlib/MeasureTheory/Function/UniformIntegrable.lean",
+    "pp_hash": "02b37d0e4b540108",
+    "tactic_index": 2,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:02b37d0e4b54",
+          "SUCC:02b37d0e4b54",
+          "SUCC:02b37d0e4b54"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\nα : Type u_1\nβ : Type u_2\nι : Type u_3\nm : MeasurableSpace α\nμ✝ : Measure α\ninst✝ : NormedAddCommGroup β\np✝ : ℝ≥0∞\nμ : Measure α\np : ℝ≥0∞\nhp' : p ≠ ⊤\ns : Set α\nhs : MeasurableSet s\nf g : α → β\nc : ℝ\nhc : 0 ≤ c\nhf : ∀ x ∈ s, dist (f x) (g x) ≤ c\nhp : ¬p = 0\nh : ℝ≥0\n⊢ ENNReal.ofReal c * μ s ^ p.toReal⁻¹ = ↑h → ∃ b, snorm (s.indicator (f - g)) p μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "BumpCovering.sum_toPOUFun_eq",
+    "file": "Mathlib/Topology/PartitionOfUnity.lean",
+    "pp_hash": "6ee4b6555ffb4c97",
+    "tactic_index": 6,
+    "histories": [
+      [
+        "simp only [s]"
+      ],
+      [
+        "simp only [this]",
+        "simp only [s]"
+      ]
+    ],
+    "flagged": [
+      "simp only [this]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [this]": {
+        "simp only [s]": [
+          "SUCC:6ee4b6555ffb",
+          "SUCC:6ee4b6555ffb",
+          "SUCC:6ee4b6555ffb"
+        ],
+        "simp only [this] ; simp only [s]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [this]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp only [s]": "ι : Type u\nX : Type v\ninst✝ : TopologicalSpace X\ns✝ : Set X\nf : BumpCovering ι X s✝\nx : X\ns : Finset ι := ⋯.toFinset\nhs : ↑s = {i | (f i) x ≠ 0}\nA : (support fun i => f.toPOUFun i x) ⊆ ↑s\nB : (mulSupport fun i => 1 - (f i) x) ⊆ ↑s\nthis : LinearOrder ι := linearOrderOfSTO WellOrderingRel\n⊢ ∑ i ∈ ⋯.toFinset, f.toPOUFun i x =\n    ∑ x_1 ∈ ⋯.toFinset, (f x_1) x * ∏ j ∈ Finset.filter (fun x => x < x_1) ⋯.toFinset, (1 - (f j) x)",
+      "simp only [this] ; simp only [s]": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+    "file": "Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+    "pp_hash": "07226ed2f4af7875",
+    "tactic_index": 8,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:07226ed2f4af",
+          "SUCC:07226ed2f4af",
+          "SUCC:07226ed2f4af"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\nα : Type u_1\nE : Type u_2\nm : MeasurableSpace α\ninst✝ : NormedAddCommGroup E\nμ : Measure α\nf : α → E\np q : ℝ≥0∞\nhpq : p ≤ q\nhf : AEStronglyMeasurable f μ\nhp0 : p ≠ 0\nhp0_lt : 0 < p\nhq0_lt : 0 < q\nhq_top : ¬q = ⊤\nhp_lt_top : p < ⊤\nh : NNReal\n⊢ snorm f q μ * μ Set.univ ^ (p.toReal⁻¹ - q.toReal⁻¹) = ↑h → ∃ b, snorm f p μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "Submodule.basis_of_pid_aux",
+    "file": "Mathlib/LinearAlgebra/FreeModule/PID.lean",
+    "pp_hash": "b4d7ae7b74a02301",
+    "tactic_index": 19,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:f9ee6ae4b94f",
+          "SUCC:3334db3b3b01",
+          "SUCC:9c5839484f8d"
+        ],
+        "simp ; constructor": [
+          "SUCC:3db25934445e",
+          "SUCC:a27da9b064e8",
+          "SUCC:7ddb66e3c636"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "Submodule.basis_of_pid_aux",
+    "file": "Mathlib/LinearAlgebra/FreeModule/PID.lean",
+    "pp_hash": "29afa1c83ec2962d",
+    "tactic_index": 19,
+    "histories": [
+      [
+        "constructor",
+        "simp only [a]"
+      ],
+      [
+        "simp only [a]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp only [a]": [
+          "SUCC:111e128b5c66",
+          "SUCC:c3c259914478",
+          "SUCC:4f5cf9361c2e"
+        ],
+        "simp only [a] ; constructor": [
+          "SUCC:ba3e3ebf26a3",
+          "SUCC:b9c5ee514a3f",
+          "SUCC:76fd7a97226f"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "HahnSeries.order_ofForallLtEqZero",
+    "file": "Mathlib/RingTheory/HahnSeries/Basic.lean",
+    "pp_hash": "0c97371220748967",
+    "tactic_index": 2,
+    "histories": [
+      [
+        "rw [h]",
+        "simp only [h]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hf]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hn]"
+      ],
+      [
+        "simp only [h]"
+      ]
+    ],
+    "flagged": [
+      "aesop",
+      "simp_all"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "rw [h] ; simp only [h]": [
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7"
+        ],
+        "rw [h] ; simp only [hf]": [
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7"
+        ],
+        "rw [h] ; simp only [hn]": [
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7",
+          "SUCC:12d2318f93a7"
+        ],
+        "simp only [h]": [
+          "SUCC:c25c2d395d69",
+          "SUCC:c25c2d395d69",
+          "SUCC:c25c2d395d69"
+        ]
+      },
+      "simp_all": {
+        "rw [h] ; simp only [h]": [
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5"
+        ],
+        "rw [h] ; simp only [hf]": [
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5"
+        ],
+        "rw [h] ; simp only [hn]": [
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5",
+          "SUCC:f7f6034d7ef5"
+        ],
+        "simp only [h]": [
+          "SUCC:eea4b347ba05",
+          "SUCC:eea4b347ba05",
+          "SUCC:eea4b347ba05"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "aesop",
+      "simp_all"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "rw [h] ; simp only [h]": "Γ : Type u_1\nR : Type u_2\ninst : Zero R\ninst_1 : LinearOrder Γ\ninst_2 : LocallyFiniteOrder Γ\ninst_3 : Zero Γ\nf : Γ → R\nn : Γ\nhn : ∀ m < n, f m = 0\nhf : ¬f = 0\nh : ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ 0\n\ncase neg\nΓ : Type u_1\nR : Type u_2\ninst✝³ : Zero R\ninst✝² : LinearOrder Γ\ninst✝¹ : LocallyFiniteOrder Γ\ninst✝ : Zero Γ\nf : Γ → R\nhf : f ≠ 0\nn : Γ\nhn : ∀ m < n, f m = 0\nh : ¬ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ if h : ofSuppBddBelow f ⋯ = 0 then 0 else ⋯.min ⋯",
+      "rw [h] ; simp only [hf]": "Γ : Type u_1\nR : Type u_2\ninst : Zero R\ninst_1 : LinearOrder Γ\ninst_2 : LocallyFiniteOrder Γ\ninst_3 : Zero Γ\nf : Γ → R\nn : Γ\nhn : ∀ m < n, f m = 0\nhf : ¬f = 0\nh : ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ 0\n\ncase neg\nΓ : Type u_1\nR : Type u_2\ninst✝³ : Zero R\ninst✝² : LinearOrder Γ\ninst✝¹ : LocallyFiniteOrder Γ\ninst✝ : Zero Γ\nf : Γ → R\nhf : f ≠ 0\nn : Γ\nhn : ∀ m < n, f m = 0\nh : ¬ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ if h : ofSuppBddBelow f ⋯ = 0 then 0 else ⋯.min ⋯",
+      "rw [h] ; simp only [hn]": "Γ : Type u_1\nR : Type u_2\ninst : Zero R\ninst_1 : LinearOrder Γ\ninst_2 : LocallyFiniteOrder Γ\ninst_3 : Zero Γ\nf : Γ → R\nn : Γ\nhn : ∀ m < n, f m = 0\nhf : ¬f = 0\nh : ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ 0\n\ncase neg\nΓ : Type u_1\nR : Type u_2\ninst✝³ : Zero R\ninst✝² : LinearOrder Γ\ninst✝¹ : LocallyFiniteOrder Γ\ninst✝ : Zero Γ\nf : Γ → R\nhf : f ≠ 0\nn : Γ\nhn : ∀ m < n, f m = 0\nh : ¬ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ if h : ofSuppBddBelow f ⋯ = 0 then 0 else ⋯.min ⋯",
+      "simp only [h]": "Γ : Type u_1\nR : Type u_2\ninst : Zero R\ninst_1 : LinearOrder Γ\ninst_2 : LocallyFiniteOrder Γ\ninst_3 : Zero Γ\nf : Γ → R\nn : Γ\nhn : ∀ m < n, f m = 0\nh : ofSuppBddBelow f ⋯ = 0\nhf : ¬f = 0\n⊢ n ≤ 0\n\ncase neg\nΓ : Type u_1\nR : Type u_2\ninst✝³ : Zero R\ninst✝² : LinearOrder Γ\ninst✝¹ : LocallyFiniteOrder Γ\ninst✝ : Zero Γ\nf : Γ → R\nhf : f ≠ 0\nn : Γ\nhn : ∀ m < n, f m = 0\nh : ¬ofSuppBddBelow f ⋯ = 0\n⊢ n ≤ if h : ofSuppBddBelow f ⋯ = 0 then 0 else ⋯.min ⋯"
+    }
+  }
+]

@@ -1,0 +1,169 @@
+{
+ "states": 168074,
+ "proofs": 60665,
+ "proofs_with_repeat": 10,
+ "repeat_pairs": 12,
+ "same_tactic": 0,
+ "same_tactic_successor_differs": 0,
+ "same_tactic_successor_identical": 0,
+ "same_tactic_successor_unrecorded": 0,
+ "different_tactic": 12,
+ "pairs": [
+  {
+   "file": "Mathlib/SetTheory/Cardinal/Ordinal.lean",
+   "theorem": "Cardinal.mk_bounded_set_le",
+   "positions": [
+    0,
+    2
+   ],
+   "tactics": [
+    "trans #{ t : Set (Sum (ULift.{u} ℕ) α) // #t ≤ c }",
+    "apply (mk_bounded_set_le_of_infinite (Sum (ULift.{u} ℕ) α) c).trans"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/NumberTheory/Padics/RingHoms.lean",
+   "theorem": "PadicInt.zmod_congr_of_sub_mem_max_ideal",
+   "positions": [
+    4,
+    6
+   ],
+   "tactics": [
+    "apply_fun ZMod.castHom (show p ∣ p ^ 1 by rw [pow_one]) (ZMod p) at this",
+    "simpa only [Int.cast_natCast] using this"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/AlgebraicGeometry/Morphisms/RingHomProperties.lean",
+   "theorem": "RingHom.StableUnderBaseChange.Γ_pullback_fst",
+   "positions": [
+    0,
+    2
+   ],
+   "tactics": [
+    "erw [← PreservesPullback.iso_inv_fst AffineScheme.forgetToScheme (AffineScheme.ofHom f)\n    (AffineScheme.ofHom g)]",
+    "have :=\n  _root_.congr_arg Quiver.Hom.unop\n    (PreservesPullback.iso_hom_fst AffineScheme.Γ.rightOp (AffineScheme.ofHom f)\n      (AffineScheme.ofHom g))"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Geometry/Manifold/MFDeriv/SpecificFunctions.lean",
+   "theorem": "mfderiv_add",
+   "positions": [
+    0,
+    1
+   ],
+   "tactics": [
+    "exact mfderiv I 𝓘(𝕜, E') (f + g) z",
+    "exact mfderiv I 𝓘(𝕜, E') f z"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Geometry/Manifold/MFDeriv/SpecificFunctions.lean",
+   "theorem": "mfderiv_add",
+   "positions": [
+    1,
+    2
+   ],
+   "tactics": [
+    "exact mfderiv I 𝓘(𝕜, E') f z",
+    "exact mfderiv I 𝓘(𝕜, E') g z"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Geometry/Manifold/MFDeriv/SpecificFunctions.lean",
+   "theorem": "mfderiv_sub",
+   "positions": [
+    0,
+    1
+   ],
+   "tactics": [
+    "exact mfderiv I 𝓘(𝕜, E') (f - g) z",
+    "exact mfderiv I 𝓘(𝕜, E') f z"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Geometry/Manifold/MFDeriv/SpecificFunctions.lean",
+   "theorem": "mfderiv_sub",
+   "positions": [
+    1,
+    2
+   ],
+   "tactics": [
+    "exact mfderiv I 𝓘(𝕜, E') f z",
+    "exact mfderiv I 𝓘(𝕜, E') g z"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Algebra/CharP/MixedCharZero.lean",
+   "theorem": "EqualCharZero.pnatCast_one",
+   "positions": [
+    2,
+    4
+   ],
+   "tactics": [
+    "change ((PNat.isUnit_natCast (R := R) 1).unit : R) = 1",
+    "rw [PNat.one_coe, Nat.cast_one]"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Algebra/Category/Ring/Colimits.lean",
+   "theorem": "CommRingCat.Colimits.quot_neg",
+   "positions": [
+    0,
+    1
+   ],
+   "tactics": [
+    "exact Quot.mk Setoid.r (neg x)",
+    "exact Quot.mk Setoid.r x"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Algebra/Category/Ring/Colimits.lean",
+   "theorem": "CommRingCat.Colimits.quot_add",
+   "positions": [
+    1,
+    2
+   ],
+   "tactics": [
+    "exact Quot.mk _ x",
+    "exact Quot.mk _ y"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Algebra/Category/Ring/Colimits.lean",
+   "theorem": "CommRingCat.Colimits.quot_mul",
+   "positions": [
+    1,
+    2
+   ],
+   "tactics": [
+    "exact Quot.mk _ x",
+    "exact Quot.mk _ y"
+   ],
+   "case": "different_tactic"
+  },
+  {
+   "file": "Mathlib/Algebra/Category/Grp/Colimits.lean",
+   "theorem": "AddCommGrp.Colimits.quot_add",
+   "positions": [
+    1,
+    2
+   ],
+   "tactics": [
+    "exact Quot.mk Setoid.r x",
+    "exact Quot.mk Setoid.r y"
+   ],
+   "case": "different_tactic"
+  }
+ ]
+}

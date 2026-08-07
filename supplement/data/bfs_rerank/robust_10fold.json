@@ -1,0 +1,594 @@
+{
+  "protocol": {
+    "generator": "ByteDance-Seed/BFS-Prover-V2-7B",
+    "candidate_source": "recorded shared top-8 lists from default rendering",
+    "labels": "fresh three-repeat Lean executions on every hidden member",
+    "split": "10-fold grouped by theorem",
+    "classifier": "hashed linear logistic reranker with original-rank features",
+    "dimension": 4096,
+    "l2": 0.01,
+    "steps": 700,
+    "seed": 20260803
+  },
+  "corpus": {
+    "classes": 59,
+    "theorems": 48,
+    "members": 146,
+    "candidate_executions": 1168,
+    "compiler_calls": 3504,
+    "accepted": 855,
+    "families": {
+      "coercion": 128,
+      "Fin-eta": 8,
+      "Ne-vs-Not": 2,
+      "instance-path": 4,
+      "proof-term": 4
+    }
+  },
+  "raw_generator_order": {
+    "members": 146,
+    "covered_members": 134,
+    "top1_acceptance": 0.6575342465753424,
+    "top3_acceptance": 0.8561643835616438,
+    "top8_acceptance": 0.9178082191780822,
+    "mrr": 0.7634866275277233,
+    "mean_first_accepted_rank_covered": 1.5746268656716418
+  },
+  "fixed_candidate_oracles": {
+    "member_oracle_top1": 0.9178082191780822,
+    "best_shared_action_oracle_top1": 0.9178082191780822,
+    "member_specific_oracle_headroom": 0.0,
+    "member_specific_oracle_extra_successes": 0,
+    "acceptance_ambiguous_classes": 1,
+    "acceptance_ambiguous_class_actions": 1,
+    "fully_covered_classes_with_common_action": 56,
+    "classes": 59
+  },
+  "representations": {
+    "default": {
+      "members": 146,
+      "covered_members": 134,
+      "top1_acceptance": 0.863013698630137,
+      "top3_acceptance": 0.8767123287671232,
+      "top8_acceptance": 0.9178082191780822,
+      "mrr": 0.8775277234181343,
+      "mean_first_accepted_rank_covered": 1.2238805970149254,
+      "mrr_delta_vs_raw": 0.114041095890411,
+      "mrr_delta_vs_raw_theorem_bootstrap_95": [
+        0.025102848101265826,
+        0.20694653614457828
+      ],
+      "top1_delta_vs_raw": 0.20547945205479456,
+      "improved_members": 38,
+      "worsened_members": 4,
+      "tied_members": 104,
+      "divergent_candidate_pairs": {
+        "pairs": 1,
+        "accepted_member_ranked_higher": 0.5
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "test_theorems": [
+            "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE"
+          ],
+          "train_examples": 1024,
+          "test_examples": 144
+        },
+        {
+          "fold": 1,
+          "test_theorems": [
+            "ENNReal.rpow_add_rpow_le",
+            "MeasureTheory.Content.innerContent_exists_compact",
+            "MeasureTheory.countable_meas_le_ne_meas_lt",
+            "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+            "WithLp.prod_antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1040,
+          "test_examples": 128
+        },
+        {
+          "fold": 2,
+          "test_theorems": [
+            "ENNReal.rpow_le_self_of_le_one",
+            "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+            "MeasureTheory.snormEssSup_add_le",
+            "MonotoneOn.eVariationOn_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 3,
+          "test_theorems": [
+            "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+            "ENNReal.tsum_condensed_le",
+            "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+            "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+            "MeasureTheory.snorm_sub_le_of_dist_bdd"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 4,
+          "test_theorems": [
+            "ENNReal.le_tsum_schlomilch",
+            "LipschitzWith.uncurry",
+            "MeasureTheory.lintegral_prod_lintegral_pow_le",
+            "NNReal.count_const_le_le_of_tsum_le",
+            "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 5,
+          "test_theorems": [
+            "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+            "HasFPowerSeriesOnBall.coeff_zero",
+            "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+            "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+            "PiLp.antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 6,
+          "test_theorems": [
+            "ENNReal.lintegral_Lp_add_le",
+            "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+            "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+            "MeasureTheory.meas_le_lintegral₀",
+            "ProbabilityTheory.kernel.densityProcess_le_one"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 7,
+          "test_theorems": [
+            "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+            "ENNReal.lintegral_Lp_add_le_aux",
+            "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+            "MeasureTheory.GridLines.T_lmarginal_antitone",
+            "MeasureTheory.mul_meas_ge_le_pow_snorm",
+            "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 8,
+          "test_theorems": [
+            "BumpCovering.sum_toPOUFun_eq",
+            "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+            "ENNReal.rpow_add_rpow_le_add",
+            "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+            "MeasureTheory.norm_indicatorConstLp_le",
+            "ProbabilityTheory.sum_prob_mem_Ioc_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 9,
+          "test_theorems": [
+            "ENNReal.Lp_add_le",
+            "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+            "HahnSeries.order_ofForallLtEqZero",
+            "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+            "MeasureTheory.smul_le_stoppedValue_hitting",
+            "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        }
+      ]
+    },
+    "shallow": {
+      "members": 146,
+      "covered_members": 134,
+      "top1_acceptance": 0.863013698630137,
+      "top3_acceptance": 0.8904109589041096,
+      "top8_acceptance": 0.9178082191780822,
+      "mrr": 0.8798108284409655,
+      "mean_first_accepted_rank_covered": 1.1791044776119404,
+      "mrr_delta_vs_raw": 0.11632420091324214,
+      "mrr_delta_vs_raw_theorem_bootstrap_95": [
+        0.029385824336482232,
+        0.20822642543859646
+      ],
+      "top1_delta_vs_raw": 0.20547945205479456,
+      "improved_members": 38,
+      "worsened_members": 4,
+      "tied_members": 104,
+      "divergent_candidate_pairs": {
+        "pairs": 1,
+        "accepted_member_ranked_higher": 1.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "test_theorems": [
+            "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE"
+          ],
+          "train_examples": 1024,
+          "test_examples": 144
+        },
+        {
+          "fold": 1,
+          "test_theorems": [
+            "ENNReal.rpow_add_rpow_le",
+            "MeasureTheory.Content.innerContent_exists_compact",
+            "MeasureTheory.countable_meas_le_ne_meas_lt",
+            "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+            "WithLp.prod_antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1040,
+          "test_examples": 128
+        },
+        {
+          "fold": 2,
+          "test_theorems": [
+            "ENNReal.rpow_le_self_of_le_one",
+            "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+            "MeasureTheory.snormEssSup_add_le",
+            "MonotoneOn.eVariationOn_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 3,
+          "test_theorems": [
+            "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+            "ENNReal.tsum_condensed_le",
+            "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+            "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+            "MeasureTheory.snorm_sub_le_of_dist_bdd"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 4,
+          "test_theorems": [
+            "ENNReal.le_tsum_schlomilch",
+            "LipschitzWith.uncurry",
+            "MeasureTheory.lintegral_prod_lintegral_pow_le",
+            "NNReal.count_const_le_le_of_tsum_le",
+            "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 5,
+          "test_theorems": [
+            "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+            "HasFPowerSeriesOnBall.coeff_zero",
+            "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+            "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+            "PiLp.antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 6,
+          "test_theorems": [
+            "ENNReal.lintegral_Lp_add_le",
+            "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+            "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+            "MeasureTheory.meas_le_lintegral₀",
+            "ProbabilityTheory.kernel.densityProcess_le_one"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 7,
+          "test_theorems": [
+            "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+            "ENNReal.lintegral_Lp_add_le_aux",
+            "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+            "MeasureTheory.GridLines.T_lmarginal_antitone",
+            "MeasureTheory.mul_meas_ge_le_pow_snorm",
+            "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 8,
+          "test_theorems": [
+            "BumpCovering.sum_toPOUFun_eq",
+            "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+            "ENNReal.rpow_add_rpow_le_add",
+            "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+            "MeasureTheory.norm_indicatorConstLp_le",
+            "ProbabilityTheory.sum_prob_mem_Ioc_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 9,
+          "test_theorems": [
+            "ENNReal.Lp_add_le",
+            "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+            "HahnSeries.order_ofForallLtEqZero",
+            "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+            "MeasureTheory.smul_le_stoppedValue_hitting",
+            "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        }
+      ]
+    },
+    "proofs": {
+      "members": 146,
+      "covered_members": 134,
+      "top1_acceptance": 0.863013698630137,
+      "top3_acceptance": 0.8767123287671232,
+      "top8_acceptance": 0.9178082191780822,
+      "mrr": 0.8794520547945206,
+      "mean_first_accepted_rank_covered": 1.164179104477612,
+      "mrr_delta_vs_raw": 0.11596542726679726,
+      "mrr_delta_vs_raw_theorem_bootstrap_95": [
+        0.02879447375541126,
+        0.2079683066408381
+      ],
+      "top1_delta_vs_raw": 0.20547945205479456,
+      "improved_members": 38,
+      "worsened_members": 4,
+      "tied_members": 104,
+      "divergent_candidate_pairs": {
+        "pairs": 1,
+        "accepted_member_ranked_higher": 1.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "test_theorems": [
+            "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE"
+          ],
+          "train_examples": 1024,
+          "test_examples": 144
+        },
+        {
+          "fold": 1,
+          "test_theorems": [
+            "ENNReal.rpow_add_rpow_le",
+            "MeasureTheory.Content.innerContent_exists_compact",
+            "MeasureTheory.countable_meas_le_ne_meas_lt",
+            "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+            "WithLp.prod_antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1040,
+          "test_examples": 128
+        },
+        {
+          "fold": 2,
+          "test_theorems": [
+            "ENNReal.rpow_le_self_of_le_one",
+            "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+            "MeasureTheory.snormEssSup_add_le",
+            "MonotoneOn.eVariationOn_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 3,
+          "test_theorems": [
+            "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+            "ENNReal.tsum_condensed_le",
+            "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+            "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+            "MeasureTheory.snorm_sub_le_of_dist_bdd"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 4,
+          "test_theorems": [
+            "ENNReal.le_tsum_schlomilch",
+            "LipschitzWith.uncurry",
+            "MeasureTheory.lintegral_prod_lintegral_pow_le",
+            "NNReal.count_const_le_le_of_tsum_le",
+            "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 5,
+          "test_theorems": [
+            "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+            "HasFPowerSeriesOnBall.coeff_zero",
+            "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+            "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+            "PiLp.antilipschitzWith_equiv_aux"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 6,
+          "test_theorems": [
+            "ENNReal.lintegral_Lp_add_le",
+            "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+            "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+            "MeasureTheory.meas_le_lintegral₀",
+            "ProbabilityTheory.kernel.densityProcess_le_one"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 7,
+          "test_theorems": [
+            "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+            "ENNReal.lintegral_Lp_add_le_aux",
+            "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+            "MeasureTheory.GridLines.T_lmarginal_antitone",
+            "MeasureTheory.mul_meas_ge_le_pow_snorm",
+            "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 8,
+          "test_theorems": [
+            "BumpCovering.sum_toPOUFun_eq",
+            "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+            "ENNReal.rpow_add_rpow_le_add",
+            "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+            "MeasureTheory.norm_indicatorConstLp_le",
+            "ProbabilityTheory.sum_prob_mem_Ioc_le"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        },
+        {
+          "fold": 9,
+          "test_theorems": [
+            "ENNReal.Lp_add_le",
+            "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+            "HahnSeries.order_ofForallLtEqZero",
+            "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+            "MeasureTheory.smul_le_stoppedValue_hitting",
+            "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt"
+          ],
+          "train_examples": 1056,
+          "test_examples": 112
+        }
+      ]
+    }
+  },
+  "structural_increment": {
+    "mrr_delta_shallow_minus_default": 0.0022831050228311334,
+    "mrr_delta_theorem_bootstrap_95": [
+      0.0,
+      0.007692307692307693
+    ],
+    "top1_delta_shallow_minus_default": 0.0,
+    "improved_members_vs_default": 2,
+    "worsened_members_vs_default": 0,
+    "tied_members_vs_default": 144,
+    "classes_with_member_specific_order": 11
+  },
+  "leave_one_family_out": {
+    "Fin-eta": {
+      "members": 8,
+      "default": {
+        "members": 8,
+        "covered_members": 8,
+        "top1_acceptance": 0.5,
+        "top3_acceptance": 0.5,
+        "top8_acceptance": 1.0,
+        "mrr": 0.5773809523809523,
+        "mean_first_accepted_rank_covered": 3.75
+      },
+      "shallow": {
+        "members": 8,
+        "covered_members": 8,
+        "top1_acceptance": 0.5,
+        "top3_acceptance": 0.5,
+        "top8_acceptance": 1.0,
+        "mrr": 0.5982142857142857,
+        "mean_first_accepted_rank_covered": 3.25
+      }
+    },
+    "Ne-vs-Not": {
+      "members": 2,
+      "default": {
+        "members": 2,
+        "covered_members": 2,
+        "top1_acceptance": 1.0,
+        "top3_acceptance": 1.0,
+        "top8_acceptance": 1.0,
+        "mrr": 1.0,
+        "mean_first_accepted_rank_covered": 1.0
+      },
+      "shallow": {
+        "members": 2,
+        "covered_members": 2,
+        "top1_acceptance": 1.0,
+        "top3_acceptance": 1.0,
+        "top8_acceptance": 1.0,
+        "mrr": 1.0,
+        "mean_first_accepted_rank_covered": 1.0
+      }
+    },
+    "coercion": {
+      "members": 128,
+      "default": {
+        "members": 128,
+        "covered_members": 120,
+        "top1_acceptance": 0.859375,
+        "top3_acceptance": 0.9375,
+        "top8_acceptance": 0.9375,
+        "mrr": 0.8932291666666666,
+        "mean_first_accepted_rank_covered": 1.1166666666666667
+      },
+      "shallow": {
+        "members": 128,
+        "covered_members": 120,
+        "top1_acceptance": 0.890625,
+        "top3_acceptance": 0.9296875,
+        "top8_acceptance": 0.9375,
+        "mrr": 0.9078125,
+        "mean_first_accepted_rank_covered": 1.1
+      }
+    },
+    "instance-path": {
+      "members": 4,
+      "default": {
+        "members": 4,
+        "covered_members": 4,
+        "top1_acceptance": 0.5,
+        "top3_acceptance": 0.5,
+        "top8_acceptance": 1.0,
+        "mrr": 0.625,
+        "mean_first_accepted_rank_covered": 2.5
+      },
+      "shallow": {
+        "members": 4,
+        "covered_members": 4,
+        "top1_acceptance": 0.5,
+        "top3_acceptance": 0.5,
+        "top8_acceptance": 1.0,
+        "mrr": 0.625,
+        "mean_first_accepted_rank_covered": 2.5
+      }
+    },
+    "proof-term": {
+      "members": 4,
+      "default": {
+        "members": 4,
+        "covered_members": 0,
+        "top1_acceptance": 0.0,
+        "top3_acceptance": 0.0,
+        "top8_acceptance": 0.0,
+        "mrr": 0.0,
+        "mean_first_accepted_rank_covered": null
+      },
+      "shallow": {
+        "members": 4,
+        "covered_members": 0,
+        "top1_acceptance": 0.0,
+        "top3_acceptance": 0.0,
+        "top8_acceptance": 0.0,
+        "mrr": 0.0,
+        "mean_first_accepted_rank_covered": null
+      }
+    }
+  }
+}

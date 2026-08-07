@@ -1,0 +1,32 @@
+# Gate-1 audit harness. Python 3.10-3.12 (3.11 verified). LeanDojo requires Linux/macOS.
+#
+# Versions are PINNED, not floored. Blueprint §11.3 requires pinning every revision by
+# immutable hash; `>=` constraints in a project whose entire premise is version-locking mean
+# a rerun months later silently audits a different system. The previous `lean-dojo>=2.1.0`
+# floated to 4.20.0 on install here — a different major line than the one that produced the
+# published Benchmark 4.
+
+lean-dojo==2.0.2        # tracing + interactive Dojo replay (Component 1, 5).
+                        # LeanDojo's version numbers track Lean releases. mathlib4 at the
+                        # Benchmark 4 commit (29dcec07) pins leanprover/lean4:v4.10.0-rc1 and
+                        # dates to 2024-07-01; lean-dojo 2.0.x is the contemporaneous line
+                        # (2.0.0 released 2024-07-04). VERIFIED on macOS arm64 / Python 3.11:
+                        # traces the corpus and opens a Dojo successfully.
+                        # Do NOT float this. `>=2.1.0` resolved to 4.20.0 (a 2026 tracer), which
+                        # failed to trace even LeanDojo's own example repo here — it could not
+                        # produce a .ast.json for a Lean core stdlib file and aborted.
+
+numpy==2.3.4            # analysis package (Component 7)
+scipy==1.16.3           # bootstrap / binomial CIs (Component 7)
+pyyaml==6.0.3           # config loading
+tqdm==4.69.1
+GitPython==3.1.58       # repository metadata used by the isolated LeanDojo-v2 parser audit
+pytest==8.4.1           # repository verification suite
+
+# ReProver inference (Components 3, 6). VERIFIED installed on macOS arm64 / Python 3.11.
+# NOTE: transformers 4.58.x does not exist — an earlier edit of this file pinned it from memory
+# rather than from the index, which is exactly the failure mode pinning is supposed to prevent.
+# 4.57.6 is the last 4.x release; the 5.x line is avoided because the public ReProver checkpoint
+# predates it and T5ForConditionalGeneration's generate() defaults changed.
+torch==2.9.1
+transformers==4.57.6

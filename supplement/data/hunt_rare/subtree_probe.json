@@ -1,0 +1,70 @@
+[
+  {
+    "theorem": "HahnSeries.order_ofForallLtEqZero",
+    "file": "Mathlib/RingTheory/HahnSeries/Basic.lean",
+    "probe": "aesop",
+    "histories": [
+      [
+        "rw [h]",
+        "simp only [h]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hf]"
+      ],
+      [
+        "rw [h]",
+        "simp only [hn]"
+      ],
+      [
+        "simp only [h]"
+      ]
+    ],
+    "subtrees": {
+      "rw [h] ; simp only [h]": {
+        "tag": "rw [h] ; simp only [h]",
+        "proved": false,
+        "proof": null,
+        "expansions": 14,
+        "nodes": 13,
+        "stopped": "exhausted",
+        "elapsed": 37.85149168968201
+      },
+      "rw [h] ; simp only [hf]": {
+        "tag": "rw [h] ; simp only [hf]",
+        "proved": false,
+        "proof": null,
+        "expansions": 14,
+        "nodes": 13,
+        "stopped": "exhausted",
+        "elapsed": 11.802757024765015
+      },
+      "rw [h] ; simp only [hn]": {
+        "tag": "rw [h] ; simp only [hn]",
+        "proved": false,
+        "proof": null,
+        "expansions": 14,
+        "nodes": 13,
+        "stopped": "exhausted",
+        "elapsed": 11.725711822509766
+      },
+      "simp only [h]": {
+        "tag": "simp only [h]",
+        "proved": false,
+        "proof": null,
+        "expansions": 5,
+        "nodes": 4,
+        "stopped": "exhausted",
+        "elapsed": 10.692317962646484
+      }
+    },
+    "successor_kind": {
+      "rw [h] ; simp only [h]": "STATE",
+      "rw [h] ; simp only [hf]": "STATE",
+      "rw [h] ; simp only [hn]": "STATE",
+      "simp only [h]": "STATE"
+    },
+    "distinct_successor_renderings": 2,
+    "verdict": "NEITHER_PROVES_INCONCLUSIVE"
+  }
+]

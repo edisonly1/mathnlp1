@@ -1,0 +1,380 @@
+{
+ "summary": {
+  "pairs": 8,
+  "valid": 8,
+  "order_dependent_under_rendering_key": 5,
+  "proof_lost_when_rejecting_variant_retained": 5,
+  "digest_invariant_both_orders": 8,
+  "compiles": 194
+ },
+ "pairs": [
+  {
+   "pair": 0,
+   "probe": "simp only [ENNReal.coe_add]",
+   "goal": "(x : ENNReal) + y = ((x + y : NNReal) : ENNReal)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 3,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 3,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": true
+   },
+   "order_dependent_R": false,
+   "digest_invariant": true
+  },
+  {
+   "pair": 1,
+   "probe": "simp only [ENNReal.coe_mul]",
+   "goal": "(x : ENNReal) * y = ((x * y : NNReal) : ENNReal)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 5,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 5,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": true
+   },
+   "order_dependent_R": false,
+   "digest_invariant": true
+  },
+  {
+   "pair": 2,
+   "probe": "simp only [ENNReal.coe_le_coe]",
+   "goal": "((x : ENNReal) \u2264 y) = (x \u2264 y)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 7,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": false,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 7,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 24,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": false
+   },
+   "order_dependent_R": true,
+   "digest_invariant": true
+  },
+  {
+   "pair": 3,
+   "probe": "simp only [ENNReal.coe_inj]",
+   "goal": "((x : ENNReal) = y) = (x = y)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 9,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": false,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 9,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 26,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": false
+   },
+   "order_dependent_R": true,
+   "digest_invariant": true
+  },
+  {
+   "pair": 4,
+   "probe": "simp only [ENNReal.coe_lt_coe]",
+   "goal": "((x : ENNReal) < y) = (x < y)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 11,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": false,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 11,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 28,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": false
+   },
+   "order_dependent_R": true,
+   "digest_invariant": true
+  },
+  {
+   "pair": 5,
+   "probe": "simp only [ENNReal.coe_eq_zero]",
+   "goal": "((x : ENNReal) = 0) = (x = 0)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 13,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": false,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 13,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 30,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": false
+   },
+   "order_dependent_R": true,
+   "digest_invariant": true
+  },
+  {
+   "pair": 6,
+   "probe": "rw [ENNReal.coe_add]",
+   "goal": "(x : ENNReal) + y = ((x + y : NNReal) : ENNReal)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 3,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 3,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 19,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": true
+   },
+   "order_dependent_R": false,
+   "digest_invariant": true
+  },
+  {
+   "pair": 7,
+   "probe": "rw [ENNReal.coe_le_coe]",
+   "goal": "((x : ENNReal) \u2264 y) = (x \u2264 y)",
+   "arms": {
+    "R_Afirst": {
+     "proved": true,
+     "edges": 7,
+     "retained": [
+      "A"
+     ]
+    },
+    "R_Bfirst": {
+     "proved": false,
+     "edges": 19,
+     "retained": [
+      "B"
+     ]
+    },
+    "D_Afirst": {
+     "proved": true,
+     "edges": 7,
+     "retained": [
+      "A",
+      "B"
+     ]
+    },
+    "D_Bfirst": {
+     "proved": true,
+     "edges": 24,
+     "retained": [
+      "B",
+      "A"
+     ]
+    }
+   },
+   "pp_identical": true,
+   "dig_distinct": true,
+   "valid": true,
+   "variant_closes": {
+    "A": true,
+    "B": false
+   },
+   "order_dependent_R": true,
+   "digest_invariant": true
+  }
+ ]
+}

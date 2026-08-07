@@ -1,0 +1,74 @@
+[
+  {
+    "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+    "file": "Mathlib/Analysis/FunctionalSpaces/SobolevInequality.lean",
+    "probe": "aesop",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "subtrees": {
+      "simp ; intro h": {
+        "tag": "simp ; intro h",
+        "proved": false,
+        "proof": null,
+        "expansions": 1,
+        "nodes": 0,
+        "stopped": "exhausted",
+        "elapsed": 13.7431960105896
+      }
+    },
+    "successor_kind": {
+      "intro h ; simp": "FAIL",
+      "simp ; intro h": "STATE"
+    },
+    "distinct_successor_renderings": 1,
+    "verdict": "ONE_SIDED_NO_PROOF_FOUND"
+  },
+  {
+    "theorem": "MeasureTheory.countable_meas_le_ne_meas_lt",
+    "file": "Mathlib/MeasureTheory/Integral/Layercake.lean",
+    "probe": "constructor",
+    "histories": [
+      [
+        "constructor"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "subtrees": {
+      "constructor": {
+        "tag": "constructor",
+        "proved": false,
+        "proof": null,
+        "expansions": 18,
+        "nodes": 17,
+        "stopped": "exhausted",
+        "elapsed": 49.2048761844635
+      },
+      "simp ; constructor": {
+        "tag": "simp ; constructor",
+        "proved": false,
+        "proof": null,
+        "expansions": 40,
+        "nodes": 59,
+        "stopped": "max_expansions",
+        "elapsed": 99.64603114128113
+      }
+    },
+    "successor_kind": {
+      "constructor": "STATE",
+      "simp ; constructor": "STATE"
+    },
+    "distinct_successor_renderings": 2,
+    "verdict": "NEITHER_PROVES_INCONCLUSIVE"
+  }
+]

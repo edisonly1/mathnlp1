@@ -1,0 +1,1128 @@
+[
+  {
+    "theorem": "ENNReal.le_tsum_schlomilch",
+    "file": "Mathlib/Analysis/PSeries.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [
+      "simp only [this]"
+    ],
+    "recorded_escape_depth": 2,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:9db317e24f69",
+        "S:9db317e24f69",
+        "S:9db317e24f69"
+      ],
+      "simp ; intro h": [
+        "S:c7f5043e1d08",
+        "S:c7f5043e1d08",
+        "S:c7f5043e1d08"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:9db317e24f69",
+      "simp ; intro h": "S:c7f5043e1d08"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 312,
+      "simp ; intro h": 302
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-∑'",
+      "+¬∑'",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+    "file": "Mathlib/Analysis/FunctionalSpaces/SobolevInequality.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [
+      "simp only [Finset.prod_insert hi, ENNReal.coe_pow]",
+      "simp only [lmarginal, ENNReal.coe_pow]",
+      "simp_rw [updateFinset_singleton]"
+    ],
+    "recorded_escape_depth": 4,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:6b5639886a1a",
+        "S:6b5639886a1a",
+        "S:6b5639886a1a"
+      ],
+      "simp ; intro h": [
+        "S:cdda8c11d883",
+        "S:cdda8c11d883",
+        "S:cdda8c11d883"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:6b5639886a1a",
+      "simp ; intro h": "S:cdda8c11d883"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 1290,
+      "simp ; intro h": 1324
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "-→",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "+→",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+    "file": "Mathlib/Probability/Kernel/Disintegration/Density.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:c364c767dd53",
+        "S:c364c767dd53",
+        "S:c364c767dd53"
+      ],
+      "simp ; intro h": [
+        "S:e2433dd24225",
+        "S:e2433dd24225",
+        "S:e2433dd24225"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:c364c767dd53",
+      "simp ; intro h": "S:e2433dd24225"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 340,
+      "simp ; intro h": 334
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(ν",
+      "+¬(ν",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:88eb339fbdf9",
+        "S:88eb339fbdf9",
+        "S:88eb339fbdf9"
+      ],
+      "simp ; intro h": [
+        "S:d735322ca028",
+        "S:d735322ca028",
+        "S:d735322ca028"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:88eb339fbdf9",
+      "simp ; intro h": "S:d735322ca028"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 429,
+      "simp ; intro h": 423
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:0d3979f0a149",
+        "S:0d3979f0a149",
+        "S:0d3979f0a149"
+      ],
+      "simp ; intro h": [
+        "S:3b483c4b9484",
+        "S:3b483c4b9484",
+        "S:3b483c4b9484"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:0d3979f0a149",
+      "simp ; intro h": "S:3b483c4b9484"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 836,
+      "simp ; intro h": 830
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel",
+    "file": "Mathlib/Probability/Kernel/WithDensity.lean",
+    "probe": "rw [← h']",
+    "shared_prefix": [
+      "simp only [fs, Nat.cast_succ]",
+      "intro h'",
+      "refine ⟨h,?_⟩",
+      "simp [h']"
+    ],
+    "recorded_escape_depth": 5,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:a21c3c01108e",
+        "S:a21c3c01108e",
+        "S:a21c3c01108e"
+      ],
+      "simp ; intro h": [
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:a21c3c01108e",
+      "simp ; intro h": "FAIL"
+    },
+    "verdict": "CONFIRMED_ESCAPE"
+  },
+  {
+    "theorem": "ENNReal.rpow_add_rpow_le_add",
+    "file": "Mathlib/Analysis/MeanInequalitiesPow.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:2f161eae4cc5",
+        "S:2f161eae4cc5",
+        "S:2f161eae4cc5"
+      ],
+      "simp ; intro h": [
+        "S:328c8da309bb",
+        "S:328c8da309bb",
+        "S:328c8da309bb"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:2f161eae4cc5",
+      "simp ; intro h": "S:328c8da309bb"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 129,
+      "simp ; intro h": 123
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b_1",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b_1,",
+      "+∧",
+      "+b_1",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b_1)",
+      "-→",
+      "-(a",
+      "+¬(a",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:1c6da4f82697",
+        "S:1c6da4f82697",
+        "S:1c6da4f82697"
+      ],
+      "simp ; intro h": [
+        "S:3586fba46906",
+        "S:3586fba46906",
+        "S:3586fba46906"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:1c6da4f82697",
+      "simp ; intro h": "S:3586fba46906"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 418,
+      "simp ; intro h": 408
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.lintegral_prod_lintegral_pow_le",
+    "file": "Mathlib/Analysis/FunctionalSpaces/SobolevInequality.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:fe34c63abd43",
+        "S:fe34c63abd43",
+        "S:fe34c63abd43"
+      ],
+      "simp ; intro h": [
+        "S:5c7e11c748d7",
+        "S:5c7e11c748d7",
+        "S:5c7e11c748d7"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:fe34c63abd43",
+      "simp ; intro h": "S:5c7e11c748d7"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 596,
+      "simp ; intro h": 596
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+    "file": "Mathlib/MeasureTheory/Measure/WithDensity.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:bf6b59a82067",
+        "S:bf6b59a82067",
+        "S:bf6b59a82067"
+      ],
+      "simp ; intro h": [
+        "S:a33e9eb8fe99",
+        "S:a33e9eb8fe99",
+        "S:a33e9eb8fe99"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:bf6b59a82067",
+      "simp ; intro h": "S:a33e9eb8fe99"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 301,
+      "simp ; intro h": 295
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-∫⁻",
+      "+¬∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.rpow_add_rpow_le",
+    "file": "Mathlib/Analysis/MeanInequalitiesPow.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:c81645420ce5",
+        "S:c81645420ce5",
+        "S:c81645420ce5"
+      ],
+      "simp ; intro h": [
+        "S:f14f1c3656ca",
+        "S:f14f1c3656ca",
+        "S:f14f1c3656ca"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:c81645420ce5",
+      "simp ; intro h": "S:f14f1c3656ca"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 164,
+      "simp ; intro h": 158
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b_1",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b_1,",
+      "+∧",
+      "+b_1",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b_1)",
+      "-→",
+      "-(a",
+      "+¬(a",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+    "file": "Mathlib/MeasureTheory/Integral/Lebesgue.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:9bd6293e37e5",
+        "S:9bd6293e37e5",
+        "S:9bd6293e37e5"
+      ],
+      "simp ; intro h": [
+        "S:700901d28185",
+        "S:700901d28185",
+        "S:700901d28185"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:9bd6293e37e5",
+      "simp ; intro h": "S:700901d28185"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 216,
+      "simp ; intro h": 210
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-∫⁻",
+      "+¬∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+    "file": "Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:fec32984644f",
+        "S:fec32984644f",
+        "S:fec32984644f"
+      ],
+      "simp ; intro h": [
+        "S:61ea207833d9",
+        "S:61ea207833d9",
+        "S:61ea207833d9"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:fec32984644f",
+      "simp ; intro h": "S:61ea207833d9"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 501,
+      "simp ; intro h": 492
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-NNReal),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.Lp_add_le",
+    "file": "Mathlib/Analysis/MeanInequalities.lean",
+    "probe": "refine ⟨∑ i ∈ s,?_,?_⟩",
+    "shared_prefix": [
+      "intro hh"
+    ],
+    "recorded_escape_depth": 2,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:e236cec09275",
+        "S:dc3c1b423744",
+        "S:77859e12f141"
+      ],
+      "simp ; intro h": [
+        "S:d22f2857b220",
+        "S:5af4f8fba603",
+        "S:249e1410f9cd"
+      ]
+    },
+    "self_consistent": false,
+    "first_outcomes": {
+      "intro h ; simp": "S:e236cec09275",
+      "simp ; intro h": "S:d22f2857b220"
+    },
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:927ffdc87062",
+        "S:927ffdc87062",
+        "S:927ffdc87062"
+      ],
+      "simp ; intro h": [
+        "S:e05ee8e1963a",
+        "S:e05ee8e1963a",
+        "S:e05ee8e1963a"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:927ffdc87062",
+      "simp ; intro h": "S:e05ee8e1963a"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 594,
+      "simp ; intro h": 588
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(∫⁻",
+      "+¬(∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.rpow_add_rpow_le_add",
+    "file": "Mathlib/Analysis/MeanInequalitiesPow.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:9a9aa0ef29d8",
+        "S:9a9aa0ef29d8",
+        "S:9a9aa0ef29d8"
+      ],
+      "simp ; intro h": [
+        "S:dde439631ac4",
+        "S:dde439631ac4",
+        "S:dde439631ac4"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:9a9aa0ef29d8",
+      "simp ; intro h": "S:dde439631ac4"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 131,
+      "simp ; intro h": 125
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b_1",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b_1,",
+      "+∧",
+      "+b_1",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b_1)",
+      "-→",
+      "-a",
+      "+¬a",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+    "file": "Mathlib/MeasureTheory/Measure/FiniteMeasure.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:87b1d7568da3",
+        "S:87b1d7568da3",
+        "S:87b1d7568da3"
+      ],
+      "simp ; intro h": [
+        "S:2a4e6fce168b",
+        "S:2a4e6fce168b",
+        "S:2a4e6fce168b"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:87b1d7568da3",
+      "simp ; intro h": "S:2a4e6fce168b"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 369,
+      "simp ; intro h": 363
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-∫⁻",
+      "+¬∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:c9532c01fa3d",
+        "S:c9532c01fa3d",
+        "S:c9532c01fa3d"
+      ],
+      "simp ; intro h": [
+        "S:c720f5a4c2cc",
+        "S:c720f5a4c2cc",
+        "S:c720f5a4c2cc"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:c9532c01fa3d",
+      "simp ; intro h": "S:c720f5a4c2cc"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 403,
+      "simp ; intro h": 397
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-((∫⁻",
+      "+¬((∫⁻",
+      "-≠",
+      "+="
+    ]
+  },
+  {
+    "theorem": "LipschitzWith.uncurry",
+    "file": "Mathlib/Topology/EMetricSpace/Lipschitz.lean",
+    "probe": "contrapose!",
+    "shared_prefix": [],
+    "recorded_escape_depth": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "members_restored": 2,
+    "identical_before_probe": true,
+    "repeat_table": {
+      "intro h ; simp": [
+        "S:e711dcef20e6",
+        "S:e711dcef20e6",
+        "S:e711dcef20e6"
+      ],
+      "simp ; intro h": [
+        "S:f6f5b15100c5",
+        "S:f6f5b15100c5",
+        "S:f6f5b15100c5"
+      ]
+    },
+    "self_consistent": true,
+    "first_outcomes": {
+      "intro h ; simp": "S:e711dcef20e6",
+      "simp ; intro h": "S:f6f5b15100c5"
+    },
+    "verdict": "CONFIRMED_ESCAPE",
+    "successor_bytes": {
+      "intro h ; simp": 429,
+      "simp ; intro h": 423
+    },
+    "successor_diff": [
+      "-(∀",
+      "-(b",
+      "-:",
+      "-ℝ≥0),",
+      "+(¬∃",
+      "+b,",
+      "+∧",
+      "+b",
+      "+≤",
+      "+h)",
+      "-h",
+      "-<",
+      "-b)",
+      "-→",
+      "-(↑Kα",
+      "+¬(↑Kα",
+      "-≠",
+      "+="
+    ]
+  }
+]

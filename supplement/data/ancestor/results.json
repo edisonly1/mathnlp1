@@ -1,0 +1,57 @@
+{
+ "theorem": "MeasureTheory.snormEssSup_add_le",
+ "histories": [
+  [
+   "intro h",
+   "simp"
+  ],
+  [
+   "simp",
+   "intro h"
+  ]
+ ],
+ "arms": {
+  "R_prod_first": {
+   "arm": "R_prod_first",
+   "proved": true,
+   "proof": [
+    "simp",
+    "exact mod_cast nnnorm_add_le _ _"
+   ],
+   "expansions": 4,
+   "nodes": 16,
+   "merges": 11,
+   "merged_member_discarded": "simp ; intro h",
+   "stopped": null,
+   "elapsed": 108.61193132400513
+  },
+  "R_unprod_first": {
+   "arm": "R_unprod_first",
+   "proved": true,
+   "proof": [
+    "simp",
+    "exact mod_cast nnnorm_add_le _ _"
+   ],
+   "expansions": 2,
+   "nodes": 5,
+   "merges": 7,
+   "merged_member_discarded": "intro h ; simp",
+   "stopped": null,
+   "elapsed": 36.09334707260132
+  },
+  "D_unprod_first": {
+   "arm": "D_unprod_first",
+   "proved": true,
+   "proof": [
+    "simp",
+    "exact mod_cast nnnorm_add_le _ _"
+   ],
+   "expansions": 2,
+   "nodes": 6,
+   "merges": 6,
+   "merged_member_discarded": null,
+   "stopped": null,
+   "elapsed": 49.91907596588135
+  }
+ }
+}

@@ -1,0 +1,927 @@
+[
+  {
+    "theorem": "ENNReal.hasSum_lt",
+    "file": "Mathlib/Topology/Instances/ENNReal.lean",
+    "pp_hash": "82aab2b5369e943c",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "constructor",
+        "rw [hsg]"
+      ],
+      [
+        "constructor",
+        "simp only [hsg]"
+      ],
+      [
+        "rw [hsg]",
+        "constructor"
+      ],
+      [
+        "simp only [hsg]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; rw [hsg]": [
+          "SUCC:970b02e87e2a",
+          "SUCC:cc9462358c92",
+          "SUCC:2648cc0279ea"
+        ],
+        "constructor ; simp only [hsg]": [
+          "SUCC:92b95dcfc9f4",
+          "SUCC:45787b15c62e",
+          "SUCC:94b639498454"
+        ],
+        "rw [hsg] ; constructor": [
+          "SUCC:3023643b93f5",
+          "SUCC:7dcc20ee11af",
+          "SUCC:714bb3ddc76b"
+        ],
+        "simp only [hsg] ; constructor": [
+          "SUCC:44505dcaf020",
+          "SUCC:f6a3a97a5de3",
+          "SUCC:14b26f36996e"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+    "file": "Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+    "pp_hash": "6122b0b41fdcb6ed",
+    "tactic_index": 9,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:6122b0b41fdc",
+          "SUCC:6122b0b41fdc",
+          "SUCC:6122b0b41fdc"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\nα : Type u_1\nE : Type u_2\nm : MeasurableSpace α\ninst✝ : NormedAddCommGroup E\nμ : Measure α\nf : α → E\np q : ℝ≥0∞\nhpq : p ≤ q\nhf : AEStronglyMeasurable f μ\nhp0 : p ≠ 0\nhp0_lt : 0 < p\nhq0_lt : 0 < q\nhq_top : ¬q = ⊤\nhp_lt_top : p < ⊤\nhp_pos : 0 < p.toReal\nh : NNReal\n⊢ snorm f q μ * μ Set.univ ^ (p.toReal⁻¹ - q.toReal⁻¹) = ↑h → ∃ b, snorm f p μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "AffineIndependent.convexHull_inter",
+    "file": "Mathlib/Analysis/Convex/Combination.lean",
+    "pp_hash": "d33236de35721438",
+    "tactic_index": 5,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:680dfa1354f5",
+          "SUCC:47c03f14f8d7",
+          "SUCC:0cc5374f20bf"
+        ],
+        "simp ; constructor": [
+          "SUCC:78f07d1ff000",
+          "SUCC:42b902386cb4",
+          "SUCC:7ebe00d0ef82"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "tendsto_integral_exp_smul_cocompact",
+    "file": "Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean",
+    "pp_hash": "fbee2d4e4d51cd53",
+    "tactic_index": 8,
+    "histories": [
+      [
+        "simp only [Adual]",
+        "simp only [V']"
+      ],
+      [
+        "simp only [V']",
+        "simp only [Adual]"
+      ]
+    ],
+    "flagged": [
+      "simp only [V']"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [V']": {
+        "simp only [Adual] ; simp only [V']": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [V'] ; simp only [Adual]": [
+          "SUCC:fbee2d4e4d51",
+          "SUCC:fbee2d4e4d51",
+          "SUCC:fbee2d4e4d51"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [V']"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp only [Adual] ; simp only [V']": "FAIL: simp made no progress",
+      "simp only [V'] ; simp only [Adual]": "case h.e'_3.h\nE : Type u_1\nV : Type u_2\ninst✝¹² : NormedAddCommGroup E\ninst✝¹¹ : NormedSpace ℂ E\nf : V → E\ninst✝¹⁰ : AddCommGroup V\ninst✝⁹ : TopologicalSpace V\ninst✝⁸ : TopologicalAddGroup V\ninst✝⁷ : T2Space V\ninst✝⁶ : MeasurableSpace V\ninst✝⁵ : BorelSpace V\ninst✝⁴ : Module ℝ V\ninst✝³ : ContinuousSMul ℝ V\ninst✝² : FiniteDimensional ℝ V\ninst✝¹ : CompleteSpace E\nμ : Measure V\ninst✝ : μ.IsAddHaarMeasure\nV' : Type := EuclideanSpace ℝ (Fin (finrank ℝ V))\nA : V ≃L[ℝ] V'\nthis✝¹ : MeasurableSpace V' := borel V'\nthis✝ : BorelSpace V'\nAₘ : V ≃ᵐ V' := A.toHomeomorph.toMeasurableEquiv\nAdualₗ : (V →L[ℝ] ℝ) ≃ₗ[ℝ] V' →L[ℝ] ℝ :=\n  { toFun := fun t => t.comp ↑A.symm, map_add' := ⋯, map_smul' := ⋯, invFun := fun t => t.comp ↑A, left_inv := ⋯,\n    right_inv := ⋯ }\nAdual : (V →L[ℝ] ℝ) ≃L[ℝ] V' →L[ℝ] ℝ := { toLinearEquiv := Adualₗ, continuous_toFun := ⋯, continuous_invFun := ⋯ }\nthis : (Measure.map (⇑Aₘ) μ).IsAddHaarMeasure\nw : V →L[ℝ] ℝ\n⊢ ∫ (v : V), 𝐞 (-w v) • f v ∂μ =\n    ((fun w => ∫ (v : EuclideanSpace ℝ (Fin (finrank ℝ V))), 𝐞 (-w v) • (f ∘ ⇑A.symm) v ∂Measure.map (⇑Aₘ) μ) ∘\n        { toLinearEquiv := Adualₗ, continuous_toFun := ⋯, continuous_invFun := ⋯ }.toHomeomorph.toCocompactMap.toFun)\n      w"
+    }
+  },
+  {
+    "theorem": "Nat.smoothNumbersUpTo_subset_image",
+    "file": "Mathlib/NumberTheory/SmoothNumbers.lean",
+    "pp_hash": "a33c795a05f4e962",
+    "tactic_index": 4,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:dc99ab11999f",
+          "SUCC:34d78b2593c5",
+          "SUCC:64e2a1a4280e"
+        ],
+        "simp ; constructor": [
+          "SUCC:d3c608fa971b",
+          "SUCC:cac7f514aff3",
+          "SUCC:dcf2715a1e62"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "Nat.smoothNumbersUpTo_subset_image",
+    "file": "Mathlib/NumberTheory/SmoothNumbers.lean",
+    "pp_hash": "a69864996feddc06",
+    "tactic_index": 4,
+    "histories": [
+      [
+        "constructor",
+        "rw [hm]"
+      ],
+      [
+        "constructor",
+        "simp only [hm]"
+      ],
+      [
+        "rw [hm]",
+        "constructor"
+      ],
+      [
+        "simp only [hm]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; rw [hm]": [
+          "SUCC:41a2138b71a0",
+          "SUCC:7a230af57ced",
+          "SUCC:1bdc90bb3c62"
+        ],
+        "constructor ; simp only [hm]": [
+          "SUCC:19f14ff250b2",
+          "SUCC:e01993324ab9",
+          "SUCC:4a9ffda96819"
+        ],
+        "rw [hm] ; constructor": [
+          "SUCC:208aaf909bf2",
+          "SUCC:a68c2c30730b",
+          "SUCC:5a00d54c0ca5"
+        ],
+        "simp only [hm] ; constructor": [
+          "SUCC:81c88cbec3ac",
+          "SUCC:e5d1e8fbe47b",
+          "SUCC:61b891e0c69e"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "NNReal.count_const_le_le_of_tsum_le",
+    "file": "Mathlib/MeasureTheory/Integral/Lebesgue.lean",
+    "pp_hash": "dda9f44493dd61d8",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:dda9f44493dd",
+          "SUCC:dda9f44493dd",
+          "SUCC:dda9f44493dd"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nβ : Type u_2\nγ : Type u_3\nδ : Type u_4\nm : MeasurableSpace α\nμ ν : Measure α\ninst✝¹ : MeasurableSpace α\ninst✝ : MeasurableSingletonClass α\na : α → ℝ≥0\na_mble : Measurable a\na_summable : Summable a\nc : ℝ≥0\ntsum_le_c : ∑' (i : α), a i ≤ c\nε : ℝ≥0\nε_ne_zero : ε ≠ 0\nh : ℝ≥0\n⊢ ↑c / ↑ε = ↑h → ∃ b, count {i | ε ≤ a i} = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "Tuple.bubble_sort_induction'",
+    "file": "Mathlib/Data/Fin/Tuple/BubbleSortInduction.lean",
+    "pp_hash": "e93dc754a3c75fcb",
+    "tactic_index": 2,
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [h]"
+      ],
+      [
+        "simp only [hf]"
+      ],
+      [
+        "simp only [this]"
+      ]
+    ],
+    "flagged": [
+      "simp only [this]"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [this]": {
+        "simp": [
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7"
+        ],
+        "simp only [h]": [
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7"
+        ],
+        "simp only [hf]": [
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7",
+          "SUCC:e93dc754a3c7"
+        ],
+        "simp only [this]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [this]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp": "n : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ∃ c < σ, P (f ∘ ⇑c)",
+      "simp only [h]": "n : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ∃ c < σ, P (f ∘ ⇑c)",
+      "simp only [hf]": "n : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ∃ c < σ, P (f ∘ ⇑c)",
+      "simp only [this]": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "Tuple.bubble_sort_induction'",
+    "file": "Mathlib/Data/Fin/Tuple/BubbleSortInduction.lean",
+    "pp_hash": "7f391f523e98cc8e",
+    "tactic_index": 2,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "constructor",
+        "simp only [h]"
+      ],
+      [
+        "constructor",
+        "simp only [hf]"
+      ],
+      [
+        "constructor",
+        "simp only [this]"
+      ],
+      [
+        "simp",
+        "constructor"
+      ],
+      [
+        "simp only [h]",
+        "constructor"
+      ],
+      [
+        "simp only [hf]",
+        "constructor"
+      ],
+      [
+        "simp only [this]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "simp only [this]"
+    ],
+    "members_restored": 8,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [this]": {
+        "constructor ; simp": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "constructor ; simp only [h]": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "constructor ; simp only [hf]": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "constructor ; simp only [this]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; constructor": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "simp only [h] ; constructor": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "simp only [hf] ; constructor": [
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98",
+          "SUCC:7f391f523e98"
+        ],
+        "simp only [this] ; constructor": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [this]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "constructor ; simp": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "constructor ; simp only [h]": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "constructor ; simp only [hf]": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "constructor ; simp only [this]": "FAIL: simp made no progress",
+      "simp ; constructor": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "simp only [h] ; constructor": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "simp only [hf] ; constructor": "case h\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ ?w < σ ∧ P (f ∘ ⇑?w)\n\ncase w\nn : ℕ\nα : Type u_1\ninst✝ : LinearOrder α\nf : Fin n → α\nP : (Fin n → α) → Prop\nhf : P f\nh :\n  ∀ (σ : Equiv.Perm (Fin n)) (i j : Fin n),\n    i < j → (f ∘ ⇑σ) j < (f ∘ ⇑σ) i → P (f ∘ ⇑σ) → P (f ∘ ⇑σ ∘ ⇑(Equiv.swap i j))\nthis : Preorder (Equiv.Perm (Fin n)) := Preorder.lift fun σ => toLex (f ∘ ⇑σ)\nσ : Fin n ≃ Fin n\nhσ : (fun σ => f ∘ ⇑σ) σ ≠ (fun σ => f ∘ ⇑σ) (sort f)\nhfσ : P ((fun σ => f ∘ ⇑σ) σ)\n⊢ Fin n ≃ Fin n",
+      "simp only [this] ; constructor": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "MeasureTheory.pow_mul_meas_ge_le_snorm",
+    "file": "Mathlib/MeasureTheory/Function/LpSeminorm/ChebyshevMarkov.lean",
+    "pp_hash": "9af9c47ac8902711",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:9af9c47ac890",
+          "SUCC:9af9c47ac890",
+          "SUCC:9af9c47ac890"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\nE : Type u_2\nm0 : MeasurableSpace α\ninst✝ : NormedAddCommGroup E\np : ℝ≥0∞\nμ : Measure α\nf : α → E\nhp_ne_zero : p ≠ 0\nhp_ne_top : p ≠ ⊤\nhf : AEStronglyMeasurable f μ\nε : ℝ≥0∞\nh : NNReal\n⊢ (∫⁻ (x : α), ↑‖f x‖₊ ^ p.toReal ∂μ) ^ p.toReal⁻¹ = ↑h →\n    ∃ b, (ε * μ {x | ε ≤ ↑‖f x‖₊ ^ p.toReal}) ^ p.toReal⁻¹ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "MvPolynomial.eval₂_congr",
+    "file": "Mathlib/Algebra/MvPolynomial/Basic.lean",
+    "pp_hash": "7080dcdfa5f3f9cc",
+    "tactic_index": 6,
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [h]"
+      ]
+    ],
+    "flagged": [
+      "rw [h]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "rw [h]": {
+        "simp": [
+          "SUCC:2d68ddf81b08",
+          "SUCC:deb009635ef1",
+          "SUCC:e4b926c5317e"
+        ],
+        "simp only [h]": [
+          "SUCC:66af5deb4927",
+          "SUCC:c9a31a826084",
+          "SUCC:d354f667d013"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "rw [h]"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "max_aleph0_card_le_rank_fun_nat",
+    "file": "Mathlib/LinearAlgebra/Dimension/DivisionRing.lean",
+    "pp_hash": "0e09dd5fe480296f",
+    "tactic_index": 20,
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [L]",
+        "simp"
+      ]
+    ],
+    "flagged": [
+      "simp only [L]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [L]": {
+        "simp": [
+          "SUCC:0e09dd5fe480",
+          "SUCC:0e09dd5fe480",
+          "SUCC:0e09dd5fe480"
+        ],
+        "simp only [L] ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [L]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp": "case inr.intro.mk.intro.mk.intro.intro.intro.intro.intro.intro\nK R : Type u\nV V₁ V₂ V₃ : Type v\nV' V'₁ : Type v'\nV'' : Type v''\nι : Type w\nι' : Type w'\nη : Type u₁'\nφ : η → Type u_1\ninst✝ : DivisionRing K\naleph0_le : ℵ₀ ≤ Module.rank K (ℕ → K)\ncard_K : ℵ₀ < #K\nthis✝¹ : Module.rank K (ℕ → K) < #K\nιK : Type u\nbK : Basis ιK K (ℕ → K)\nL : Subfield K := Subfield.closure (range fun i => bK i.1 i.2)\nhLK : #↥L < #K\nthis✝ : Module (↥L)ᵐᵒᵖ K := Module.compHom K (RingHom.op L.subtype)\nιL : Type u\nbL : Basis ιL (↥L)ᵐᵒᵖ K\ncard_ιL : ℵ₀ ≤ #ιL\ne : ℕ ↪ ιL\nc : ιK →₀ K := bK.repr (⇑bL ∘ ⇑e)\ns : Finset ιK := c.support\nrep_e : ∑ a ∈ s, c a • bK a = ⇑bL ∘ ⇑e\nf : ℕ → { x // x ∈ s } → ↥L := fun i j => ⟨bK (↑j) i, ⋯⟩\nthis : ¬LinearIndependent (↥L)ᵐᵒᵖ f\nt : Finset ℕ\ng : ℕ → (↥L)ᵐᵒᵖ\neq0 : ∑ i ∈ t, g i • f i = 0\ni : ℕ\nhi : i ∈ t\nhgi : g i ≠ 0\n⊢ ∑ x ∈ t, g x • bL (e x) = 0",
+      "simp only [L] ; simp": "FAIL: simp made no progress"
+    }
+  },
+  {
+    "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "pp_hash": "bbbd22ade5dab85e",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:bbbd22ade5da",
+          "SUCC:bbbd22ade5da",
+          "SUCC:bbbd22ade5da"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α : Type u_1\ninst✝ : MeasurableSpace α\nμ : Measure α\np q : ℝ\nhpq : p.IsConjExponent q\nf g : α → ℝ≥0∞\nhf : AEMeasurable f μ\nhf_nontop : ∫⁻ (a : α), f a ^ p ∂μ ≠ ⊤\nhg_nontop : ∫⁻ (a : α), g a ^ q ∂μ ≠ ⊤\nhf_nonzero : ∫⁻ (a : α), f a ^ p ∂μ ≠ 0\nhg_nonzero : ∫⁻ (a : α), g a ^ q ∂μ ≠ 0\nnpf : ℝ≥0∞ := (∫⁻ (c : α), f c ^ p ∂μ) ^ (1 / p)\nh : ℝ≥0\n⊢ (∫⁻ (a : α), f a ^ p ∂μ) ^ p⁻¹ * (∫⁻ (a : α), g a ^ q ∂μ) ^ q⁻¹ = ↑h → ∃ b, ∫⁻ (a : α), f a * g a ∂μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+    "file": "Mathlib/MeasureTheory/Function/UniformIntegrable.lean",
+    "pp_hash": "7e7eae40e9ff5018",
+    "tactic_index": 4,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:7e7eae40e9ff",
+          "SUCC:7e7eae40e9ff",
+          "SUCC:7e7eae40e9ff"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "case neg\nα : Type u_1\nβ : Type u_2\nι : Type u_3\nm : MeasurableSpace α\nμ✝ : Measure α\ninst✝ : NormedAddCommGroup β\np✝ : ℝ≥0∞\nμ : Measure α\np : ℝ≥0∞\nhp' : p ≠ ⊤\ns : Set α\nhs : MeasurableSet s\nf g : α → β\nc : ℝ\nhc : 0 ≤ c\nhf : ∀ x ∈ s, dist (f x) (g x) ≤ c\nhp : ¬p = 0\nthis : ∀ (x : α), ‖s.indicator (f - g) x‖ ≤ ‖s.indicator (fun x => c) x‖\nh : ℝ≥0\n⊢ ENNReal.ofReal c * μ s ^ p.toReal⁻¹ = ↑h → ∃ b, snorm (s.indicator fun x => c) p μ = ↑b ∧ b ≤ h"
+    }
+  },
+  {
+    "theorem": "WittVector.exists_eq_pow_p_mul",
+    "file": "Mathlib/RingTheory/WittVector/DiscreteValuationRing.lean",
+    "pp_hash": "5c7aa35d40ff24d2",
+    "tactic_index": 1,
+    "histories": [
+      [
+        "constructor",
+        "simp"
+      ],
+      [
+        "simp",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; simp": [
+          "SUCC:2c22fc472a8c",
+          "SUCC:9ec187cab844",
+          "SUCC:f012d43516b7"
+        ],
+        "simp ; constructor": [
+          "SUCC:bf48926ad7cd",
+          "SUCC:90d86001690c",
+          "SUCC:b34546aa0ac0"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "IsCauSeq.of_abv_le",
+    "file": "Mathlib/Algebra/Order/CauSeq/BigOperators.lean",
+    "pp_hash": "2660d17585465928",
+    "tactic_index": 8,
+    "histories": [
+      [
+        "simp"
+      ],
+      [
+        "simp only [hg]"
+      ],
+      [
+        "simp only [hi]"
+      ],
+      [
+        "simp only [hm]"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp only [hg]": [
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546"
+        ],
+        "simp only [hi]": [
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546"
+        ],
+        "simp only [hm]": [
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546",
+          "SUCC:2660d1758546"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "simp": "FAIL: simp made no progress",
+      "simp only [hg]": "case intro\nα : Type u_1\nβ : Type u_2\ninst✝² : LinearOrderedField α\ninst✝¹ : Ring β\nabv : β → α\ninst✝ : IsAbsoluteValue abv\nf g : ℕ → β\na : ℕ → α\nn : ℕ\nhm : ∀ (m : ℕ), n ≤ m → abv (f m) ≤ a m\nhg : IsCauSeq abs fun n => ∑ i ∈ range n, a i\nε : α\nε0 : ε > 0\ni : ℕ\nhi : ∀ j ≥ i, |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nj : ℕ\nji : j ≥ max n i\nhi₁ : |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nhi₂ : |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nsub_le :\n  |∑ k ∈ range j, a k - ∑ k ∈ range (max n i), a k| ≤\n    |∑ k ∈ range j, a k - ∑ k ∈ range i, a k| + |∑ k ∈ range i, a k - ∑ k ∈ range (max n i), a k|\nthis :\n  |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| +\n      |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| <\n    ε / 2 + ε / 2\n⊢ abv (∑ i ∈ range j, f i - ∑ i ∈ range (max n i), f i) < ε",
+      "simp only [hi]": "case intro\nα : Type u_1\nβ : Type u_2\ninst✝² : LinearOrderedField α\ninst✝¹ : Ring β\nabv : β → α\ninst✝ : IsAbsoluteValue abv\nf g : ℕ → β\na : ℕ → α\nn : ℕ\nhm : ∀ (m : ℕ), n ≤ m → abv (f m) ≤ a m\nhg : IsCauSeq abs fun n => ∑ i ∈ range n, a i\nε : α\nε0 : ε > 0\ni : ℕ\nhi : ∀ j ≥ i, |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nj : ℕ\nji : j ≥ max n i\nhi₁ : |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nhi₂ : |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nsub_le :\n  |∑ k ∈ range j, a k - ∑ k ∈ range (max n i), a k| ≤\n    |∑ k ∈ range j, a k - ∑ k ∈ range i, a k| + |∑ k ∈ range i, a k - ∑ k ∈ range (max n i), a k|\nthis :\n  |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| +\n      |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| <\n    ε / 2 + ε / 2\n⊢ abv (∑ i ∈ range j, f i - ∑ i ∈ range (max n i), f i) < ε",
+      "simp only [hm]": "case intro\nα : Type u_1\nβ : Type u_2\ninst✝² : LinearOrderedField α\ninst✝¹ : Ring β\nabv : β → α\ninst✝ : IsAbsoluteValue abv\nf g : ℕ → β\na : ℕ → α\nn : ℕ\nhm : ∀ (m : ℕ), n ≤ m → abv (f m) ≤ a m\nhg : IsCauSeq abs fun n => ∑ i ∈ range n, a i\nε : α\nε0 : ε > 0\ni : ℕ\nhi : ∀ j ≥ i, |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nj : ℕ\nji : j ≥ max n i\nhi₁ : |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nhi₂ : |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| < ε / 2\nsub_le :\n  |∑ k ∈ range j, a k - ∑ k ∈ range (max n i), a k| ≤\n    |∑ k ∈ range j, a k - ∑ k ∈ range i, a k| + |∑ k ∈ range i, a k - ∑ k ∈ range (max n i), a k|\nthis :\n  |(fun n => ∑ i ∈ range n, a i) j - (fun n => ∑ i ∈ range n, a i) i| +\n      |(fun n => ∑ i ∈ range n, a i) (max n i) - (fun n => ∑ i ∈ range n, a i) i| <\n    ε / 2 + ε / 2\n⊢ abv (∑ i ∈ range j, f i - ∑ i ∈ range (max n i), f i) < ε"
+    }
+  },
+  {
+    "theorem": "Rat.num_den_mk",
+    "file": "Mathlib/Data/Rat/Lemmas.lean",
+    "pp_hash": "a604c773a66a9175",
+    "tactic_index": 3,
+    "histories": [
+      [
+        "constructor",
+        "rw [qdf]"
+      ],
+      [
+        "constructor",
+        "simp only [qdf]"
+      ],
+      [
+        "rw [qdf]",
+        "constructor"
+      ],
+      [
+        "simp only [qdf]",
+        "constructor"
+      ]
+    ],
+    "flagged": [
+      "aesop"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "aesop": {
+        "constructor ; rw [qdf]": [
+          "SUCC:a6205599c674",
+          "SUCC:f0f491301591",
+          "SUCC:99b12c372fd4"
+        ],
+        "constructor ; simp only [qdf]": [
+          "SUCC:4f7ec93fe0ea",
+          "SUCC:159963e1f75a",
+          "SUCC:2ccb02d00616"
+        ],
+        "rw [qdf] ; constructor": [
+          "SUCC:a129837cef31",
+          "SUCC:7ec7beca0c5d",
+          "SUCC:84400cd1f4ea"
+        ],
+        "simp only [qdf] ; constructor": [
+          "SUCC:8ca9dc0c5d51",
+          "SUCC:db27210b9f63",
+          "SUCC:8f1b9b242d08"
+        ]
+      }
+    },
+    "nondeterministic_probes": [
+      "aesop"
+    ],
+    "poisoned_probes": [],
+    "confirmed_probes": [],
+    "verdict": "NONDETERMINISTIC"
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "pp_hash": "686c04ce8258057d",
+    "tactic_index": 6,
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "intro h ; simp": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "simp ; intro h": [
+          "SUCC:686c04ce8258",
+          "SUCC:686c04ce8258",
+          "SUCC:686c04ce8258"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; simp": "FAIL: simp made no progress",
+      "simp ; intro h": "α✝ : Type u_1\ninst✝¹ : MeasurableSpace α✝\nμ✝ : Measure α✝\nα : Type u_2\ninst✝ : MeasurableSpace α\np q r : ℝ\nhp0_lt : 0 < p\nhpq : p < q\nhpqr : 1 / p = 1 / q + 1 / r\nμ : Measure α\nf g : α → ℝ≥0∞\nhf : AEMeasurable f μ\nhg : AEMeasurable g μ\nhp0_ne : p ≠ 0\nhp0 : 0 ≤ p\nhq0_lt : 0 < q\nhq0_ne : q ≠ 0\nh_one_div_r : 1 / r = 1 / p - 1 / q\np2 : ℝ := q / p\nh : ℝ≥0\n⊢ (∫⁻ (a : α), f a ^ q ∂μ) ^ q⁻¹ * (∫⁻ (a : α), g a ^ r ∂μ) ^ r⁻¹ = ↑h →\n    ∃ b, (∫⁻ (a : α), (f a * g a) ^ p ∂μ) ^ p⁻¹ = ↑b ∧ b ≤ h"
+    }
+  }
+]

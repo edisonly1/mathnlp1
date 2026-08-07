@@ -1,0 +1,122 @@
+{
+  "A_with_simp": {
+    "phi_deep": "⊢ f 0 = 0",
+    "phi_deep_proofs": "⊢ f 0 = 0",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "phi_full": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20471|simpH=8512890140261868142",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "A_without_simp": {
+    "phi_deep": "⊢ f 0 = 0",
+    "phi_deep_proofs": "⊢ f 0 = 0",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "phi_full": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (f (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "B_normal": {
+    "phi_deep": "⊢ (x + y).n = 2",
+    "phi_deep_proofs": "⊢ (x + y).n = 2",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxSum) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxSum) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxSum) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "B_degenerate": {
+    "phi_deep": "⊢ (x + y).n = 2",
+    "phi_deep_proofs": "⊢ (x + y).n = 2",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxZero) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxZero) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (Box.n (@HAdd.hAdd.{0, 0, 0} Box Box Box (@instHAdd.{0} Box addBoxZero) x y))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "C_scope_N1": {
+    "phi_deep": "⊢ a = b",
+    "phi_deep_proofs": "⊢ a = b",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat a b",
+    "phi_full": "⊢ @Eq.{1} Nat a b",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat a b",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic, N1]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "C_scope_N2": {
+    "phi_deep": "⊢ a = b",
+    "phi_deep_proofs": "⊢ a = b",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat a b",
+    "phi_full": "⊢ @Eq.{1} Nat a b",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat a b",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic, N2]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "D_over_true": {
+    "phi_deep": "⊢ id (id (id (id 5))) = 5",
+    "phi_deep_proofs": "⊢ id (id (id (id 5))) = 5",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (@id.{1} Nat (@id.{1} Nat ⋯)) (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "phi_full": "⊢ @Eq.{1} Nat\n    (@id.{1} Nat\n      (@id.{1} Nat (@id.{1} Nat (@id.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat\n    (@id.{1} Nat\n      (@id.{1} Nat (@id.{1} Nat (@id.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (pp.deepTerms.threshold, 2), (maxErrors, 100000), (internal.cmdlineSnapshots, true), (pp.deepTerms, false)]"
+  },
+  "D_over_false": {
+    "phi_deep": "⊢ id (id (id (id 7))) = 5",
+    "phi_deep_proofs": "⊢ id (id (id (id 7))) = 5",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (@id.{1} Nat (@id.{1} Nat ⋯)) (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "phi_full": "⊢ @Eq.{1} Nat\n    (@id.{1} Nat\n      (@id.{1} Nat (@id.{1} Nat (@id.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat\n    (@id.{1} Nat\n      (@id.{1} Nat (@id.{1} Nat (@id.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (pp.deepTerms.threshold, 2), (maxErrors, 100000), (internal.cmdlineSnapshots, true), (pp.deepTerms, false)]"
+  },
+  "E_ingoal_2": {
+    "phi_deep": "⊢ tval = 2",
+    "phi_deep_proofs": "⊢ tval = 2",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "E_ingoal_0": {
+    "phi_deep": "⊢ tval = 2",
+    "phi_deep_proofs": "⊢ tval = 2",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (@tval (Tag.mk (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))\n    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "CTRL_proof_aa": {
+    "phi_deep": "⊢ { n := 1, h := ⋯ }.n = 1",
+    "phi_deep_proofs": "⊢ { n := 1, h := qf qa qa }.n = 1",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) ⋯))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "phi_full": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) ⋯))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (qf qa qa)))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  },
+  "CTRL_proof_ab": {
+    "phi_deep": "⊢ { n := 1, h := ⋯ }.n = 1",
+    "phi_deep_proofs": "⊢ { n := 1, h := qf qa qb }.n = 1",
+    "phi_all_shallow": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) ⋯))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "phi_full": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) ⋯))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "phi_full_proofs": "⊢ @Eq.{1} Nat (Wrap.n (Wrap.mk (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (qf qa qb)))\n    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))",
+    "env_behavior": "ns=[anonymous]|open=[Lean, Lean.Elab, Lean.Elab.Tactic, Lean.Meta, Lean.Tactic]|linst=[]|simpN=20470|simpH=12788641717144040222",
+    "env_provenance": "mod=_stdin",
+    "raw_options": "[(Elab.async, true), (maxErrors, 100000), (internal.cmdlineSnapshots, true)]"
+  }
+}

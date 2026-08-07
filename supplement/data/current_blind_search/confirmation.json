@@ -1,0 +1,200 @@
+[
+  {
+    "theorem": "ModuleCat.disjoint_span_sum",
+    "file": "Mathlib/Algebra/Category/ModuleCat/Free.lean",
+    "pp_hash": "8fa2faeccedc895e",
+    "tactic_index": 0,
+    "histories": [
+      [
+        "rw [huv]"
+      ],
+      [
+        "simp only [huv]"
+      ]
+    ],
+    "flagged": [
+      "simp",
+      "simp only [hS]",
+      "simp only [huv]",
+      "simp only [hw]"
+    ],
+    "members_restored": 2,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp": {
+        "rw [huv]": [
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc"
+        ],
+        "simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [hS]": {
+        "rw [huv]": [
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc"
+        ],
+        "simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [huv]": {
+        "rw [huv]": [
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc"
+        ],
+        "simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [hw]": {
+        "rw [huv]": [
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc",
+          "SUCC:8fa2faeccedc"
+        ],
+        "simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp",
+      "simp only [hS]",
+      "simp only [huv]",
+      "simp only [hw]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "rw [huv]": "ι : Type u_1\nι' : Type u_2\nR : Type u_3\ninst✝ : Ring R\nS : ShortComplex (ModuleCat R)\nhS : S.Exact\nv : ι → ↑S.X₁\nu : ι ⊕ ι' → ↑S.X₂\nhw : LinearIndependent R (⇑(ConcreteCategory.hom S.g) ∘ u ∘ Sum.inr)\nhuv : u ∘ Sum.inl = ⇑(ConcreteCategory.hom S.f) ∘ v\n⊢ Disjoint (span R (range (⇑(ConcreteCategory.hom S.f) ∘ v))) (span R (range (u ∘ Sum.inr)))",
+      "simp only [huv]": "FAIL: `simp` made no progress"
+    }
+  },
+  {
+    "theorem": "ModuleCat.disjoint_span_sum",
+    "file": "Mathlib/Algebra/Category/ModuleCat/Free.lean",
+    "pp_hash": "bd61d2125318eef7",
+    "tactic_index": 0,
+    "histories": [
+      [
+        "intro h",
+        "rw [huv]"
+      ],
+      [
+        "intro h",
+        "simp only [huv]"
+      ],
+      [
+        "rw [huv]",
+        "intro h"
+      ],
+      [
+        "simp only [huv]",
+        "intro h"
+      ]
+    ],
+    "flagged": [
+      "simp only [hS]",
+      "simp only [huv]",
+      "simp only [hw]"
+    ],
+    "members_restored": 4,
+    "renderings_identical": true,
+    "repeat_table": {
+      "simp only [hS]": {
+        "intro h ; rw [huv]": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "intro h ; simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "rw [huv] ; intro h": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "simp only [huv] ; intro h": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [huv]": {
+        "intro h ; rw [huv]": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "intro h ; simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "rw [huv] ; intro h": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "simp only [huv] ; intro h": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      },
+      "simp only [hw]": {
+        "intro h ; rw [huv]": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "intro h ; simp only [huv]": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ],
+        "rw [huv] ; intro h": [
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318",
+          "SUCC:bd61d2125318"
+        ],
+        "simp only [huv] ; intro h": [
+          "FAIL",
+          "FAIL",
+          "FAIL"
+        ]
+      }
+    },
+    "nondeterministic_probes": [],
+    "poisoned_probes": [],
+    "confirmed_probes": [
+      "simp only [hS]",
+      "simp only [huv]",
+      "simp only [hw]"
+    ],
+    "verdict": "CONFIRMED",
+    "successor_pp": {
+      "intro h ; rw [huv]": "ι : Type u_1\nι' : Type u_2\nR : Type u_3\ninst✝ : Ring R\nS : ShortComplex (ModuleCat R)\nhS : S.Exact\nv : ι → ↑S.X₁\nu : ι ⊕ ι' → ↑S.X₂\nhw : LinearIndependent R (⇑(ConcreteCategory.hom S.g) ∘ u ∘ Sum.inr)\nhuv : u ∘ Sum.inl = ⇑(ConcreteCategory.hom S.f) ∘ v\nh : Submodule R ↑S.X₂\n⊢ h ≤ span R (range (⇑(ConcreteCategory.hom S.f) ∘ v)) → h ≤ span R (range (u ∘ Sum.inr)) → h ≤ ⊥",
+      "intro h ; simp only [huv]": "FAIL: `simp` made no progress",
+      "rw [huv] ; intro h": "ι : Type u_1\nι' : Type u_2\nR : Type u_3\ninst✝ : Ring R\nS : ShortComplex (ModuleCat R)\nhS : S.Exact\nv : ι → ↑S.X₁\nu : ι ⊕ ι' → ↑S.X₂\nhw : LinearIndependent R (⇑(ConcreteCategory.hom S.g) ∘ u ∘ Sum.inr)\nhuv : u ∘ Sum.inl = ⇑(ConcreteCategory.hom S.f) ∘ v\nh : Submodule R ↑S.X₂\n⊢ h ≤ span R (range (⇑(ConcreteCategory.hom S.f) ∘ v)) → h ≤ span R (range (u ∘ Sum.inr)) → h ≤ ⊥",
+      "simp only [huv] ; intro h": "FAIL: `simp` made no progress"
+    }
+  }
+]

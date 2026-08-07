@@ -1,0 +1,375 @@
+{
+  "protocol": "fixed-seed uniform sample of compiled Mathlib source files",
+  "repo_url": "https://github.com/leanprover-community/mathlib4",
+  "commit": "3b3cdbb692938d509d6fb29fc5e50638985aecf1",
+  "lean_toolchain": "leanprover/lean4:v4.33.0-rc1",
+  "seed": 20260806,
+  "eligible_files": 8302,
+  "selected_files": 60,
+  "successfully_traced_files": 60,
+  "states": 2507,
+  "theorems": 989,
+  "trace_rows": [
+    {
+      "file": "Mathlib/Algebra/Category/ModuleCat/Free.lean",
+      "returncode": 0,
+      "seconds": 11.450448274612427,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Group/Int/Units.lean",
+      "returncode": 0,
+      "seconds": 6.1984336376190186,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Homology/Embedding/Boundary.lean",
+      "returncode": 0,
+      "seconds": 7.748697757720947,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Homology/ShortComplex/HomologicalComplex.lean",
+      "returncode": 0,
+      "seconds": 11.684301853179932,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Lie/AdjointAction/Derivation.lean",
+      "returncode": 0,
+      "seconds": 10.158906936645508,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Lie/Weights/Linear.lean",
+      "returncode": 0,
+      "seconds": 11.358787059783936,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/MonoidAlgebra/ToDirectSum.lean",
+      "returncode": 0,
+      "seconds": 7.728119611740112,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Order/Sub/WithTop.lean",
+      "returncode": 0,
+      "seconds": 6.8009068965911865,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Algebra/Ring/Periodic.lean",
+      "returncode": 0,
+      "seconds": 9.181002140045166,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/AlgebraicGeometry/Birational/RationalMap.lean",
+      "returncode": 0,
+      "seconds": 20.17078709602356,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Analysis/Complex/ReImTopology.lean",
+      "returncode": 0,
+      "seconds": 8.663655996322632,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Analysis/Complex/RemovableSingularity.lean",
+      "returncode": 0,
+      "seconds": 11.18549108505249,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Analysis/Meromorphic/IsolatedZeros.lean",
+      "returncode": 0,
+      "seconds": 9.566195964813232,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Analysis/Normed/Affine/ContinuousAffineMap.lean",
+      "returncode": 0,
+      "seconds": 10.041505813598633,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Analysis/SpecialFunctions/Trigonometric/Cotangent.lean",
+      "returncode": 0,
+      "seconds": 22.70392394065857,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/FiberedCategory/Cocartesian.lean",
+      "returncode": 0,
+      "seconds": 8.167004108428955,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Galois/Equivalence.lean",
+      "returncode": 0,
+      "seconds": 9.007486820220947,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Generator/Basic.lean",
+      "returncode": 0,
+      "seconds": 10.470813035964966,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/LiftingProperties/Adjunction.lean",
+      "returncode": 0,
+      "seconds": 7.957979917526245,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Limits/FunctorCategory/Filtered.lean",
+      "returncode": 0,
+      "seconds": 7.411180019378662,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Localization/Quotient.lean",
+      "returncode": 0,
+      "seconds": 6.989356994628906,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Monad/Adjunction.lean",
+      "returncode": 0,
+      "seconds": 9.683564901351929,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Sites/Hypercover/Homotopy.lean",
+      "returncode": 0,
+      "seconds": 11.15537405014038,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Sites/PrecoverageToGrothendieck.lean",
+      "returncode": 0,
+      "seconds": 16.94159197807312,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/SmallObject/TransfiniteIteration.lean",
+      "returncode": 0,
+      "seconds": 8.807168960571289,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/CategoryTheory/Subobject/Lattice.lean",
+      "returncode": 0,
+      "seconds": 11.030762910842896,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Combinatorics/Hindman.lean",
+      "returncode": 0,
+      "seconds": 8.402836084365845,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Combinatorics/SimpleGraph/Finsubgraph.lean",
+      "returncode": 0,
+      "seconds": 8.203508138656616,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Condensed/Light/Basic.lean",
+      "returncode": 0,
+      "seconds": 8.304796934127808,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Condensed/Light/EffectiveEpi.lean",
+      "returncode": 0,
+      "seconds": 9.930158853530884,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Data/Finset/Sym.lean",
+      "returncode": 0,
+      "seconds": 8.415103912353516,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Data/PFunctor/Multivariate/M.lean",
+      "returncode": 0,
+      "seconds": 9.776962995529175,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Data/Set/Card.lean",
+      "returncode": 0,
+      "seconds": 14.660241842269897,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Data/ZMod/Units.lean",
+      "returncode": 0,
+      "seconds": 9.96643590927124,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Dynamics/Ergodic/AddCircleAdd.lean",
+      "returncode": 0,
+      "seconds": 12.215278148651123,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Dynamics/OmegaLimit.lean",
+      "returncode": 0,
+      "seconds": 10.052011013031006,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/FieldTheory/PurelyInseparable/Exponent.lean",
+      "returncode": 0,
+      "seconds": 30.02514886856079,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Geometry/Euclidean/Sphere/SecondInter.lean",
+      "returncode": 0,
+      "seconds": 11.507481813430786,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/GroupTheory/Coxeter/Inversion.lean",
+      "returncode": 0,
+      "seconds": 11.687040090560913,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/LinearAlgebra/Eigenspace/Basic.lean",
+      "returncode": 0,
+      "seconds": 19.165524005889893,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/LinearAlgebra/Matrix/Reindex.lean",
+      "returncode": 0,
+      "seconds": 8.153657913208008,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/MeasureTheory/Function/ConditionalExpectation/CondexpL1.lean",
+      "returncode": 0,
+      "seconds": 21.132492065429688,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/NumberTheory/LegendreSymbol/QuadraticChar/Basic.lean",
+      "returncode": 0,
+      "seconds": 9.410646915435791,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/NumberTheory/ModularForms/EisensteinSeries/E2/Defs.lean",
+      "returncode": 0,
+      "seconds": 12.859878063201904,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Order/Category/BddOrd.lean",
+      "returncode": 0,
+      "seconds": 23.285260915756226,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Order/ConditionallyCompleteLattice/Defs.lean",
+      "returncode": 0,
+      "seconds": 6.723331928253174,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Order/Interval/Finset/Floor.lean",
+      "returncode": 0,
+      "seconds": 7.609579086303711,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Order/Interval/Set/InitialSeg.lean",
+      "returncode": 0,
+      "seconds": 6.741320848464966,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Basic.lean",
+      "returncode": 0,
+      "seconds": 16.3539719581604,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/RingTheory/Localization/Away/Basic.lean",
+      "returncode": 0,
+      "seconds": 20.404056072235107,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/RingTheory/Localization/NormTrace.lean",
+      "returncode": 0,
+      "seconds": 9.476625919342041,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/RingTheory/Polynomial/IrreducibleRing.lean",
+      "returncode": 0,
+      "seconds": 10.392030954360962,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Tactic/ClickSuggestions/SectionState.lean",
+      "returncode": 0,
+      "seconds": 6.138499975204468,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Tactic/IrreducibleDef.lean",
+      "returncode": 0,
+      "seconds": 6.413033962249756,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Tactic/NormNum.lean",
+      "returncode": 0,
+      "seconds": 6.998061895370483,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Tactic/Widget/SelectInsertParamsClass.lean",
+      "returncode": 0,
+      "seconds": 5.9859583377838135,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Topology/Algebra/ContinuousMonoidHom.lean",
+      "returncode": 0,
+      "seconds": 9.452044010162354,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Topology/Instances/Rat.lean",
+      "returncode": 0,
+      "seconds": 8.209436893463135,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Topology/MetricSpace/UniformConvergence.lean",
+      "returncode": 0,
+      "seconds": 10.97845721244812,
+      "stderr_tail": ""
+    },
+    {
+      "file": "Mathlib/Topology/UniformSpace/CompleteSeparated.lean",
+      "returncode": 0,
+      "seconds": 8.282629013061523,
+      "stderr_tail": ""
+    }
+  ],
+  "parse_failures": []
+}

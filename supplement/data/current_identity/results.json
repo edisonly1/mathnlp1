@@ -1,0 +1,97 @@
+{
+  "evaluated_lean_dojo": {
+    "source": "../.venv/lib/python3.11/site-packages/lean_dojo/interaction/dojo.py",
+    "source_sha256": "93c3e53f840c1a8ce102a61f4d995a04b5f1b0ab458a8e54667ecdd47860b040",
+    "tactic_state_fields": {
+      "pp": {
+        "annotation": "str",
+        "default": null
+      },
+      "id": {
+        "annotation": "int",
+        "default": "field(compare=False)"
+      },
+      "message": {
+        "annotation": "Optional[str]",
+        "default": "field(default=None, compare=False)"
+      },
+      "goals": {
+        "annotation": "List[Goal]",
+        "default": "field(init=False, compare=False, repr=False)"
+      }
+    },
+    "pretty_printed_state_participates_in_equality": true,
+    "executable_id_excluded_from_equality": true
+  },
+  "lean_dojo_v2": {
+    "version": "1.0.9",
+    "wheel": "lean_dojo_v2-1.0.9-py3-none-any.whl",
+    "wheel_sha256": "635e8f991bdfb2380f444595569160332f39994aece22083e7e8eff9d865ef57",
+    "legacy_internal_node_fields": {
+      "state": {
+        "annotation": "TacticState",
+        "default": "field(compare=True)"
+      },
+      "cumulative_logprob": {
+        "annotation": "float",
+        "default": "field(compare=False, repr=False)"
+      },
+      "in_edges": {
+        "annotation": "List['Edge']",
+        "default": "field(default_factory=list, init=False, compare=False, repr=False)"
+      },
+      "_out_edges": {
+        "annotation": "Optional[List['Edge']]",
+        "default": "field(default=None, init=False, compare=False, repr=False)"
+      },
+      "_status": {
+        "annotation": "Status",
+        "default": "field(default=Status.OPEN, init=False, compare=False, repr=True)"
+      },
+      "_distance_to_proof": {
+        "annotation": "float",
+        "default": "field(default=math.inf, init=False, compare=False, repr=False)"
+      }
+    },
+    "legacy_interaction_state_definition_present_in_wheel": false,
+    "active_prover_uses_history_stack": true,
+    "active_prover_uses_state_dictionary": false,
+    "active_policy_uses_str_goal_state": {
+      "lean_dojo_v2/prover/external_prover.py": true,
+      "lean_dojo_v2/prover/hf_prover.py": true,
+      "lean_dojo_v2/prover/retrieval_prover.py": true
+    }
+  },
+  "pantograph": {
+    "commit": "f8aee320ee5550ea2677e414534618a61e7e1497",
+    "goal_state_source_sha256": "42661940bdc81a48533cfff18bcccfdfc42cb427ae45627023abf6bb8c653ccc",
+    "goal_state_fields": {
+      "state_id": {
+        "annotation": "int",
+        "default": null
+      },
+      "goals": {
+        "annotation": "list[Goal]",
+        "default": null
+      },
+      "messages": {
+        "annotation": "list[Message]",
+        "default": null
+      },
+      "_sentinel": {
+        "annotation": "list[int]",
+        "default": null
+      }
+    },
+    "same_rendering_different_handle": {
+      "renderings_equal": true,
+      "objects_equal": false,
+      "hashable": false
+    }
+  },
+  "conclusion": {
+    "evaluated_prover_rendering_keyed": true,
+    "current_v2_active_prover_rendering_keyed": false,
+    "current_v2_model_rendering_can_alias": true
+  }
+}

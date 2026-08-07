@@ -1,0 +1,103 @@
+{
+  "protocol": {
+    "generator": "l3lab/ntp-mathlib-st-deepseek-coder-1.3b",
+    "revision": "7c00b1175a82ea993732e5eff727b300e7589bb5",
+    "candidate_construction": "one deterministic maximum-width beam list per rendering; nested prefixes",
+    "max_new_tokens": 16,
+    "labels": "fresh repeated Lean executions on every hidden member",
+    "k": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ]
+  },
+  "corpus": {
+    "records": 70,
+    "complete_classes": 70,
+    "theorems": 53,
+    "members": 178,
+    "mechanisms": {
+      "coercion": 56,
+      "Ne-vs-Not": 1,
+      "local-unfolding": 4,
+      "Fin-eta": 4,
+      "instance-path": 2,
+      "residual": 2,
+      "proof-term": 1
+    }
+  },
+  "sweep": [
+    {
+      "k": 1,
+      "classes": 70,
+      "members": 178,
+      "mean_candidates_available": 1.0,
+      "member_oracle_coverage": 0.37640449438202245,
+      "best_shared_action_coverage": 0.37640449438202245,
+      "member_specific_headroom": 0.0,
+      "member_specific_extra_successes": 0,
+      "acceptance_ambiguous_classes": 1,
+      "acceptance_ambiguous_actions": 1,
+      "fully_covered_classes_with_common_action": 32,
+      "unstable_state_action_labels": 0
+    },
+    {
+      "k": 2,
+      "classes": 70,
+      "members": 178,
+      "mean_candidates_available": 2.0,
+      "member_oracle_coverage": 0.797752808988764,
+      "best_shared_action_coverage": 0.797752808988764,
+      "member_specific_headroom": 0.0,
+      "member_specific_extra_successes": 0,
+      "acceptance_ambiguous_classes": 2,
+      "acceptance_ambiguous_actions": 2,
+      "fully_covered_classes_with_common_action": 58,
+      "unstable_state_action_labels": 0
+    },
+    {
+      "k": 4,
+      "classes": 70,
+      "members": 178,
+      "mean_candidates_available": 4.0,
+      "member_oracle_coverage": 0.8820224719101124,
+      "best_shared_action_coverage": 0.8820224719101124,
+      "member_specific_headroom": 0.0,
+      "member_specific_extra_successes": 0,
+      "acceptance_ambiguous_classes": 2,
+      "acceptance_ambiguous_actions": 2,
+      "fully_covered_classes_with_common_action": 65,
+      "unstable_state_action_labels": 0
+    },
+    {
+      "k": 8,
+      "classes": 70,
+      "members": 178,
+      "mean_candidates_available": 7.5,
+      "member_oracle_coverage": 0.9382022471910112,
+      "best_shared_action_coverage": 0.9382022471910112,
+      "member_specific_headroom": 0.0,
+      "member_specific_extra_successes": 0,
+      "acceptance_ambiguous_classes": 2,
+      "acceptance_ambiguous_actions": 8,
+      "fully_covered_classes_with_common_action": 67,
+      "unstable_state_action_labels": 0
+    },
+    {
+      "k": 16,
+      "classes": 70,
+      "members": 178,
+      "mean_candidates_available": 11.857142857142858,
+      "member_oracle_coverage": 0.9382022471910112,
+      "best_shared_action_coverage": 0.9382022471910112,
+      "member_specific_headroom": 0.0,
+      "member_specific_extra_successes": 0,
+      "acceptance_ambiguous_classes": 2,
+      "acceptance_ambiguous_actions": 8,
+      "fully_covered_classes_with_common_action": 67,
+      "unstable_state_action_labels": 0
+    }
+  ]
+}

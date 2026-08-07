@@ -1,0 +1,103 @@
+# Gate-1 audit configuration. Everything version-locked (blueprint §7.1, §11.3).
+
+corpus:
+  # Primary reproducibility track: the commit shipped with LeanDojo Benchmark 4.
+  # Read the EXACT commit from the benchmark tarball metadata and paste it here so the
+  # traced states match the public ReProver checkpoint's training/eval distribution.
+  repo_url: "https://github.com/leanprover-community/mathlib4"
+  # Source of truth: LeanDojo's own benchmark-generation script,
+  # scripts/generate-benchmark-lean4.ipynb, which constructs
+  #   LeanGitRepo("https://github.com/leanprover-community/mathlib4", "29dcec...")
+  # NOTE: an older Benchmark 4 release traced 3ce43c18f614b76e161f911b75a3e1ef641620ff
+  # (21 Oct 2023, 102,514 theorems). Confirm against the metadata of the tarball whose
+  # ReProver checkpoint you actually use before quoting §7.1 track-1 fidelity.
+  repo_commit: "29dcec074de168ac2bf835a77ef68bbe069194c5"
+  # Provenance of the traced corpus. This is the value in the pinned commit's
+  # lean-toolchain file; LeanDojo executes that repository under this toolchain.
+  lean_toolchain: "leanprover/lean4:v4.10.0-rc1"
+  cache_dir: ".leandojo_cache"
+
+regression:
+  # Gate-0's standalone certified witnesses intentionally target the newer stack on which they
+  # were constructed. Keep this separate from corpus provenance.
+  lean_toolchain: "leanprover/lean4:v4.32.0"
+
+sampling:
+  # Pilot = 20,000 (blueprint §10.2); main = 100k-250k (§10.3, §7.2).
+  n_states: 20000
+  seed: 20260724
+  # Stratify by these keys (blueprint §7.2). Values are read from provenance.
+  stratify_by: [repo_file, proof_depth, goal_count, token_length, has_ellipsis, tactic_family]
+  # Do NOT dedup by visible string before fingerprinting — duplication IS the object of study.
+  dedup_visible_before_fingerprint: false
+
+fingerprint:
+  # φ_full rendering options that reveal what default pp hides (blueprint §3.3, §4.1).
+  pp_all: true                 # pp.all: show instances, implicits, universes, no notation folding
+  include_env_digest: true     # namespace + opens + local instances + simp set + declaration count
+  alpha_normalize_local_names: true
+  # Extraction channel: 'throwError' injects the fingerprint tactic via Dojo.run_tac and reads
+  # it back from the LeanError message (no repo modification). 'frontend' uses the re-elaboration
+  # exporter in lean_fingerprint/ (more faithful, needs the file on the import path).
+  channel: "throwError"
+
+observation:
+  tokenizer: "kaiyuy/leandojo-lean4-tacgen-byt5-small"   # ReProver tacgen (ByT5) tokenizer
+  max_input_length: 2300        # ReProver generator max_seq_len; CONFIRM against checkpoint config
+  retriever: "state_only"       # 'state_only' | 'reprover' (real retriever; see observation.py)
+  reprover_retriever: "kaiyuy/leandojo-lean4-retriever-byt5-small"
+  num_retrieved_premises: 100
+  # Which observation layers to group on (blueprint §7.5).
+  # φ_tok is DISABLED by default. ReProver's ByT5 tokenizer is byte-level, so identical φ_state
+  # yields byte-identical token input: the φ_tok layer reproduces the φ_state classes under a
+  # different hash, contributing no information while doubling fingerprint+replay cost. Measured
+  # in probe4: 7 classes per layer, 0 key overlap, 4 unique divergent classes counted as 8 —
+  # which produced a FALSE GO until `evaluate_gate1` was made to count the primary layer only.
+  # Re-enable only with a real retriever wired (φ_RAG ≠ φ_state), where the layers can differ,
+  # or to study truncation-induced aliasing specifically.
+  group_on: [phi_state]
+
+replay:
+  # Preregistered deterministic CORE panel (blueprint §7.6). Exploratory panel handled separately.
+  core_panel: ["rfl", "assumption", "simp", "simpa", "constructor"]
+  # Structurally-instantiated tactics: only fired when the identifier appears in φ_state.
+  structural_panel: ["rw", "apply", "exact"]
+  repeats: 2                    # blueprint §7.7: repeat each ≥2; invalidate if not reproducible
+  hard_timeout_s: 20            # per tactic; TIMEOUT is never counted as logical FAILURE (§7.6)
+  reverify_nondivergent_fraction: 0.05   # rerun 5% of non-divergent to estimate silent replay error
+  # 'session': reuse one Dojo per theorem and fan the panel out from the restored state. A
+  # fresh Dojo per (state, tactic, repeat) costs 100+ Mathlib starts per class and is not
+  # affordable at pilot scale. Cross-process confirmation still happens: the orchestrator
+  # drops all sessions before re-running every detected divergence (§10.2 cond 5).
+  # 'process': fresh Dojo per repeat — strict §7.7 isolation, for the §8.3 manual audit.
+  isolation: "session"
+  # Wall-clock watchdogs, enforced by SIGALRM in replay.py INDEPENDENTLY of LeanDojo's own
+  # `Dojo(timeout=...)`. That timeout does not cover session startup: a 200-file probe hung with
+  # four Lean subprocesses alive 2+ hours each on a 20s setting, having burned 0.2s CPU apiece.
+  session_open_timeout_s: 240   # deep Mathlib files (Probability/Kernel, RingTheory) are slow
+  tactic_watchdog_s: 90         # per run_tac / fingerprint / prefix fast-forward
+  goal_order_sensitive: false  # if false, successor comparison is multiset-normalized (§4.2)
+
+model:
+  tacgen: "kaiyuy/leandojo-lean4-tacgen-byt5-small"
+  bfs_prover: "ByteDance-Seed/BFS-Prover-V2-7B"
+  bfs_revision: "533d59fc6b5e04ae6e2c25f1d88cf921061169d0"
+  # NB: the HF org is `kaiyuy`, not `kaiyu`. The previous identifier 404s, so any
+  # --with-model run would have failed at checkpoint load.
+  top_k: [1, 4, 8]             # blueprint §7.9: replay top-1/4/8 on every member
+  num_beams: 8
+  do_sample: false             # deterministic beam search — identical tokens ⇒ identical output
+  device: "cpu"                # "cuda" (12 GB) | "mps" (Apple) | "cpu".
+                               # ByT5-small is ~300M params; CPU is adequate and
+                               # avoids mps kernel gaps in beam search.
+
+audit_budget:
+  manual_audit_pilot_max: 10   # blueprint §8.3
+  manual_audit_total_max: 20
+
+repair_ladder:
+  # blueprint §7.10 R1..R8. Each entry: (name, token/byte-cost is measured, not assumed).
+  rungs: ["R1_default", "R2_full_nonproof", "R3_proofterm_negctrl", "R4_struct_hash",
+          "R5_mvar_digest", "R6_env_digest", "R7_retrieved_premise", "R8_full_repaired"]
+
+output_dir: "runs"

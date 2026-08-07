@@ -1,0 +1,1869 @@
+{
+  "protocol": {
+    "unit": "one accepted and one rejected member per confirmed class-action pair",
+    "split": "5-fold grouped by theorem",
+    "secondary_split": "leave one hidden-delta mechanism group out",
+    "mechanism_macro": "unweighted mean across named held-out mechanisms",
+    "all_group_macro": "unweighted mean including the unresolved group",
+    "classifier": "hashed linear logistic evaluator with action-feature crosses",
+    "dimension": 16384,
+    "l2": 0.001,
+    "steps": 500,
+    "seed": 20260803
+  },
+  "corpus": {
+    "classes": 68,
+    "theorems": 51,
+    "contradictory_pairs": 103,
+    "examples": 206,
+    "mechanisms": {
+      "coercion": 78,
+      "residual": 4,
+      "Fin-eta": 10,
+      "instance-path": 7,
+      "local-unfolding": 4
+    },
+    "mechanism_classes": {
+      "local-unfolding": 4,
+      "coercion": 56,
+      "instance-path": 2,
+      "Fin-eta": 4,
+      "residual": 2
+    }
+  },
+  "representations": {
+    "default": {
+      "paired_ranking_accuracy": 0.5,
+      "theorem_cluster_bootstrap_95": [
+        0.5,
+        0.5
+      ],
+      "mean_pair_margin": 0.0,
+      "classification_accuracy": 0.5,
+      "brier": 0.25,
+      "by_mechanism_paired_accuracy": {
+        "Fin-eta": {
+          "pairs": 10,
+          "accuracy": 0.5
+        },
+        "coercion": {
+          "pairs": 78,
+          "accuracy": 0.5
+        },
+        "instance-path": {
+          "pairs": 7,
+          "accuracy": 0.5
+        },
+        "local-unfolding": {
+          "pairs": 4,
+          "accuracy": 0.5
+        },
+        "residual": {
+          "pairs": 4,
+          "accuracy": 0.5
+        }
+      },
+      "leave_one_mechanism_out": {
+        "Fin-eta": {
+          "pairs": 10,
+          "classes": 4,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "coercion",
+            "instance-path",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "coercion": {
+          "pairs": 78,
+          "classes": 56,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "Fin-eta",
+            "instance-path",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "instance-path": {
+          "pairs": 7,
+          "classes": 2,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "local-unfolding": {
+          "pairs": 4,
+          "classes": 4,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "instance-path",
+            "residual"
+          ]
+        },
+        "residual": {
+          "pairs": 4,
+          "classes": 2,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "instance-path",
+            "local-unfolding"
+          ]
+        }
+      },
+      "mechanism_macro_paired_accuracy": 0.5,
+      "all_group_macro_paired_accuracy": 0.5,
+      "all_group_pair_weighted_paired_accuracy": 0.5,
+      "pair_predictions": [
+        {
+          "pair_id": "ProbabilityTheory.kernel.densityProcess_le_one|00c9c6d8af4acb31|simp",
+          "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ProbabilityTheory.kernel.densityProcess_le_one|00c9c6d8af4acb31|simp_all",
+          "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|aesop",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|simp",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|simp_all",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.norm_indicatorConstLp_le|7a5740c2f76a925c|simp",
+          "theorem": "MeasureTheory.norm_indicatorConstLp_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le_aux|662881225e347611|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MonotoneOn.eVariationOn_le|67cfd8096c0b4b1f|simp",
+          "theorem": "MonotoneOn.eVariationOn_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp only [hf]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp only [v_eq]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp_all",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.meas_le_lintegral₀|6d349828345ecf27|simp",
+          "theorem": "MeasureTheory.meas_le_lintegral₀",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.meas_le_lintegral₀|6d349828345ecf27|simp_all",
+          "theorem": "MeasureTheory.meas_le_lintegral₀",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_prod_lintegral_pow_le|3ca31d6d89eda5ee|simp",
+          "theorem": "MeasureTheory.lintegral_prod_lintegral_pow_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.le_tsum_schlomilch|ab5c58c24520ed21|simp",
+          "theorem": "ENNReal.le_tsum_schlomilch",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable|0bf68df7abe405e2|simp",
+          "theorem": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable|0bf68df7abe405e2|simp_all",
+          "theorem": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton|bec38ea99cbd7698|simp",
+          "theorem": "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "WithLp.prod_antilipschitzWith_equiv_aux|abf2259e20a734d5|simp",
+          "theorem": "WithLp.prod_antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "WithLp.prod_antilipschitzWith_equiv_aux|abf2259e20a734d5|simp_all",
+          "theorem": "WithLp.prod_antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|54802ded1f286f85|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "BumpCovering.sum_toPOUFun_eq|6ee4b6555ffb4c97|simp only [this]",
+          "theorem": "BumpCovering.sum_toPOUFun_eq",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.pow_mul_meas_ge_le_snorm|9af9c47ac8902711|simp",
+          "theorem": "MeasureTheory.pow_mul_meas_ge_le_snorm",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "IsCauSeq.of_abv_le|2660d17585465928|simp",
+          "theorem": "IsCauSeq.of_abv_le",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "tendsto_integral_exp_smul_cocompact|fbee2d4e4d51cd53|simp only [V']",
+          "theorem": "tendsto_integral_exp_smul_cocompact",
+          "mechanism": "local-unfolding",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm|dc12987d57bfa877|simp",
+          "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm|dc12987d57bfa877|simp_all",
+          "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|b6483c7ce07df2e5|simp",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|b6483c7ce07df2e5|simp_all",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|aesop",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hf]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hp]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hp₀]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp_all",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt|55cdc5980de3ee26|simp",
+          "theorem": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt|55cdc5980de3ee26|simp_all",
+          "theorem": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "PiLp.antilipschitzWith_equiv_aux|e425140c64354f1f|simp",
+          "theorem": "PiLp.antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "PiLp.antilipschitzWith_equiv_aux|e425140c64354f1f|simp_all",
+          "theorem": "PiLp.antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|3c982d4b4b3b58bc|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le_aux|0f19b09a006d34e8|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ProbabilityTheory.sum_prob_mem_Ioc_le|5a1993b8a12c4752|simp",
+          "theorem": "ProbabilityTheory.sum_prob_mem_Ioc_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ProbabilityTheory.sum_prob_mem_Ioc_le|5a1993b8a12c4752|simp_all",
+          "theorem": "ProbabilityTheory.sum_prob_mem_Ioc_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre|dc70e1e78e7f9a19|simp",
+          "theorem": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre|dc70e1e78e7f9a19|simp_all",
+          "theorem": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|fed0e6786dd5fe97|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|fed0e6786dd5fe97|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.smul_le_stoppedValue_hitting|3838c7ecd7cebdfb|simp",
+          "theorem": "MeasureTheory.smul_le_stoppedValue_hitting",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.smul_le_stoppedValue_hitting|3838c7ecd7cebdfb|simp_all",
+          "theorem": "MeasureTheory.smul_le_stoppedValue_hitting",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|eaec19d160a437b5|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate|c56244ffbc61d74d|simp",
+          "theorem": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate|c56244ffbc61d74d|simp_all",
+          "theorem": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top|ccb4123b231919ff|simp",
+          "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|07226ed2f4af7875|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "NNReal.count_const_le_le_of_tsum_le|dda9f44493dd61d8|simp",
+          "theorem": "NNReal.count_const_le_le_of_tsum_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "max_aleph0_card_le_rank_fun_nat|0e09dd5fe480296f|simp only [L]",
+          "theorem": "max_aleph0_card_le_rank_fun_nat",
+          "mechanism": "local-unfolding",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr|686c04ce8258057d|simp",
+          "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|7555e1702ed54909|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|7555e1702ed54909|simp_all",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr|a5ee4e13f608b073|simp",
+          "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|9fa045dd99ee24f3|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|60509dcbccdabe4b|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel|c10a7a07c6be073f|simp",
+          "theorem": "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal|56f3385bca2b5c66|simp",
+          "theorem": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal|56f3385bca2b5c66|simp_all",
+          "theorem": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [hf]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [v_eq]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [zero_mem]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_le_self_of_le_one|775e3d3a2918d2ec|simp",
+          "theorem": "ENNReal.rpow_le_self_of_le_one",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.tsum_condensed_le|49bd9b6a2fc4b990|simp",
+          "theorem": "ENNReal.tsum_condensed_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.tsum_condensed_le|49bd9b6a2fc4b990|simp_all",
+          "theorem": "ENNReal.tsum_condensed_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snormEssSup_add_le|4494b0265a4242f1|simp",
+          "theorem": "MeasureTheory.snormEssSup_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snormEssSup_add_le|4494b0265a4242f1|simp_all",
+          "theorem": "MeasureTheory.snormEssSup_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|e9ae37045a02e44c|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|e9ae37045a02e44c|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le|006999b090269699|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le|006999b090269699|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared|c3159ce8dfd81494|simp only [P]",
+          "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq|c92816e18f9ba9c4|simp",
+          "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "Tuple.bubble_sort_induction'|e93dc754a3c75fcb|simp only [this]",
+          "theorem": "Tuple.bubble_sort_induction'",
+          "mechanism": "local-unfolding",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top|bbbd22ade5dab85e|simp",
+          "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq|64187459e5f60212|simp",
+          "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ|82894c12214a8eda|simp",
+          "theorem": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ|82894c12214a8eda|simp_all",
+          "theorem": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Content.innerContent_exists_compact|e5445c3a9279d21b|simp",
+          "theorem": "MeasureTheory.Content.innerContent_exists_compact",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.exists_pos_tsum_mul_lt_of_countable|91e14f701888108d|simp",
+          "theorem": "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.Lp_add_le|52813a33960b1b40|simp",
+          "theorem": "ENNReal.Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|91bf907ead75c8c2|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Lp.nnnorm_le_of_ae_bound|c8d9ae6fed9e88f7|simp",
+          "theorem": "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Lp.nnnorm_le_of_ae_bound|c8d9ae6fed9e88f7|simp_all",
+          "theorem": "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq|cc5c45b20a18cde1|simp",
+          "theorem": "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "LipschitzWith.uncurry|1c9f72c1733ab235|simp",
+          "theorem": "LipschitzWith.uncurry",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "LipschitzWith.uncurry|1c9f72c1733ab235|simp_all",
+          "theorem": "LipschitzWith.uncurry",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add|f059d7ec5e3053db|simp",
+          "theorem": "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "NNReal.count_const_le_le_of_tsum_le|bb6f5032b3291679|simp",
+          "theorem": "NNReal.count_const_le_le_of_tsum_le",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.mul_meas_ge_le_pow_snorm|39fd6366fdaf9800|simp",
+          "theorem": "MeasureTheory.mul_meas_ge_le_pow_snorm",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared|53c08477581c5ca5|simp only [P]",
+          "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+          "mechanism": "Fin-eta",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_sub_le_of_dist_bdd|02b37d0e4b540108|simp",
+          "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|6122b0b41fdcb6ed|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "Tuple.bubble_sort_induction'|7f391f523e98cc8e|simp only [this]",
+          "theorem": "Tuple.bubble_sort_induction'",
+          "mechanism": "local-unfolding",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_sub_le_of_dist_bdd|7e7eae40e9ff5018|simp",
+          "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+          "mechanism": "coercion",
+          "margin": 0.0,
+          "correct": 0.5
+        }
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "ENNReal.rpow_add_rpow_le",
+            "ENNReal.rpow_le_self_of_le_one",
+            "HasFPowerSeriesOnBall.coeff_zero",
+            "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+            "MeasureTheory.lintegral_prod_lintegral_pow_le",
+            "MeasureTheory.smul_le_stoppedValue_hitting",
+            "PiLp.antilipschitzWith_equiv_aux",
+            "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel",
+            "WithLp.prod_antilipschitzWith_equiv_aux"
+          ]
+        },
+        {
+          "fold": 1,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+            "BumpCovering.sum_toPOUFun_eq",
+            "ENNReal.Lp_add_le",
+            "ENNReal.tsum_condensed_le",
+            "IsCauSeq.of_abv_le",
+            "MeasureTheory.GridLines.T_lmarginal_antitone",
+            "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+            "MeasureTheory.mul_meas_ge_le_pow_snorm",
+            "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+            "ProbabilityTheory.kernel.densityProcess_le_one",
+            "max_aleph0_card_le_rank_fun_nat"
+          ]
+        },
+        {
+          "fold": 2,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+            "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+            "ENNReal.lintegral_Lp_add_le_aux",
+            "LipschitzWith.uncurry",
+            "MeasureTheory.Content.innerContent_exists_compact",
+            "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+            "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+            "MeasureTheory.norm_indicatorConstLp_le",
+            "MeasureTheory.snormEssSup_add_le",
+            "ProbabilityTheory.sum_prob_mem_Ioc_le",
+            "tendsto_integral_exp_smul_cocompact"
+          ]
+        },
+        {
+          "fold": 3,
+          "train_examples": 166,
+          "test_examples": 40,
+          "test_theorems": [
+            "ENNReal.le_tsum_schlomilch",
+            "ENNReal.lintegral_Lp_add_le",
+            "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+            "ENNReal.rpow_add_rpow_le_add",
+            "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+            "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+            "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+            "MeasureTheory.pow_mul_meas_ge_le_snorm",
+            "MeasureTheory.snorm_sub_le_of_dist_bdd",
+            "Tuple.bubble_sort_induction'"
+          ]
+        },
+        {
+          "fold": 4,
+          "train_examples": 166,
+          "test_examples": 40,
+          "test_theorems": [
+            "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+            "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+            "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+            "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+            "MeasureTheory.meas_le_lintegral₀",
+            "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+            "MonotoneOn.eVariationOn_le",
+            "NNReal.count_const_le_le_of_tsum_le",
+            "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+            "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div"
+          ]
+        }
+      ]
+    },
+    "shallow": {
+      "paired_ranking_accuracy": 0.9660194174757282,
+      "theorem_cluster_bootstrap_95": [
+        0.9271844660194175,
+        0.9953271028037384
+      ],
+      "mean_pair_margin": 0.6572056824789753,
+      "classification_accuracy": 0.8398058252427184,
+      "brier": 0.13189189269309928,
+      "by_mechanism_paired_accuracy": {
+        "Fin-eta": {
+          "pairs": 10,
+          "accuracy": 1.0
+        },
+        "coercion": {
+          "pairs": 78,
+          "accuracy": 1.0
+        },
+        "instance-path": {
+          "pairs": 7,
+          "accuracy": 0.8571428571428571
+        },
+        "local-unfolding": {
+          "pairs": 4,
+          "accuracy": 0.875
+        },
+        "residual": {
+          "pairs": 4,
+          "accuracy": 0.5
+        }
+      },
+      "leave_one_mechanism_out": {
+        "Fin-eta": {
+          "pairs": 10,
+          "classes": 4,
+          "paired_ranking_accuracy": 1.0,
+          "training_mechanisms": [
+            "coercion",
+            "instance-path",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "coercion": {
+          "pairs": 78,
+          "classes": 56,
+          "paired_ranking_accuracy": 0.8589743589743589,
+          "training_mechanisms": [
+            "Fin-eta",
+            "instance-path",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "instance-path": {
+          "pairs": 7,
+          "classes": 2,
+          "paired_ranking_accuracy": 0.8571428571428571,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "local-unfolding",
+            "residual"
+          ]
+        },
+        "local-unfolding": {
+          "pairs": 4,
+          "classes": 4,
+          "paired_ranking_accuracy": 0.625,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "instance-path",
+            "residual"
+          ]
+        },
+        "residual": {
+          "pairs": 4,
+          "classes": 2,
+          "paired_ranking_accuracy": 0.5,
+          "training_mechanisms": [
+            "Fin-eta",
+            "coercion",
+            "instance-path",
+            "local-unfolding"
+          ]
+        }
+      },
+      "mechanism_macro_paired_accuracy": 0.8352793040293041,
+      "all_group_macro_paired_accuracy": 0.7682234432234433,
+      "all_group_pair_weighted_paired_accuracy": 0.8495145631067961,
+      "pair_predictions": [
+        {
+          "pair_id": "ProbabilityTheory.kernel.densityProcess_le_one|00c9c6d8af4acb31|simp",
+          "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+          "mechanism": "coercion",
+          "margin": 0.9599745277326989,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ProbabilityTheory.kernel.densityProcess_le_one|00c9c6d8af4acb31|simp_all",
+          "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+          "mechanism": "coercion",
+          "margin": 0.790576333427791,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|aesop",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|simp",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|2cb811265df7608d|simp_all",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.norm_indicatorConstLp_le|7a5740c2f76a925c|simp",
+          "theorem": "MeasureTheory.norm_indicatorConstLp_le",
+          "mechanism": "coercion",
+          "margin": 0.9892227771394966,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le_aux|662881225e347611|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+          "mechanism": "coercion",
+          "margin": 0.7787636507924776,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MonotoneOn.eVariationOn_le|67cfd8096c0b4b1f|simp",
+          "theorem": "MonotoneOn.eVariationOn_le",
+          "mechanism": "coercion",
+          "margin": 0.9826828209627666,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.004183764388839495,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp only [hf]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0010835985179151741,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp only [v_eq]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.001927249952982546,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|d9e88457fd35a1f2|simp_all",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.0007256992067857793,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.meas_le_lintegral₀|6d349828345ecf27|simp",
+          "theorem": "MeasureTheory.meas_le_lintegral₀",
+          "mechanism": "coercion",
+          "margin": 0.9876904634890411,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.meas_le_lintegral₀|6d349828345ecf27|simp_all",
+          "theorem": "MeasureTheory.meas_le_lintegral₀",
+          "mechanism": "coercion",
+          "margin": 0.9815416298627715,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_prod_lintegral_pow_le|3ca31d6d89eda5ee|simp",
+          "theorem": "MeasureTheory.lintegral_prod_lintegral_pow_le",
+          "mechanism": "coercion",
+          "margin": 0.9841430163239866,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.le_tsum_schlomilch|ab5c58c24520ed21|simp",
+          "theorem": "ENNReal.le_tsum_schlomilch",
+          "mechanism": "coercion",
+          "margin": 0.9851999125322951,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable|0bf68df7abe405e2|simp",
+          "theorem": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+          "mechanism": "coercion",
+          "margin": 0.66840626823647,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable|0bf68df7abe405e2|simp_all",
+          "theorem": "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+          "mechanism": "coercion",
+          "margin": 0.7401557254902418,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton|bec38ea99cbd7698|simp",
+          "theorem": "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+          "mechanism": "coercion",
+          "margin": 0.9834470320988619,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "WithLp.prod_antilipschitzWith_equiv_aux|abf2259e20a734d5|simp",
+          "theorem": "WithLp.prod_antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.5852369360469079,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "WithLp.prod_antilipschitzWith_equiv_aux|abf2259e20a734d5|simp_all",
+          "theorem": "WithLp.prod_antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.7154294662101851,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|54802ded1f286f85|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.9441991448661123,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "BumpCovering.sum_toPOUFun_eq|6ee4b6555ffb4c97|simp only [this]",
+          "theorem": "BumpCovering.sum_toPOUFun_eq",
+          "mechanism": "instance-path",
+          "margin": -1.345757855153451e-07,
+          "correct": 0.0
+        },
+        {
+          "pair_id": "MeasureTheory.pow_mul_meas_ge_le_snorm|9af9c47ac8902711|simp",
+          "theorem": "MeasureTheory.pow_mul_meas_ge_le_snorm",
+          "mechanism": "coercion",
+          "margin": 0.9550561753268847,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "IsCauSeq.of_abv_le|2660d17585465928|simp",
+          "theorem": "IsCauSeq.of_abv_le",
+          "mechanism": "residual",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "tendsto_integral_exp_smul_cocompact|fbee2d4e4d51cd53|simp only [V']",
+          "theorem": "tendsto_integral_exp_smul_cocompact",
+          "mechanism": "local-unfolding",
+          "margin": 0.0,
+          "correct": 0.5
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm|dc12987d57bfa877|simp",
+          "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+          "mechanism": "coercion",
+          "margin": 0.9869013236131479,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm|dc12987d57bfa877|simp_all",
+          "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+          "mechanism": "coercion",
+          "margin": 0.977876104813766,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|b6483c7ce07df2e5|simp",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "coercion",
+          "margin": 0.9815420873789663,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE|b6483c7ce07df2e5|simp_all",
+          "theorem": "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+          "mechanism": "coercion",
+          "margin": 0.9722771295491993,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|aesop",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.28349840698695283,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.35145315563533286,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hf]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.04185769340930279,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hp]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.028764128558865898,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp only [hp₀]",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.028764128558865898,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.GridLines.T_lmarginal_antitone|9990e1a832be946f|simp_all",
+          "theorem": "MeasureTheory.GridLines.T_lmarginal_antitone",
+          "mechanism": "instance-path",
+          "margin": 0.3440990665230923,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt|55cdc5980de3ee26|simp",
+          "theorem": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+          "mechanism": "coercion",
+          "margin": 0.9520761958814307,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt|55cdc5980de3ee26|simp_all",
+          "theorem": "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+          "mechanism": "coercion",
+          "margin": 0.9046209494551082,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "PiLp.antilipschitzWith_equiv_aux|e425140c64354f1f|simp",
+          "theorem": "PiLp.antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.672746484674402,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "PiLp.antilipschitzWith_equiv_aux|e425140c64354f1f|simp_all",
+          "theorem": "PiLp.antilipschitzWith_equiv_aux",
+          "mechanism": "coercion",
+          "margin": 0.9314319486670168,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|3c982d4b4b3b58bc|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9876408661154802,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le_aux|0f19b09a006d34e8|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le_aux",
+          "mechanism": "coercion",
+          "margin": 0.8005661365947169,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ProbabilityTheory.sum_prob_mem_Ioc_le|5a1993b8a12c4752|simp",
+          "theorem": "ProbabilityTheory.sum_prob_mem_Ioc_le",
+          "mechanism": "coercion",
+          "margin": 0.47364347249391403,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ProbabilityTheory.sum_prob_mem_Ioc_le|5a1993b8a12c4752|simp_all",
+          "theorem": "ProbabilityTheory.sum_prob_mem_Ioc_le",
+          "mechanism": "coercion",
+          "margin": 0.44503885280265776,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre|dc70e1e78e7f9a19|simp",
+          "theorem": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+          "mechanism": "coercion",
+          "margin": 0.9723324055707365,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre|dc70e1e78e7f9a19|simp_all",
+          "theorem": "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+          "mechanism": "coercion",
+          "margin": 0.9676849941535002,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|fed0e6786dd5fe97|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.988118729741771,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|fed0e6786dd5fe97|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.9785300366143367,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.smul_le_stoppedValue_hitting|3838c7ecd7cebdfb|simp",
+          "theorem": "MeasureTheory.smul_le_stoppedValue_hitting",
+          "mechanism": "coercion",
+          "margin": 0.8810870814655648,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.smul_le_stoppedValue_hitting|3838c7ecd7cebdfb|simp_all",
+          "theorem": "MeasureTheory.smul_le_stoppedValue_hitting",
+          "mechanism": "coercion",
+          "margin": 0.6196420858753262,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|eaec19d160a437b5|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.9762843271063275,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate|c56244ffbc61d74d|simp",
+          "theorem": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+          "mechanism": "coercion",
+          "margin": 0.954687455544933,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate|c56244ffbc61d74d|simp_all",
+          "theorem": "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+          "mechanism": "coercion",
+          "margin": 0.8933989297469082,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top|ccb4123b231919ff|simp",
+          "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+          "mechanism": "coercion",
+          "margin": 0.9736751522157533,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|07226ed2f4af7875|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9833690777288326,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "NNReal.count_const_le_le_of_tsum_le|dda9f44493dd61d8|simp",
+          "theorem": "NNReal.count_const_le_le_of_tsum_le",
+          "mechanism": "coercion",
+          "margin": 0.8593467481127319,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "max_aleph0_card_le_rank_fun_nat|0e09dd5fe480296f|simp only [L]",
+          "theorem": "max_aleph0_card_le_rank_fun_nat",
+          "mechanism": "local-unfolding",
+          "margin": 7.75824835375083e-07,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr|686c04ce8258057d|simp",
+          "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+          "mechanism": "coercion",
+          "margin": 0.9890660202839119,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|7555e1702ed54909|simp",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.9803067044068021,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_add_le|7555e1702ed54909|simp_all",
+          "theorem": "ENNReal.lintegral_Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.9815941492320793,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr|a5ee4e13f608b073|simp",
+          "theorem": "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+          "mechanism": "coercion",
+          "margin": 0.9875361336871582,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|9fa045dd99ee24f3|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.5497915809298375,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div|60509dcbccdabe4b|simp",
+          "theorem": "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div",
+          "mechanism": "coercion",
+          "margin": 0.289214474498498,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel|c10a7a07c6be073f|simp",
+          "theorem": "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel",
+          "mechanism": "coercion",
+          "margin": 0.7691654460181867,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal|56f3385bca2b5c66|simp",
+          "theorem": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+          "mechanism": "coercion",
+          "margin": 0.9724061137441811,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal|56f3385bca2b5c66|simp_all",
+          "theorem": "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+          "mechanism": "coercion",
+          "margin": 0.9435839384636511,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.000573442204370167,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [hf]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 5.773126917052451e-05,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [v_eq]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.00013450504245138273,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "HasFPowerSeriesOnBall.coeff_zero|9722f51e8166be3b|simp only [zero_mem]",
+          "theorem": "HasFPowerSeriesOnBall.coeff_zero",
+          "mechanism": "Fin-eta",
+          "margin": 0.000166158162055563,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_le_self_of_le_one|775e3d3a2918d2ec|simp",
+          "theorem": "ENNReal.rpow_le_self_of_le_one",
+          "mechanism": "coercion",
+          "margin": 0.9878354496703265,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.tsum_condensed_le|49bd9b6a2fc4b990|simp",
+          "theorem": "ENNReal.tsum_condensed_le",
+          "mechanism": "coercion",
+          "margin": 0.9505120794930502,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.tsum_condensed_le|49bd9b6a2fc4b990|simp_all",
+          "theorem": "ENNReal.tsum_condensed_le",
+          "mechanism": "coercion",
+          "margin": 0.9421437728901638,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snormEssSup_add_le|4494b0265a4242f1|simp",
+          "theorem": "MeasureTheory.snormEssSup_add_le",
+          "mechanism": "coercion",
+          "margin": 0.5792855118011574,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snormEssSup_add_le|4494b0265a4242f1|simp_all",
+          "theorem": "MeasureTheory.snormEssSup_add_le",
+          "mechanism": "coercion",
+          "margin": 0.48520163025191404,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|e9ae37045a02e44c|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.9871426572943233,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le_add|e9ae37045a02e44c|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le_add",
+          "mechanism": "coercion",
+          "margin": 0.9769461773159609,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le|006999b090269699|simp",
+          "theorem": "ENNReal.rpow_add_rpow_le",
+          "mechanism": "coercion",
+          "margin": 0.9888517299910226,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.rpow_add_rpow_le|006999b090269699|simp_all",
+          "theorem": "ENNReal.rpow_add_rpow_le",
+          "mechanism": "coercion",
+          "margin": 0.9801825643233596,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared|c3159ce8dfd81494|simp only [P]",
+          "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+          "mechanism": "Fin-eta",
+          "margin": 0.16809001516121336,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq|c92816e18f9ba9c4|simp",
+          "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+          "mechanism": "coercion",
+          "margin": 0.989077334883884,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "Tuple.bubble_sort_induction'|e93dc754a3c75fcb|simp only [this]",
+          "theorem": "Tuple.bubble_sort_induction'",
+          "mechanism": "local-unfolding",
+          "margin": 3.4257232365626716e-09,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top|bbbd22ade5dab85e|simp",
+          "theorem": "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+          "mechanism": "coercion",
+          "margin": 0.9800565169161426,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq|64187459e5f60212|simp",
+          "theorem": "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+          "mechanism": "coercion",
+          "margin": 0.9890518131703754,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ|82894c12214a8eda|simp",
+          "theorem": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9378820601421216,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ|82894c12214a8eda|simp_all",
+          "theorem": "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9030419478094089,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Content.innerContent_exists_compact|e5445c3a9279d21b|simp",
+          "theorem": "MeasureTheory.Content.innerContent_exists_compact",
+          "mechanism": "coercion",
+          "margin": 0.008122433542252115,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.exists_pos_tsum_mul_lt_of_countable|91e14f701888108d|simp",
+          "theorem": "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+          "mechanism": "coercion",
+          "margin": 0.12693345734139366,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.Lp_add_le|52813a33960b1b40|simp",
+          "theorem": "ENNReal.Lp_add_le",
+          "mechanism": "coercion",
+          "margin": 0.9830816584591742,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|91bf907ead75c8c2|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9836319679108204,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Lp.nnnorm_le_of_ae_bound|c8d9ae6fed9e88f7|simp",
+          "theorem": "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+          "mechanism": "coercion",
+          "margin": 0.9512530220199215,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.Lp.nnnorm_le_of_ae_bound|c8d9ae6fed9e88f7|simp_all",
+          "theorem": "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+          "mechanism": "coercion",
+          "margin": 0.931769935135079,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq|cc5c45b20a18cde1|simp",
+          "theorem": "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+          "mechanism": "coercion",
+          "margin": 0.6242345062398306,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "LipschitzWith.uncurry|1c9f72c1733ab235|simp",
+          "theorem": "LipschitzWith.uncurry",
+          "mechanism": "coercion",
+          "margin": 0.2106454305457734,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "LipschitzWith.uncurry|1c9f72c1733ab235|simp_all",
+          "theorem": "LipschitzWith.uncurry",
+          "mechanism": "coercion",
+          "margin": 0.4225205297055499,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add|f059d7ec5e3053db|simp",
+          "theorem": "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+          "mechanism": "coercion",
+          "margin": 0.9262065455496123,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "NNReal.count_const_le_le_of_tsum_le|bb6f5032b3291679|simp",
+          "theorem": "NNReal.count_const_le_le_of_tsum_le",
+          "mechanism": "coercion",
+          "margin": 0.9313935425958728,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.mul_meas_ge_le_pow_snorm|39fd6366fdaf9800|simp",
+          "theorem": "MeasureTheory.mul_meas_ge_le_pow_snorm",
+          "mechanism": "coercion",
+          "margin": 0.9757529157735048,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared|53c08477581c5ca5|simp only [P]",
+          "theorem": "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+          "mechanism": "Fin-eta",
+          "margin": 0.20802177828217938,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_sub_le_of_dist_bdd|02b37d0e4b540108|simp",
+          "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+          "mechanism": "coercion",
+          "margin": 0.9412090809602095,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ|6122b0b41fdcb6ed|simp",
+          "theorem": "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+          "mechanism": "coercion",
+          "margin": 0.9859465749009283,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "Tuple.bubble_sort_induction'|7f391f523e98cc8e|simp only [this]",
+          "theorem": "Tuple.bubble_sort_induction'",
+          "mechanism": "local-unfolding",
+          "margin": 2.7119706245489755e-09,
+          "correct": 1.0
+        },
+        {
+          "pair_id": "MeasureTheory.snorm_sub_le_of_dist_bdd|7e7eae40e9ff5018|simp",
+          "theorem": "MeasureTheory.snorm_sub_le_of_dist_bdd",
+          "mechanism": "coercion",
+          "margin": 0.9199622617344043,
+          "correct": 1.0
+        }
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "ENNReal.rpow_add_rpow_le",
+            "ENNReal.rpow_le_self_of_le_one",
+            "HasFPowerSeriesOnBall.coeff_zero",
+            "MeasureTheory.Lp.nnnorm_le_of_ae_bound",
+            "MeasureTheory.lintegral_prod_lintegral_pow_le",
+            "MeasureTheory.smul_le_stoppedValue_hitting",
+            "PiLp.antilipschitzWith_equiv_aux",
+            "ProbabilityTheory.kernel.isSFiniteKernel_withDensity_of_isFiniteKernel",
+            "WithLp.prod_antilipschitzWith_equiv_aux"
+          ]
+        },
+        {
+          "fold": 1,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "BoundedContinuousFunction.lintegral_lt_top_of_nnreal",
+            "BumpCovering.sum_toPOUFun_eq",
+            "ENNReal.Lp_add_le",
+            "ENNReal.tsum_condensed_le",
+            "IsCauSeq.of_abv_le",
+            "MeasureTheory.GridLines.T_lmarginal_antitone",
+            "MeasureTheory.OuterMeasure.mkMetric'.trim_pre",
+            "MeasureTheory.mul_meas_ge_le_pow_snorm",
+            "MeasureTheory.snorm'_le_snorm'_mul_rpow_measure_univ",
+            "ProbabilityTheory.kernel.densityProcess_le_one",
+            "max_aleph0_card_le_rank_fun_nat"
+          ]
+        },
+        {
+          "fold": 2,
+          "train_examples": 164,
+          "test_examples": 42,
+          "test_theorems": [
+            "AlgebraicTopology.AlternatingFaceMapComplex.d_squared",
+            "ENNReal.exists_pos_tsum_mul_lt_of_countable",
+            "ENNReal.lintegral_Lp_add_le_aux",
+            "LipschitzWith.uncurry",
+            "MeasureTheory.Content.innerContent_exists_compact",
+            "MeasureTheory.Measure.LebesgueDecomposition.sup_mem_measurableLE",
+            "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+            "MeasureTheory.norm_indicatorConstLp_le",
+            "MeasureTheory.snormEssSup_add_le",
+            "ProbabilityTheory.sum_prob_mem_Ioc_le",
+            "tendsto_integral_exp_smul_cocompact"
+          ]
+        },
+        {
+          "fold": 3,
+          "train_examples": 166,
+          "test_examples": 40,
+          "test_theorems": [
+            "ENNReal.le_tsum_schlomilch",
+            "ENNReal.lintegral_Lp_add_le",
+            "ENNReal.lintegral_Lp_mul_le_Lq_mul_Lr",
+            "ENNReal.rpow_add_rpow_le_add",
+            "MeasureTheory.Egorov.measure_iUnionNotConvergentSeq",
+            "MeasureTheory.GridLines.T_insert_le_T_lmarginal_singleton",
+            "MeasureTheory.lintegral_withDensity_eq_lintegral_mul_non_measurable",
+            "MeasureTheory.pow_mul_meas_ge_le_snorm",
+            "MeasureTheory.snorm_sub_le_of_dist_bdd",
+            "Tuple.bubble_sort_induction'"
+          ]
+        },
+        {
+          "fold": 4,
+          "train_examples": 166,
+          "test_examples": 40,
+          "test_theorems": [
+            "ENNReal.lintegral_mul_le_Lp_mul_Lq_of_ne_zero_of_ne_top",
+            "ENNReal.lintegral_rpow_add_le_add_snorm_mul_lintegral_rpow_add",
+            "MeasureTheory.FiniteMeasure.testAgainstNN_lipschitz_estimate",
+            "MeasureTheory.integral_mul_norm_le_Lp_mul_Lq",
+            "MeasureTheory.meas_le_lintegral₀",
+            "MeasureTheory.snorm_le_snorm_mul_rpow_measure_univ",
+            "MonotoneOn.eVariationOn_le",
+            "NNReal.count_const_le_le_of_tsum_le",
+            "VitaliFamily.measure_le_mul_of_subset_limRatioMeas_lt",
+            "spectrum.spectralRadius_le_liminf_pow_nnnorm_pow_one_div"
+          ]
+        }
+      ]
+    }
+  },
+  "separation": {
+    "valid_classes": 70,
+    "all_class_mechanisms": {
+      "coercion": 56,
+      "residual": 2,
+      "Fin-eta": 4,
+      "Ne-vs-Not": 1,
+      "instance-path": 2,
+      "local-unfolding": 4,
+      "proof-term": 1
+    },
+    "shallow_sketch": 67,
+    "proof_sketch": 58,
+    "digest": 70,
+    "median_bytes": {
+      "shallow_bytes": 4212.0,
+      "shallow_sketch_bytes": 934.0,
+      "proof_bytes": 3647.0,
+      "proof_sketch_bytes": 940.0
+    }
+  },
+  "inputs": [
+    "members.shard0.jsonl",
+    "members.shard1.jsonl",
+    "members.shard2.jsonl",
+    "members.shard3.jsonl"
+  ]
+}

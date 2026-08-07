@@ -1,0 +1,464 @@
+[
+  {
+    "theorem": "ProbabilityTheory.kernel.densityProcess_le_one",
+    "file": "Mathlib/Probability/Kernel/Disintegration/Density.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "00c9c6d8af4acb31",
+          "simp ; intro h": "00c9c6d8af4acb31"
+        },
+        "bytes": {
+          "intro h ; simp": 330,
+          "simp ; intro h": 330
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "16e9f5f0a63ff813",
+          "simp ; intro h": "9a34917b21114db9"
+        },
+        "bytes": {
+          "intro h ; simp": 18293,
+          "simp ; intro h": 18309
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "00c9c6d8af4acb31",
+          "simp ; intro h": "00c9c6d8af4acb31"
+        },
+        "bytes": {
+          "intro h ; simp": 330,
+          "simp ; intro h": 330
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "00c9c6d8af4acb31",
+          "simp ; intro h": "00c9c6d8af4acb31"
+        },
+        "bytes": {
+          "intro h ; simp": 330,
+          "simp ; intro h": 330
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "16e9f5f0a63ff813",
+          "simp ; intro h": "9a34917b21114db9"
+        },
+        "bytes": {
+          "intro h ; simp": 18293,
+          "simp ; intro h": 18309
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "16e9f5f0a63ff813",
+          "simp ; intro h": "9a34917b21114db9"
+        },
+        "bytes": {
+          "intro h ; simp": 18293,
+          "simp ; intro h": 18309
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "1094ae188f3a0122e4c3d2441b5dcfe6028b447c37d53bca66e1797ce62f1944",
+          "simp ; intro h": "95de6572f4d05026868ee91ed6411cfa28546f129b64364615ebe71ed06694bf"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "1094ae188f3a0122e4c3d2441b5dcfe6028b447c37d53bca66e1797ce62f1944",
+          "simp ; intro h": "95de6572f4d05026868ee91ed6411cfa28546f129b64364615ebe71ed06694bf"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "e3263f8f68370e5564310fbf021070b6142c809f66caf5b5548a733d14ca7b5c",
+          "simp ; intro h": "e3263f8f68370e5564310fbf021070b6142c809f66caf5b5548a733d14ca7b5c"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "f56db2849e9d7f77517e9f5c6da529315b115622119c52f8eb4c47cc4954fde4",
+          "simp ; intro h": "95e69391a231ddfc6d0b4571274c77c244ff413b7ccbfab5cc6c274ffb51f202"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -1144,13 +1144,14 @@",
+      " (@MeasurableSpace.countablePartitionSet.{u_3}",
+      " γ",
+      " mγ",
+      " inst✝",
+      " n",
+      " x))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -1688,13 +1689,14 @@",
+      " γ",
+      " mγ",
+      " inst✝",
+      " n",
+      " x)",
+      " s))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "MeasureTheory.lintegral_ofReal_le_lintegral_nnnorm",
+    "file": "Mathlib/MeasureTheory/Integral/Lebesgue.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "dc12987d57bfa877",
+          "simp ; intro h": "dc12987d57bfa877"
+        },
+        "bytes": {
+          "intro h ; simp": 206,
+          "simp ; intro h": 206
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "b52eb01b27505c4c",
+          "simp ; intro h": "55dd9912ab3d01bf"
+        },
+        "bytes": {
+          "intro h ; simp": 1167,
+          "simp ; intro h": 1183
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "dc12987d57bfa877",
+          "simp ; intro h": "dc12987d57bfa877"
+        },
+        "bytes": {
+          "intro h ; simp": 206,
+          "simp ; intro h": 206
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "dc12987d57bfa877",
+          "simp ; intro h": "dc12987d57bfa877"
+        },
+        "bytes": {
+          "intro h ; simp": 206,
+          "simp ; intro h": 206
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "b52eb01b27505c4c",
+          "simp ; intro h": "55dd9912ab3d01bf"
+        },
+        "bytes": {
+          "intro h ; simp": 1167,
+          "simp ; intro h": 1183
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "b52eb01b27505c4c",
+          "simp ; intro h": "55dd9912ab3d01bf"
+        },
+        "bytes": {
+          "intro h ; simp": 1167,
+          "simp ; intro h": 1183
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "b52eb01b27505c4c3a09ec6091be81750b6c78001e488e9494b35d788bb3bdcc",
+          "simp ; intro h": "55dd9912ab3d01bf1aa4e3924c1b6a1d577a73273ed9d22daa459ead4aee1c60"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "b52eb01b27505c4c3a09ec6091be81750b6c78001e488e9494b35d788bb3bdcc",
+          "simp ; intro h": "55dd9912ab3d01bf1aa4e3924c1b6a1d577a73273ed9d22daa459ead4aee1c60"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "a6f853e38adbe4e76cbb7bb10fcc9bbd2d1fae13e795518f36aa3db3d41924af",
+          "simp ; intro h": "a6f853e38adbe4e76cbb7bb10fcc9bbd2d1fae13e795518f36aa3db3d41924af"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "37b88526d37e6716b8d3d51a00f288c964e21336e5a8f3d6896abbc52bea118a",
+          "simp ; intro h": "3108d27df72da3877481d9cab110a609964347100a73d1754263a715f188690a"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -49,13 +49,14 @@",
+      " (@abs.{0}",
+      " Real",
+      " Real.lattice",
+      " Real.instAddGroup",
+      " (f",
+      " x)))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -75,13 +76,14 @@",
+      " :",
+      " α)",
+      " =>",
+      " ENNReal.ofReal",
+      " (f",
+      " x))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  },
+  {
+    "theorem": "ENNReal.lintegral_Lp_add_le",
+    "file": "Mathlib/MeasureTheory/Integral/MeanInequalities.lean",
+    "histories": [
+      [
+        "intro h",
+        "simp"
+      ],
+      [
+        "simp",
+        "intro h"
+      ]
+    ],
+    "rungs": {
+      "phi_state": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "7555e1702ed54909",
+          "simp ; intro h": "7555e1702ed54909"
+        },
+        "bytes": {
+          "intro h ; simp": 396,
+          "simp ; intro h": 396
+        }
+      },
+      "phi_all_shallow": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "82fbc1591ac5b01e",
+          "simp ; intro h": "882e497c7d48a852"
+        },
+        "bytes": {
+          "intro h ; simp": 4887,
+          "simp ; intro h": 4903
+        }
+      },
+      "phi_state_deep": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "7555e1702ed54909",
+          "simp ; intro h": "7555e1702ed54909"
+        },
+        "bytes": {
+          "intro h ; simp": 396,
+          "simp ; intro h": 396
+        }
+      },
+      "phi_deep_proofs": {
+        "separates": false,
+        "hashes": {
+          "intro h ; simp": "7555e1702ed54909",
+          "simp ; intro h": "7555e1702ed54909"
+        },
+        "bytes": {
+          "intro h ; simp": 396,
+          "simp ; intro h": 396
+        }
+      },
+      "phi_full": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "82fbc1591ac5b01e",
+          "simp ; intro h": "882e497c7d48a852"
+        },
+        "bytes": {
+          "intro h ; simp": 4887,
+          "simp ; intro h": 4903
+        }
+      },
+      "phi_full_proofs": {
+        "separates": true,
+        "hashes": {
+          "intro h ; simp": "82fbc1591ac5b01e",
+          "simp ; intro h": "882e497c7d48a852"
+        },
+        "bytes": {
+          "intro h ; simp": 4887,
+          "simp ; intro h": 4903
+        }
+      },
+      "f_core": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "53168cc9e28a15649adc6e1a7a2cb6c6326ecb854cd5cf932119012af8146ec5",
+          "simp ; intro h": "697da7256066a12b0f3958aa2fa3872d1e09e478ad99f607815edf52cf0c8741"
+        }
+      },
+      "f_proof": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "53168cc9e28a15649adc6e1a7a2cb6c6326ecb854cd5cf932119012af8146ec5",
+          "simp ; intro h": "697da7256066a12b0f3958aa2fa3872d1e09e478ad99f607815edf52cf0c8741"
+        }
+      },
+      "f_env": {
+        "separates": false,
+        "values": {
+          "intro h ; simp": "d91019640f21b80ebc04615850bf0e21e70ba37e74854547d982a8150e2c6d79",
+          "simp ; intro h": "d91019640f21b80ebc04615850bf0e21e70ba37e74854547d982a8150e2c6d79"
+        }
+      },
+      "f_exec": {
+        "separates": true,
+        "values": {
+          "intro h ; simp": "60d9d872b3c1ec7c66cf2d5a505a6bdba040441e2b078d29daa8dcf0626cf5a1",
+          "simp ; intro h": "13cc356cd1b3f232cc2e199f275e490fb1d9f74b2fd5a8e85ff0ce5ed146f632"
+        }
+      }
+    },
+    "diff_tokens": [
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal"
+    ],
+    "diff_context": [
+      "--- ",
+      "+++ ",
+      "@@ -271,13 +271,14 @@",
+      " (@Inv.inv.{0}",
+      " Real",
+      " (@DivInvMonoid.toInv.{0}",
+      " Real",
+      " Real.instDivInvMonoid)",
+      " p)))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " h)",
+      " →",
+      " @Exists.{1}",
+      " NNReal",
+      " fun",
+      " (b",
+      "@@ -350,13 +351,14 @@",
+      " (@Inv.inv.{0}",
+      " Real",
+      " (@DivInvMonoid.toInv.{0}",
+      " Real",
+      " Real.instDivInvMonoid)",
+      " p))",
+      "-(ENNReal.ofNNReal",
+      "+(@WithTop.some.{0}",
+      "+NNReal",
+      " b))",
+      " (@LE.le.{0}",
+      " NNReal",
+      " (@Preorder.toLE.{0}",
+      " NNReal",
+      " (@PartialOrder.toPreorder.{0}"
+    ]
+  }
+]
